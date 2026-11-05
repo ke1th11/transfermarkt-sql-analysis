@@ -1,0 +1,221 @@
+Bloco 0:
+player_id	first_name	last_name	name	last_season	current_club_id	player_code	country_of_birth	city_of_birth	country_of_citizenship	date_of_birth	sub_position	position	foot	height_in_cm	contract_expiration_date	agent_name	image_url	international_caps	international_goals	current_national_team_id	url	current_club_domestic_competition_id	current_club_name	market_value_in_eur	highest_market_value_in_eur
+10	Miroslav	Klose	Miroslav Klose	2015	398	miroslav-klose	Poland	Opole  	Germany	1978-06-09 00:00:00	Centre-Forward	Attack	right	184	NULL	ASBW Sport Marketing	https://img.a.transfermarkt.technology/portrait/header/10-1448468291.jpg?lm=1	NULL	NULL	NULL	https://www.transfermarkt.co.uk/miroslav-klose/profil/spieler/10	IT1	Società Sportiva Lazio S.p.A.	1000000	30000000
+26	Roman	Weidenfeller	Roman Weidenfeller	2017	16	roman-weidenfeller	Germany	Diez  	Germany	1980-08-06 00:00:00	Goalkeeper	Goalkeeper	left	190	NULL	Neubauer 13 GmbH	https://img.a.transfermarkt.technology/portrait/header/26-1502448725.jpg?lm=1	NULL	NULL	NULL	https://www.transfermarkt.co.uk/roman-weidenfeller/profil/spieler/26	L1	Borussia Dortmund	750000	8000000
+65	Dimitar	Berbatov	Dimitar Berbatov	2015	1091	dimitar-berbatov	Bulgaria	Blagoevgrad  	Bulgaria	1981-01-30 00:00:00	Centre-Forward	Attack	NULL	NULL	NULL	CSKA-AS-23 Ltd.	https://img.a.transfermarkt.technology/portrait/header/65-1683670068.jpg?lm=1	NULL	NULL	NULL	https://www.transfermarkt.co.uk/dimitar-berbatov/profil/spieler/65	GR1	Panthessalonikios Athlitikos Omilos Konstantinoupoliton	1000000	34500000
+77	NULL	Lúcio	Lúcio	2012	506	lucio	Brazil	Brasília  	Brazil	1978-05-08 00:00:00	Centre-Back	Defender	NULL	NULL	NULL	NULL	https://img.a.transfermarkt.technology/portrait/header/77-1458201664.jpg?lm=1	NULL	NULL	NULL	https://www.transfermarkt.co.uk/lucio/profil/spieler/77	IT1	Juventus FC	200000	24500000
+80	Tom	Starke	Tom Starke	2017	27	tom-starke	East Germany (GDR)	Freital  	Germany	1981-03-18 00:00:00	Goalkeeper	Goalkeeper	right	194	NULL	IFM	https://img.a.transfermarkt.technology/portrait/header/80-1471439914.JPG?lm=1	NULL	NULL	NULL	https://www.transfermarkt.co.uk/tom-starke/profil/spieler/80	L1	Bayern Munich	100000	3000000
+109	NULL	Dedê	Dedê	2013	825	dede	Brazil	Belo Horizonte  	Brazil	1978-04-18 00:00:00	Left-Back	Defender	NULL	NULL	NULL	Football Concept	https://img.a.transfermarkt.technology/portrait/header/109-1487263703.jpg?lm=1	NULL	NULL	NULL	https://www.transfermarkt.co.uk/dede/profil/spieler/109	TR1	Eskisehirspor	400000	9500000
+123	Christoph	Metzelder	Christoph Metzelder	2012	33	christoph-metzelder	Germany	Haltern  	Germany	1980-11-05 00:00:00	Centre-Back	Defender	NULL	NULL	NULL	NULL	https://img.a.transfermarkt.technology/portrait/header/s_123_33_2012_1.jpg?lm=1	NULL	NULL	NULL	https://www.transfermarkt.co.uk/christoph-metzelder/profil/spieler/123	L1	FC Schalke 04	1500000	9500000
+132	Tomas	Rosicky	Tomas Rosicky	2015	11	tomas-rosicky	CSSR	Praha  	Czech Republic	1980-10-04 00:00:00	Attacking Midfield	Midfield	both	179	NULL	NULL	https://img.a.transfermarkt.technology/portrait/header/132-1464947592.jpg?lm=1	NULL	NULL	NULL	https://www.transfermarkt.co.uk/tomas-rosicky/profil/spieler/132	GB1	Arsenal FC	350000	17500000
+162	Marc	Ziegler	Marc Ziegler	2012	79	marc-ziegler	Germany	Blieskastel  	Germany	1976-06-13 00:00:00	Goalkeeper	Goalkeeper	right	193	NULL	NULL	https://img.a.transfermarkt.technology/portrait/header/s_162_79_2012_1.jpg?lm=1	NULL	NULL	NULL	https://www.transfermarkt.co.uk/marc-ziegler/profil/spieler/162	L1	VfB Stuttgart	200000	1250000
+215	Roque	Santa Cruz	Roque Santa Cruz	2015	1084	roque-santa-cruz	Paraguay	Asunción  	Paraguay	1981-08-16 00:00:00	Centre-Forward	Attack	right	193	2023-12-31 00:00:00	NULL	https://img.a.transfermarkt.technology/portrait/header/215-1564992591.png?lm=1	NULL	NULL	NULL	https://www.transfermarkt.co.uk/roque-santa-cruz/profil/spieler/215	ES1	Málaga CF	250000	12000000
+
+
+
+
+game_id	competition_id	season	round	date	home_club_id	away_club_id	home_club_goals	away_club_goals	home_club_position	away_club_position	home_club_manager_name	away_club_manager_name	stadium	attendance	referee	url	home_club_formation	away_club_formation	home_club_name	away_club_name	aggregate	competition_type
+1026846	FIWC	2009	Round of 16	2010-06-26	3449	3589	2	1	NULL	NULL	Óscar Tabárez	Jung-moo Huh	Nelson Mandela Bay Stadium	30597	Wolfgang Stark	https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/1026846	NULL	NULL	Uruguay	South Korea	2:1	national_team_competition
+1026847	FIWC	2009	Round of 16	2010-06-27	3437	6303	3	1	NULL	NULL	Diego Maradona	Javier Aguirre	FNB-Stadium	84377	Roberto Rosetti	https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/1026847	NULL	NULL	Argentina	Mexico	3:1	national_team_competition
+1027001	FIWC	2009	Round of 16	2010-06-26	3505	3441	1	2	NULL	NULL	Bob Bradley	Milovan Rajevac	Royal Bafokeng Stadium	34976	Viktor Kassai	https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/1027001	NULL	NULL	United States	Ghana	1:2	national_team_competition
+1027002	FIWC	2009	Round of 16	2010-06-27	3262	3299	4	1	NULL	NULL	Joachim Löw	Fabio Capello	Free State Stadium	40510	Jorge Larrionda	https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/1027002	NULL	NULL	Germany	England	4:1	national_team_competition
+1027048	FIWC	2009	Round of 16	2010-06-28	3379	3503	2	1	NULL	NULL	Bert van Marwijk	Vladimír Weiss	Moses Mabhida Stadion	61962	Undiano Mallenco	https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/1027048	NULL	NULL	Netherlands	Slovakia	2:1	national_team_competition
+1027049	FIWC	2009	Round of 16	2010-06-29	3581	3435	5	3	NULL	NULL	Gerardo Martino	Takeshi Okada	Loftus Versfeld Stadium	36742	Frank De Bleeckere	https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/1027049	NULL	NULL	Paraguay	Japan	5:3	national_team_competition
+1027635	FIWC	2009	Round of 16	2010-06-28	3439	3700	3	0	NULL	NULL	Dunga	Marcelo Bielsa	Ellis Park Stadium	54096	Howard Webb	https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/1027635	NULL	NULL	Brazil	Chile	3:0	national_team_competition
+1027636	FIWC	2009	Round of 16	2010-06-29	3375	3300	1	0	NULL	NULL	Vicente del Bosque	Carlos Queiroz	Cape Town Stadium	62955	Héctor Baldassi	https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/1027636	NULL	NULL	Spain	Portugal	1:0	national_team_competition
+1027723	FIWC	2009	Quarter-Finals	2010-07-02	3449	3441	5	3	NULL	NULL	Óscar Tabárez	Milovan Rajevac	FNB-Stadium	84000	Olegário Benquerença	https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/1027723	NULL	NULL	Uruguay	Ghana	5:3	national_team_competition
+1027750	FIWC	2009	Quarter-Finals	2010-07-03	3437	3262	0	4	NULL	NULL	Diego Maradona	Joachim Löw	Cape Town Stadium	64100	Ravshan Irmatov	https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/1027750	NULL	NULL	Argentina	Germany	0:4	national_team_competition
+
+
+
+appearance_id	game_id	player_id	player_club_id	player_current_club_id	date	player_name	competition_id	yellow_cards	red_cards	goals	assists	minutes_played
+2449800_38870	2449800	38870	265	265	2014-03-22	Gordon Schildenfeld	GR1	0	0	0	0	90
+2449800_4086	2449800	4086	441	441	2014-03-22	Darren Ambrose	GR1	0	0	1	0	90
+2449800_41361	2449800	41361	441	441	2014-03-22	Tom Söderberg	GR1	1	0	0	1	90
+2449800_52045	2449800	52045	441	2672	2014-03-22	Athanasios Panteliadis	GR1	0	0	0	0	90
+2449800_55879	2449800	55879	441	6418	2014-03-22	Adrián Lucero	GR1	0	0	0	0	90
+2449800_58018	2449800	58018	265	265	2014-03-22	Nano	GR1	0	0	0	0	90
+2449800_63487	2449800	63487	265	3385	2014-03-22	Nikolaos Karelis	GR1	0	0	0	1	84
+2449800_68410	2449800	68410	265	242	2014-03-22	Stefanos Kapino	GR1	0	0	0	0	90
+2449800_73725	2449800	73725	265	653	2014-03-22	Athanasios Dinas	GR1	0	0	0	0	90
+2449800_96452	2449800	96452	265	653	2014-03-22	Georgios Koutroubis	GR1	0	0	0	0	90
+
+
+
+player_id	transfer_date	transfer_season	from_club_id	to_club_id	from_club_name	to_club_name	transfer_fee	market_value_in_eur	player_name
+467994	2030-06-30	25/26	5621	749	Reggiana	FC Empoli	0.000	700000.000	Luca Belardinelli
+645842	2028-02-02	27/28	6505	19684	Gimcheon Sangmu	Jeju SK	0.000	150000.000	Chan-gi An
+677470	2028-02-02	27/28	6505	3535	Gimcheon Sangmu	Ulsan HD	0.000	400000.000	Yool Heo
+709155	2028-02-02	27/28	6505	19684	Gimcheon Sangmu	Jeju SK	0.000	325000.000	Jae-hyeok Oh
+728133	2028-02-02	27/28	6505	35759	Gimcheon Sangmu	Bucheon FC	0.000	175000.000	Sang-hyeok Lee
+730364	2028-02-02	27/28	6505	38898	Gimcheon Sangmu	FC Anyang	0.000	150000.000	Gyu-hyeon Choe
+746780	2028-02-02	27/28	6505	2996	Gimcheon Sangmu	Incheon Utd.	0.000	125000.000	Young-hun Kang
+755355	2028-02-02	27/28	6505	30925	Gimcheon Sangmu	Gwangju FC	0.000	350000.000	Jin-ho Kim
+862094	2028-02-02	27/28	6505	21459	Gimcheon Sangmu	Gangwon FC	0.000	400000.000	Jun-seok Song
+929007	2028-02-02	27/28	6505	19684	Gimcheon Sangmu	Jeju SK	0.000	350000.000	Jun-ha Kim
+
+
+
+
+Bloco 1:
+check_name	duplicate_rows
+players.player_id	0
+clubs.club_id	0
+games.game_id	0
+competitions.competition_id	0
+countries.country_id	0
+appearances.appearance_id	0
+game_events.game_event_id	0
+game_lineups.game_lineups_id	0
+
+
+
+check_name	duplicate_rows
+club_games (game_id, club_id)	0
+
+
+
+check_name	duplicate_rows
+player_valuations (player_id, date)	0
+
+
+
+
+Bloco 2: 
+check_name	orphan_rows
+appearances -> players	2
+
+
+check_name	orphan_rows
+appearances -> games	0
+
+
+check_name	orphan_rows
+games -> competitions	1214
+
+
+check_name	orphan_rows
+games.home_club_id -> clubs	12818
+
+
+check_name	orphan_rows
+club_games -> games	0
+
+
+check_name	orphan_rows
+player_valuations -> players	0
+
+
+check_name	orphan_rows
+transfers -> players	0
+
+
+
+
+Bloco 3:
+column_name	null_values	empty_text	placeholders
+players.date_of_birth	49	0	0
+players.market_value_in_eur	8621	0	0
+players.foot	5893	0	0
+games.attendance	10803	0	0
+games.referee	678	0	0
+transfers.transfer_fee	61526	0	0
+appearances.minutes_played	0	0	0
+
+
+
+Bloco 4:
+check_name	failed_rows
+games.date -> DATE	0
+games.home_club_goals -> FLOAT	0
+games.attendance -> FLOAT	0
+players.date_of_birth -> DATE	0
+players.height_in_cm -> FLOAT	0
+players.market_value_in_eur -> FLOAT	0
+player_valuations.date -> DATE	0
+player_valuations.market_value_in_eur -> FLOAT	0
+transfers.transfer_date -> DATE	0
+transfers.transfer_fee -> FLOAT	0
+appearances.date -> DATE	0
+appearances.minutes_played -> FLOAT	0
+
+
+
+
+Bloco 5:
+position	n
+Defender	15961
+Midfield	14272
+Attack	13502
+Goalkeeper	5828
+Missing	586
+
+
+foot	n
+right	31445
+left	11000
+NULL	5893
+both	1811
+
+
+hosting	is_win	n
+Away	0	59383
+Home	0	48877
+Home	1	40081
+Away	1	29575
+
+
+type	n
+Substitutions	631339
+Cards	381753
+Goals	247803
+Shootout	13574
+
+
+type	sub_type	n
+domestic_league	first_tier	31
+domestic_cup	domestic_cup	10
+other	domestic_super_cup	9
+other	play_off	3
+international_cup	uefa_champions_league	1
+international_cup	uefa_champions_league_qualifying	1
+other	uefa_conference_league	1
+other	uefa_conference_league_qualifying	1
+national_team_competition	uefa_euro	1
+other	uefa_europa_league	1
+other	uefa_europa_league_qualifying	1
+international_cup	uefa_super_cup	1
+national_team_competition	world_cup	1
+national_team_competition	afc_asian_cup	1
+national_team_competition	africa_cup_of_nations	1
+national_team_competition	copa_america	1
+
+
+season	n
+2005	64
+2007	31
+2009	64
+2011	31
+2012	5700
+2013	5826
+2014	5836
+2015	5759
+2016	5699
+2017	5660
+2018	5723
+2019	5469
+2020	5564
+2021	5939
+2022	6008
+2023	5951
+2024	10036
+2025	9598
+
+
+
+
+
+Bloco 6:
+competition_id	name	country_name	type	sub_type
+PO1	liga-portugal	Portugal	domestic_league	first_tier
+POSU	supercup-candido-de-oliveira	Portugal	other	domestic_super_cup
