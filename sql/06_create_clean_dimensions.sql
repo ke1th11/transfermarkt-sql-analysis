@@ -78,6 +78,14 @@ WHERE c.competition_group = 'Domestic league'
                 AND g.season = '2012');
 GO
 
+ALTER TABLE clean.competitions ADD is_top15_league BIT NOT NULL DEFAULT 0;
+GO
+UPDATE clean.competitions
+SET is_top15_league = 1
+WHERE competition_id IN ('GB1','L1','ES1','IT1','FR1','BRA1','BE1','PO1',
+                         'ARG1','NO1','NL1','MEX1','MLS1','COL1');
+GO
+
 /* =====================================================================
    2) clean.clubs
       = clubs table + national teams + clubs found only in games
