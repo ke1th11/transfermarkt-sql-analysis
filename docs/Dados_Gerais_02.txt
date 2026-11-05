@@ -1,0 +1,87 @@
+Bloco 4.a)
+table_name	row_count
+clean.competitions	70
+clean.clubs	3317
+clean.players	50149
+
+
+Bloco 4.b)
+competition_id	competition_name
+BE1	jupiler-pro-league
+DK1	superliga
+ES1	laliga
+FR1	ligue-1
+GB1	premier-league
+GR1	super-league-1
+IT1	serie-a
+L1	bundesliga
+NL1	eredivisie
+PO1	liga-portugal
+RU1	premier-liga
+SC1	scottish-premiership
+TR1	super-lig
+UKR1	premier-liga
+
+
+Bloco 4.c)
+competition_group	n
+Domestic league	32
+Domestic cup	12
+Domestic super cup	10
+UEFA club competition	7
+National team tournament	5
+League play-off	3
+International club tournament	1
+
+
+Bloco 4.d)
+club_type	n
+other (name from games)	2397
+club	796
+national team	124
+
+
+Bloco 4.e)
+failed_total_market_value	failed_squad_size	failed_average_age	failed_stadium_seats
+0	0	0	0
+
+
+Bloco 4.f)
+cities_with_code_160
+0
+
+
+Bloco 4.g)
+position	n
+Defender	15961
+Midfield	14272
+Attack	13502
+Goalkeeper	5828
+NULL	586
+
+
+Bloco 4.h)
+player_id	first_name	last_name	player_name	last_season	current_club_id	country_of_birth	city_of_birth	country_of_citizenship	date_of_birth	sub_position	position	foot	height_in_cm	contract_expiration_date	agent_name	international_caps	international_goals	current_national_team_id	current_club_domestic_competition_id	current_club_name	market_value_in_eur	highest_market_value_in_eur
+10	Miroslav	Klose	Miroslav Klose	2015	398	Poland	Opole	Germany	1978-06-09	Centre-Forward	Attack	right	184	NULL	ASBW Sport Marketing	NULL	NULL	NULL	IT1	Società Sportiva Lazio S.p.A.	1000000.00	30000000.00
+26	Roman	Weidenfeller	Roman Weidenfeller	2017	16	Germany	Diez	Germany	1980-08-06	Goalkeeper	Goalkeeper	left	190	NULL	Neubauer 13 GmbH	NULL	NULL	NULL	L1	Borussia Dortmund	750000.00	8000000.00
+65	Dimitar	Berbatov	Dimitar Berbatov	2015	1091	Bulgaria	Blagoevgrad	Bulgaria	1981-01-30	Centre-Forward	Attack	NULL	NULL	NULL	CSKA-AS-23 Ltd.	NULL	NULL	NULL	GR1	Panthessalonikios Athlitikos Omilos Konstantinoupoliton	1000000.00	34500000.00
+77	NULL	Lúcio	Lúcio	2012	506	Brazil	Brasília	Brazil	1978-05-08	Centre-Back	Defender	NULL	NULL	NULL	NULL	NULL	NULL	NULL	IT1	Juventus FC	200000.00	24500000.00
+80	Tom	Starke	Tom Starke	2017	27	East Germany (GDR)	Freital	Germany	1981-03-18	Goalkeeper	Goalkeeper	right	194	NULL	IFM	NULL	NULL	NULL	L1	Bayern Munich	100000.00	3000000.00
+109	NULL	Dedê	Dedê	2013	825	Brazil	Belo Horizonte	Brazil	1978-04-18	Left-Back	Defender	NULL	NULL	NULL	Football Concept	NULL	NULL	NULL	TR1	Eskisehirspor	400000.00	9500000.00
+123	Christoph	Metzelder	Christoph Metzelder	2012	33	Germany	Haltern	Germany	1980-11-05	Centre-Back	Defender	NULL	NULL	NULL	NULL	NULL	NULL	NULL	L1	FC Schalke 04	1500000.00	9500000.00
+132	Tomas	Rosicky	Tomas Rosicky	2015	11	CSSR	Praha	Czech Republic	1980-10-04	Attacking Midfield	Midfield	both	179	NULL	NULL	NULL	NULL	NULL	GB1	Arsenal FC	350000.00	17500000.00
+162	Marc	Ziegler	Marc Ziegler	2012	79	Germany	Blieskastel	Germany	1976-06-13	Goalkeeper	Goalkeeper	right	193	NULL	NULL	NULL	NULL	NULL	L1	VfB Stuttgart	200000.00	1250000.00
+215	Roque	Santa Cruz	Roque Santa Cruz	2015	1084	Paraguay	Asunción	Paraguay	1981-08-16	Centre-Forward	Attack	right	193	2023-12-31	NULL	NULL	NULL	NULL	ES1	Málaga CF	250000.00	12000000.00
+
+
+club_id	club_name	club_type	domestic_competition_id	squad_size	average_age	total_market_value	stadium_name	stadium_seats	in_clubs_table
+1	1.FC Saarbrücken	other (name from games)	NULL	NULL	NULL	NULL	NULL	NULL	0
+2	1.FC Kaiserslautern	other (name from games)	NULL	NULL	NULL	NULL	NULL	NULL	0
+3	1.FC Köln	club	L1	28	25.7	NULL	RheinEnergieSTADION	50000	1
+4	1.FC Nuremberg	club	L1	33	25.2	NULL	Max-Morlock-Stadion	50000	1
+5	AC Milan	club	IT1	32	25.4	NULL	Giuseppe Meazza	75923	1
+6	Adanaspor	club	TR1	10	23.9	NULL	Yeni Adana Stadyumu	33000	1
+7	Al Ahly FC	other (name from games)	NULL	NULL	NULL	NULL	NULL	NULL	0
+8	Alemannia Aachen	other (name from games)	NULL	NULL	NULL	NULL	NULL	NULL	0
+9	PS Kalamata	other (name from games)	NULL	NULL	NULL	NULL	NULL	NULL	0
+10	Arminia Bielefeld	club	L1	27	25.3	NULL	SchücoArena	26515	1

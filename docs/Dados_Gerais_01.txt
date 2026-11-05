@@ -1,0 +1,47 @@
+Bloco 1:
+competition_id	season	home_club_name	away_club_name
+CGB	2022	AFC Wimbledon	Coventry City
+CGB	2022	Accrington Stanley	Bradford City
+CGB	2022	Barnsley FC	Tranmere Rovers
+COL1	2025	Llaneros FC	CD América de Cali
+COL1	2025	Once Caldas	Atlético Nacional
+COL1	2025	Asociación Deportivo Pasto	Deportes Tolima
+KLUB	2012	Sanfrecce Hiroshima	Auckland City FC
+KLUB	2012	Ulsan Hyundai Football Club	CF Monterrey
+KLUB	2012	Sanfrecce Hiroshima	Al Ahly FC
+POCP	2012	SC Covilhã	FC Arouca
+POCP	2012	CF Os Belenenses	UD Oliveirense
+POCP	2012	SC Freamunde	CF União Madeira (-2021)
+UKRS	2012	Metalurg Donetsk (- 2015)	FC Shakhtar Donetsk
+UKRS	2013	Chornomorets Odesa	FC Shakhtar Donetsk
+UKRS	2014	FC Shakhtar Donetsk	Dynamo Kyiv
+
+
+
+Bloco 2:
+city_of_birth	len_chars	len_bytes	last_char_code
+Opole  	7	14	160
+Opole  	7	14	160
+
+
+
+Bloco 3:
+transfer_month	n_transfers
+2026-07	12
+2026-08	18
+2026-09	2
+2026-10	13
+2026-11	21
+2026-12	396
+2027-01	12
+2027-05	9
+2027-06	23
+2027-07	4
+2028-02	9
+2030-06	1
+
+
+
+Bloco 4:
+away_orphan_games
+11242
