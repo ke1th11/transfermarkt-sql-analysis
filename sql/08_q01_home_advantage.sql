@@ -25,7 +25,7 @@ WITH CTE_Covid_Periods AS
 		CAST(period_start AS DATE) AS period_start,
 		CAST(period_end AS DATE) AS period_end
 	FROM (VALUES
-		('BE1', '2020-03-07', '2021-05-23'),
+		('BE1', '2020-08-08', '2021-05-23'),
 		('BE1', '2021-12-26', '2022-01-27'),
 		('ES1', '2020-03-10', '2021-05-23'),
 		('FR1', '2020-08-21', '2021-05-23'),
