@@ -1,0 +1,136 @@
+6a)
+table_name	row_count
+clean.games	88958
+clean.club_games	177916
+clean.appearances	1894348
+clean.player_valuations	656301
+clean.transfers	175165
+
+6b)
+is_win_mismatches
+0
+
+6c)
+is_scheduled	n_transfers
+0	174645
+1	520
+
+6d)
+check_name	orphan_rows
+games.competition_id -> competitions	0
+games.home_club_id -> clubs	0
+games.away_club_id -> clubs	0
+club_games.game_id -> games	0
+club_games.club_id -> clubs	0
+appearances.game_id -> games	0
+appearances.player_club_id -> clubs	0
+player_valuations.club_id -> clubs	0
+player_valuations.player_id -> players	0
+transfers.player_id -> players	0
+transfers.from_club_id -> clubs	0
+transfers.to_club_id -> clubs	0
+
+6f)
+club_fix_status	n	pct
+ok_confirmed_by_name	407939	62.16
+fixed_by_name	206010	31.39
+unresolved_set_null	25185	3.84
+not_a_club	7793	1.19
+ok_confirmed_by_clubs_table	3462	0.53
+kept_original_reliable	3256	0.50
+fixed_by_clubs_table	2656	0.40
+
+6g)
+valuation_date	club_name	club_id	club_domestic_competition	club_fix_status
+2004-10-04	SV Werder Bremen	86	L1	fixed_by_name
+2005-01-07	SV Werder Bremen	86	L1	fixed_by_name
+2005-05-05	SV Werder Bremen	86	L1	fixed_by_name
+2005-09-30	SV Werder Bremen	86	L1	fixed_by_name
+2006-01-09	SV Werder Bremen	86	L1	fixed_by_name
+2006-07-15	SV Werder Bremen	86	L1	fixed_by_name
+2007-06-21	SV Werder Bremen	86	L1	fixed_by_name
+2008-06-04	Bayern Munich	27	L1	fixed_by_name
+2009-06-10	Bayern Munich	27	L1	fixed_by_name
+2009-08-30	Bayern Munich	27	L1	fixed_by_name
+2010-01-17	Bayern Munich	27	L1	fixed_by_name
+2010-05-08	Bayern Munich	27	L1	fixed_by_name
+2011-01-12	Bayern Munich	27	L1	fixed_by_name
+2011-06-29	Bayern Munich	27	L1	fixed_by_name
+2012-01-11	Società Sportiva Lazio S.p.A.	398	IT1	ok_confirmed_by_name
+2012-07-03	Società Sportiva Lazio S.p.A.	398	IT1	ok_confirmed_by_name
+2013-01-14	Società Sportiva Lazio S.p.A.	398	IT1	ok_confirmed_by_name
+2013-06-19	Società Sportiva Lazio S.p.A.	398	IT1	ok_confirmed_by_name
+2014-01-07	Società Sportiva Lazio S.p.A.	398	IT1	ok_confirmed_by_name
+2014-07-07	Società Sportiva Lazio S.p.A.	398	IT1	ok_confirmed_by_name
+2015-01-07	Società Sportiva Lazio S.p.A.	398	IT1	ok_confirmed_by_name
+2015-07-01	Società Sportiva Lazio S.p.A.	398	IT1	ok_confirmed_by_name
+2016-01-04	Società Sportiva Lazio S.p.A.	398	IT1	ok_confirmed_by_name
+
+6h)
+rows_club_without_competition
+176499
+
+6i)
+current_club_name	n_rows
+SV Zulte Waregem	596
+Panathinaikos Athens	579
+RSC Charleroi	512
+Chornomorets Odessa	469
+Waasland-Beveren	359
+FC Internazionale	295
+FC Dinamo Bucharest	272
+Alania Vladikavkaz	261
+CA Independiente	243
+FK Khimki	234
+AIK Solna	230
+FK Orenburg	223
+FK Oleksandriya	207
+Spartak 2 Moscow ( -2022)	201
+SK Tavriya Simferopol (-2022)	187
+AS Gubbio 1910	174
+CD Universidad Católica	171
+FK Krasnodar 2	161
+FK Rostov II	158
+FK Tyumen	150
+Beerschot V.A.	138
+FK Minaj	134
+Le Mans Union Club 72	132
+Büyüksehir Belediyespor	117
+Luch Vladivostok	114
+Royale Union Saint-Gilloise	114
+Olympiakos Volou	110
+SSD Città di Teramo	107
+Club Africain Tunis	104
+FK Krasnodar II	96
+
+6e)
+home_result	n_games	pct
+Home win	24934	44.4
+Away win	17123	30.5
+Draw	14074	25.1
+
+6j)
+game_id	competition_id	season	round	game_date	home_club_id	away_club_id	home_club_goals	away_club_goals	home_club_position	away_club_position	home_club_manager_name	away_club_manager_name	stadium	attendance	referee	home_club_formation	away_club_formation	home_club_name	away_club_name	aggregate_score	total_goals	home_result
+4802733	SE1	2025	11. Matchday	2026-07-06	1109	1044	2	4	3	5	Jens Gustafsson	Jani Honkavaara	Nordic Wellness Arena	5984	Oscar Johnson	4-2-3-1	4-2-3-1	BK Häcken	Djurgårdens Idrottsförening	2:4	6	Away win
+4802735	SE1	2025	11. Matchday	2026-07-06	1092	7009	1	1	7	11	Ulf Kristiansson	Fredrik Holmberg	Grimsta IP	1347	Victor Wolf	4-2-3-1	4-3-3 Attacking	Idrottsföreningen  Brommapojkarna	Göteborgs Atlet- och Idrottssällskap	1:1	2	Draw
+4802732	SE1	2025	11. Matchday	2026-07-05	801	272	1	2	14	10	Stefan Billborn	José Riveiro	Gamla Ullevi	16598	Kristoffer Karlsson	4-2-3-1	4-1-3-2	Idrottsföreningen Kamraterna Göteborg	Allmänna Idrottsklubben	1:2	3	Away win
+4802734	SE1	2025	11. Matchday	2026-07-05	1101	1059	1	2	4	2	Björn Hamberg	Henrik Rydström	Borås Arena	12210	Richard Sundell	4-2-3-1	4-2-3-1	Idrottsföreningen Elfsborg	Hammarby IF	1:2	3	Away win
+4802738	SE1	2025	11. Matchday	2026-07-05	3654	1118	3	0	12	16	Toni Koskela	Andreas Holmberg	Guldfågeln Arena	4899	Mohammed Al-Hakim	4-4-2	5-3-2	Kalmar Fotbollförening	Örgryte IS	3:0	3	Home win
+4803454	RSK1	2025	16. Matchday	2026-07-05	6500	2996	1	0	1	6	Gi-dong Kim	Jong-hwan Yoon	Seoul World Cup Stadium	22600	Yong-jun Shin	4-3-3 Attacking	4-4-2	Football Club Seoul	Incheon United Football Club	1:0	1	Home win
+4803455	RSK1	2025	16. Matchday	2026-07-05	6505	19684	1	1	11	8	Seung-jin Joo	Sérgio Costa	Gimcheon Sports Complex	1284	Byung-jin Park	4-4-2	4-4-2	Gimcheon Sangmu Football Club	Jeju SK Football Club	1:1	2	Draw
+4803456	RSK1	2025	16. Matchday	2026-07-05	30925	3535	1	1	12	3	Jeong-kyu Lee	Hyun-seok Kim	Gwangju World Cup Stadium	3516	Tae-hwan Seol	4-1-4-1	3-4-3	Gwangju Football Club	Ulsan Hyundai Football Club	1:1	2	Draw
+4802736	SE1	2025	11. Matchday	2026-07-04	3641	496	0	1	13	6	Henok Goitom	Gaute Helstrup	Stora Valla	4723	Erik Mattsson	4-4-2	4-4-2	Degerfors IF	Malmö Fotbollförening	0:1	1	Away win
+4802739	SE1	2025	11. Matchday	2026-07-04	1011	5202	1	3	15	9	Stuart Baxter	Alexander Rubin	Örjans Vall	6003	Fredrik Klitte	4-2-3-1	3-4-3	Halmstads BK	Västerås Sportklubb FK	1:3	4	Away win
+
+
+transfer_id	player_id	transfer_date	transfer_season	from_club_id	to_club_id	from_club_name	to_club_name	transfer_fee	market_value_in_eur	is_scheduled
+1	467994	2030-06-30	25/26	5621	749	Reggiana	FC Empoli	0.00	700000.00	1
+10	929007	2028-02-02	27/28	6505	19684	Gimcheon Sangmu	Jeju SK	0.00	350000.00	1
+9	862094	2028-02-02	27/28	6505	21459	Gimcheon Sangmu	Gangwon FC	0.00	400000.00	1
+8	755355	2028-02-02	27/28	6505	30925	Gimcheon Sangmu	Gwangju FC	0.00	350000.00	1
+7	746780	2028-02-02	27/28	6505	2996	Gimcheon Sangmu	Incheon Utd.	0.00	125000.00	1
+6	730364	2028-02-02	27/28	6505	38898	Gimcheon Sangmu	FC Anyang	0.00	150000.00	1
+5	728133	2028-02-02	27/28	6505	35759	Gimcheon Sangmu	Bucheon FC	0.00	175000.00	1
+4	709155	2028-02-02	27/28	6505	19684	Gimcheon Sangmu	Jeju SK	0.00	325000.00	1
+3	677470	2028-02-02	27/28	6505	3535	Gimcheon Sangmu	Ulsan HD	0.00	400000.00	1
+2	645842	2028-02-02	27/28	6505	19684	Gimcheon Sangmu	Jeju SK	0.00	150000.00	1

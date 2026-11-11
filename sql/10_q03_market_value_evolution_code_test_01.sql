@@ -143,7 +143,7 @@ SELECT *,
 FROM CTE_Total_Market_Value_By_Club AS bc
 )
 
-/*	
+	
 SELECT 
 	mv.player_name,
 	mv.club_name,
@@ -155,7 +155,7 @@ SELECT
 	ts.[market_value_rate_diff_throughout_season (%)]
 FROM CTE_Market_Value_Rate_Throughout_Season AS ts
 LEFT JOIN CTE_Players_Market_Value AS mv
-	ON ts.player_id = mv.player_id; */
+	ON ts.player_id = mv.player_id; 
 /*
 SELECT DISTINCT
 	mv.player_name,
@@ -224,7 +224,7 @@ FROM (
 		ON d.club_id = c.club_id
 ) AS t1
 WHERE ranking_biggest_market_value_increases IN (1,2,3)*/
-
+/*
 SELECT 
 		club_name,
 		club_domestic_competition,
@@ -245,5 +245,5 @@ FROM (
 	LEFT JOIN clean.clubs AS c
 		ON d.club_id = c.club_id
 ) AS t1
-WHERE ranking_biggest_market_value_decreases IN (1,2,3)
+WHERE ranking_biggest_market_value_decreases IN (1,2,3)*/
 
