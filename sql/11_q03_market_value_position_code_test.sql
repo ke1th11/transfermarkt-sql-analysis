@@ -93,7 +93,7 @@ CTE_General_Position_By_Player AS
 	FROM CTE_Times_Played_At_Specific_Position	AS sp 
 ),
 
-CTE_Times_Played_At_General_Position
+CTE_Times_Played_At_General_Position AS
 (
 	SELECT
 		gp.player_id,
@@ -103,42 +103,92 @@ CTE_Times_Played_At_General_Position
 	GROUP BY gp.player_id, gp.general_position
 ),
 
-CTE_Player
-
-CTE_Market_Value_By_Age_By_Player AS
+CTE_Max_Market_Value_By_Age AS
 (
 	SELECT
-		t.player_id,
-		t.club_id,
-		t.club_domestic_competition,
-		t.market_value_in_eur,
-		t.season_start_year,
-		t.season_formatted,
-		SUM(t.market_value_in_eur) OVER(PARTITION BY )
-	FROM CTE_Valuations_Top15 AS t
+		vd.player_id,
+		vd.club_id,
+		vd.club_domestic_competition,
+		vd.season_formatted,
+		vd.age_at_valuation_date,
+		MAX(vd.market_value_in_eur) AS max_market_value_by_age
+	FROM CTE_Player_Age_At_Valuation_Date AS vd
+	GROUP BY vd.player_id,
+		vd.club_id,
+		vd.club_domestic_competition,
+		vd.season_formatted,
+		vd.age_at_valuation_date
+),
+
+CTE_Max_Market_Value_By_Player AS
+(
+	SELECT 
+		t1.player_id, 
+		t1.club_id, 
+		t1.club_domestic_competition, 
+		t1.season_formatted, 
+		t1.age_at_valuation_date,
+		t1.max_market_value_by_age
+	FROM (
+		SELECT 
+			ba.player_id, 
+			ba.club_id, 
+			ba.club_domestic_competition, 
+			ba.season_formatted, 
+			ba.age_at_valuation_date,
+			ba.max_market_value_by_age,
+			RANK() OVER(PARTITION BY ba.player_id, ba.age_at_valuation_date ORDER BY ba.max_market_value_by_age DESC, ba.age_at_valuation_date ASC) AS ranking_max_market_value
+		FROM CTE_Max_Market_Value_By_Age AS ba
+	) AS t1
+	WHERE t1.ranking_max_market_value = 1 AND t1.age_at_valuation_date IS NOT NULL
+),
+
+CTE_Max_Market_Value AS 
+(
+	SELECT 
+			t1.player_id,
+			t1.market_value_in_eur AS max_market_value,
+			t1.season_formatted
+	FROM (
+		SELECT 
+			t.player_id,
+			t.market_value_in_eur,
+			t.season_formatted,
+			RANK() OVER(PARTITION BY t.player_id ORDER BY t.market_value_in_eur DESC, t.season_formatted ASC) AS ranking_max_market_value
+		FROM CTE_Valuations_Top15 AS t
+	) AS t1
+	WHERE t1.ranking_max_market_value = 1
 )
 
-
 /*
-SELECT 
-	player_id,
-	sub_position,
-	COUNT(*) AS n
-FROM clean.players
-GROUP BY player_id,sub_position
-ORDER BY player_id
+SELECT
+	*,
+	CAST(t1.sum_max_market_value_by_age / t1.n_players_by_age AS DECIMAL(10,2)) AS avg_market_value_by_age
+FROM (
+	SELECT 
+		mx.age_at_valuation_date,
+		COUNT(mx.age_at_valuation_date) AS n_players_by_age,
+		SUM(mx.max_market_value_by_age) AS sum_max_market_value_by_age
+	FROM CTE_Max_Market_Value_By_Player AS mx
+	GROUP BY mx.age_at_valuation_date
+) AS t1*/
 
 SELECT 
-	player_id,
-	position,
-	COUNT(*) AS n
-FROM staging.game_lineups
-GROUP BY player_id, position
-ORDER BY player_id
-
-SELECT*
-FROM staging.game_lineups
-
-SELECT *
-FROM staging.game_lineups
-*/
+	*,
+	CAST(t2.sum_max_market_value / t2.n_by_general_position AS DECIMAL(10,2)) AS avg_market_value_by_general_position
+FROM (
+	SELECT 
+		t1.general_position,
+		COUNT(t1.general_position) AS n_by_general_position,
+		SUM(t1.max_market_value) AS sum_max_market_value
+	FROM (
+		SELECT DISTINCT
+			gp.*,
+			mx.max_market_value
+		FROM CTE_Times_Played_At_General_Position AS gp
+		LEFT JOIN CTE_Max_Market_Value AS mx
+			ON gp.player_id = mx.player_id
+		WHERE mx.max_market_value IS NOT NULL
+	) AS t1
+	GROUP BY t1.general_position
+) AS t2
