@@ -1,23 +1,24 @@
-01 - Analisar a relação entre a diferença entre as posições na tabela de classificação e a probabilidade/percentagem de vitória/derrota/empate, tendo em conta que, nas primeiras jornadas de cada competição, as classificações são muito voláteis (alteram-se consideravelmente de jornada para jornada) e, além disso, é importante verificar se a posição de cada equipa na classificação correspondente à posição no início do jogo ou após o jogo terminar, isto é, quando todas as equipas jogarem, por exemplo, a 2ª jornada. Além disso, devem ser tidos em conta possíveis adiamentos de jogos por motivos climatéricos, …
+• Analisar a relação entre a diferença entre as posições na tabela de classificação e a probabilidade/percentagem de vitória/derrota/empate, tendo em conta que, nas primeiras jornadas de cada competição, as classificações são muito voláteis (alteram-se consideravelmente de jornada para jornada) e, além disso, é importante verificar se a posição de cada equipa na classificação correspondente à posição no início do jogo ou após o jogo terminar, isto é, quando todas as equipas jogarem, por exemplo, a 2ª jornada. Além disso, devem ser tidos em conta possíveis adiamentos de jogos por motivos climatéricos, …
 
-02 - relacionar a percentagem de vitórias em casa com a quantidade de adeptos (coluna attendance)
+• Relacionar a percentagem de vitórias em casa com a quantidade de adeptos (coluna attendance)
 
+• Vantagem de jogar em casa por liga e por época, com destaque para a COVID. (games, competitions; CASE, percentagens)
 
+• Melhores marcadores por época em cada liga principal. (appearances; RANK/DENSE_RANK por partição)
 
+• Evolução do valor de mercado dos jogadores: maiores subidas de um ano para o outro. (player_valuations; LAG, variação percentual)
 
+• Valor de mercado por idade e posição: em que idade atinge o pico? (player_valuations, players; idade calculada com datas)
 
+• Gasto líquido dos clubes em transferências por época, ignorando as agendadas e as taxas desconhecidas. (transfers; agregações, CTE)
 
-Agora começa a parte da análise
+• Maiores transferências e relação entre a taxa paga e o valor de mercado. (transfers)
 
-Daqui para a frente, sugiro que sejas tu a escrever as queries. É onde mais aprendes e o que o projeto vai mostrar a quem o ler. Eu ajudo a desenhar a pergunta e reviso o que escreveres. Proposta de 10 perguntas, da mais simples à mais difícil:
+• Dependência de um só marcador: que percentagem dos golos da equipa marca o melhor marcador? (CTEs, window functions)
 
-Vantagem de jogar em casa por liga e por época, com destaque para a COVID. (games, competitions; CASE, percentagens)
-Melhores marcadores por época em cada liga principal. (appearances; RANK/DENSE_RANK por partição)
-Evolução do valor de mercado dos jogadores: maiores subidas de um ano para o outro. (player_valuations; LAG, variação percentual)
-Valor de mercado por idade e posição: em que idade atinge o pico? (player_valuations, players; idade calculada com datas)
-Gasto líquido dos clubes em transferências por época, ignorando as agendadas e as taxas desconhecidas. (transfers; agregações, CTE)
-Maiores transferências e relação entre a taxa paga e o valor de mercado. (transfers)
-Dependência de um só marcador: que percentagem dos golos da equipa marca o melhor marcador? (CTEs, window functions)
-Pontos acumulados ao longo da época por equipa (3 por vitória, 1 por empate). (club_games; soma acumulada com SUM() OVER)
-Liga Portugal: percentagem de minutos jogados por estrangeiros, por época e por clube. (appearances, players, clubs; joins)
-Treinadores: percentagem de vitórias por treinador, com um mínimo de jogos. (club_games; HAVING)
+• Pontos acumulados ao longo da época por equipa (3 por vitória, 1 por empate). (club_games; soma acumulada com SUM() OVER)
+
+• Liga Portugal: percentagem de minutos jogados por estrangeiros, por época e por clube. (appearances, players, clubs; joins)
+
+• Treinadores: percentagem de vitórias por treinador, com um mínimo de jogos. (club_games; HAVING)
+          
