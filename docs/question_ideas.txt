@@ -21,4 +21,23 @@
 • Liga Portugal: percentagem de minutos jogados por estrangeiros, por época e por clube. (appearances, players, clubs; joins)
 
 • Treinadores: percentagem de vitórias por treinador, com um mínimo de jogos. (club_games; HAVING)
+
+
+
+
+
+
+• Pico de desempenho vs pico de valor: golos e assistências por 90 minutos por idade e posição (appearances + data de nascimento), comparados com a curva de valor. Mostra se o mercado “antecipa” o pico de produção.
+
+• Variação anual do valor por idade e posição: reaproveita a lógica das Q1 e Q2 para ver a partir de que idade a variação média passa a ser negativa. Complementa bem a questão do pico.
+
+• Idade média das equipas e ligas: idade média ponderada por minutos jogados por clube e liga, e se as equipas estão a ficar mais jovens ao longo das épocas.
+
+• Perda do estatuto de titular: % de jogos como titular (game_lineups) por idade e posição, para ver quando os jogadores perdem lugar no onze.
+
+• Efeito da idade relativa: distribuição por mês de nascimento dos jogadores das top 15 ligas (por posição), para ver se há mais nascidos no início do ano. Só precisa da data de nascimento.
+
+• Disciplina por idade: cartões por 90 minutos por idade e posição, se appearances tiver yellow_cards e red_cards.
+
+• Valor por altura ou pé preferencial: só se clean.players tiver essas colunas (o dataset do Transfermarkt costuma ter height_in_cm e foot).
           

@@ -90,7 +90,7 @@ CTE_General_Position_By_Player AS
 				THEN 'Goalkeeper'
 			ELSE NULL
 		END AS general_position
-	FROM CTE_Times_Played_At_Specific_Position	AS sp 
+	FROM CTE_Times_Played_At_Specific_Position AS sp 
 ),
 
 CTE_Times_Played_At_General_Position AS
