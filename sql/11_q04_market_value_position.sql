@@ -28,6 +28,7 @@ DECLARE @min_peak_value DECIMAL(18,2) = 500000;
 DECLARE @first_season INT = 2012;
 DECLARE @last_complete_season INT = 2025;
 DECLARE @min_minutes_per_age INT = 900;		
+DECLARE @min_minutes_per_season INT = 900
 DECLARE @min_ages_observed INT = 3;
 
 WITH CTE_Valuations_Top15 AS
@@ -221,7 +222,72 @@ CTE_Peak_Goal_Participations AS
 		WHERE pa.goal_participations_per_90 > 0 AND pa.n_ages_observed >= @min_ages_observed
 	) AS t1
 	WHERE t1.ranking_goal_participations = 1
+),
+
+CTE_Minutes_Played_By_Player AS
+(
+	SELECT
+		t1.player_id,
+		t1.player_club_id,
+		t1.competition_id,
+		t1.season_formatted,
+		SUM(t1.minutes_played) AS total_minutes_played_by_season
+	FROM (
+		SELECT 
+			a.player_id,
+			a.player_club_id,
+			a.competition_id,
+			a.minutes_played,
+			CASE
+				WHEN a.competition_id IN ('BRA1', 'ARG1', 'NO1', 'MLS1', 'COL1')
+					THEN YEAR(a.appearance_date)
+				WHEN MONTH(a.appearance_date) >= 7
+					THEN YEAR(a.appearance_date)
+				ELSE YEAR(a.appearance_date) - 1
+			END AS season_start_year,
+			CASE
+				WHEN a.competition_id IN ('BRA1', 'ARG1', 'NO1', 'MLS1', 'COL1')
+					THEN CONVERT(VARCHAR(4), YEAR(a.appearance_date))
+				WHEN MONTH(a.appearance_date) >= 7				
+					THEN CONVERT(VARCHAR(4), YEAR(a.appearance_date)) + ' / ' + CONVERT(VARCHAR(4), YEAR(a.appearance_date) + 1)
+				ELSE CONVERT(VARCHAR(4), YEAR(a.appearance_date) - 1) + ' / ' + CONVERT(VARCHAR(4), YEAR(a.appearance_date))
+			END AS season_formatted
+		FROM clean.appearances AS a
+		INNER JOIN clean.competitions AS c
+			ON a.competition_id = c.competition_id
+		WHERE c.is_top15_league = 1
+	) AS t1
+	GROUP BY t1.player_id, t1.player_club_id, t1.competition_id, t1.season_formatted
+	HAVING SUM(t1.minutes_played) > @min_minutes_per_season
 )
+
+SELECT 
+	p.player_id,
+	p.date_of_birth,
+	t.season_start_year,
+	DATEDIFF(YEAR, p.date_of_birth, DATEFROMPARTS(t.season_start_year,1,1)) AS age_at_start_season
+FROM clean.players AS p
+INNER JOIN CTE_Valuations_Top15 AS t
+	ON p.player_id = t.player_id
+
+
+/*
+SELECT 
+	m.player_club_id,
+	m.competition_id,
+	m.season_formatted,
+	CAST(AVG(CAST(m.total_minutes_played_by_season AS DECIMAL(10,2))) AS DECIMAL(10,2)) AS avg_total_minutes_played
+FROM CTE_Minutes_Played_By_Player AS m
+GROUP BY m.player_club_id,
+	m.competition_id,
+	m.season_formatted
+ORDER BY player_club_id
+*/
+
+
+
+
+
 
 -- Output A: market value by position and age
 /*
@@ -284,7 +350,7 @@ ORDER BY mp.general_position, pk.age;
 */
  
 -- Output E: age curve, goal participations per 90 minutes by age and position (all qualifying player-ages)
-
+/*
 SELECT DISTINCT
 	mp.general_position,
 	pa.age,
@@ -295,4 +361,29 @@ FROM CTE_Goal_Participations_Per_90_By_Age AS pa
 INNER JOIN CTE_Main_Position_By_Player AS mp
 	ON pa.player_id = mp.player_id
 WHERE mp.general_position != 'Goalkeeper'
-ORDER BY general_position, age;
+ORDER BY general_position, age
+*/
+
+-- A partir de que idade a variação média passa a ser negativa?
+/*
+SELECT 
+	*,
+	t1.avg_market_value - LAG(t1.avg_market_value) OVER(PARTITION BY t1.general_position ORDER BY t1.age ASC) AS avg_market_diff,
+	CAST((t1.avg_market_value - LAG(t1.avg_market_value) OVER(PARTITION BY t1.general_position ORDER BY t1.age ASC)) / LAG(t1.avg_market_value) OVER(PARTITION BY t1.general_position ORDER BY t1.age ASC) * 100 AS DECIMAL(5,2)) AS [avg_market_rate_diff (%)],
+	t1.median_market_value - LAG(t1.median_market_value) OVER(PARTITION BY t1.general_position ORDER BY t1.age ASC) AS median_market_diff,
+	CAST((t1.median_market_value - LAG(t1.median_market_value) OVER(PARTITION BY t1.general_position ORDER BY t1.age ASC)) / LAG(t1.median_market_value) OVER(PARTITION BY t1.general_position ORDER BY t1.age ASC) * 100 AS DECIMAL(5,2)) AS [median_market_rate_diff (%)]
+FROM (
+	SELECT DISTINCT
+		mp.general_position,
+		ma.age_at_valuation_date AS age,
+		COUNT(*) OVER(PARTITION BY mp.general_position, ma.age_at_valuation_date) AS n_players,
+		CAST(AVG(CAST(ma.max_market_value_by_age AS DECIMAL(18,2))) OVER(PARTITION BY mp.general_position, ma.age_at_valuation_date) AS DECIMAL(18,2)) AS avg_market_value,
+		CAST(PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY ma.max_market_value_by_age) OVER(PARTITION BY mp.general_position, ma.age_at_valuation_date) AS DECIMAL(18,2)) AS median_market_value
+	FROM CTE_Max_Market_Value_By_Age AS ma
+	INNER JOIN CTE_Peak_Market_Value AS pk
+		ON ma.player_id = pk.player_id
+	INNER JOIN CTE_Main_Position_By_Player AS mp
+		ON ma.player_id = mp.player_id
+) AS t1
+ORDER BY general_position, age
+*/
