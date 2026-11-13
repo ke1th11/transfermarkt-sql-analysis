@@ -1,6 +1,3 @@
--- Gasto líquido dos clubes em transferências por época, ignorando as agendadas e as taxas desconhecidas.
--- Quais clubes mais arrecadaram dinheiro com vendas.
--- Maiores transferências por clube e liga e relação entre a taxa paga e o valor de mercado.
 
 USE TransfermarktDB;
 
@@ -81,61 +78,73 @@ CTE_Transfers_Already_Happened_To_Top15_leagues AS
 		ON t1.from_club_id = c.club_id
 )
 
--- Top clubes que mais gastaram em transferências por season
-/*
+-- Top clubes que mais arrecadaram em transferências por season
+
 SELECT 
-		t2.domestic_competition_id,
-		t2.from_club_id,
-		t2.transfer_season,
-		t2.total_transfers_value,
-		t2.n_players
+	t2.from_club_competition_id,
+	c.club_name,
+	t2.transfer_season,
+	t2.total_transfers_value,
+	t2.n_players
 FROM (
 	SELECT 
-		t1.domestic_competition_id,
+		t1.from_club_competition_id,
 		t1.from_club_id,
 		t1.transfer_season,
 		t1.total_transfers_value,
 		t1.n_players,
-		ROW_NUMBER() OVER(PARTITION BY t1.domestic_competition_id, t1.transfer_season ORDER BY t1.total_transfers_value DESC, t1.n_players ASC) AS ranking_spending
+		ROW_NUMBER() OVER(PARTITION BY t1.from_club_competition_id, t1.transfer_season ORDER BY t1.total_transfers_value DESC, t1.n_players ASC) AS ranking_spending
 	FROM (
 		SELECT 
-			hf.domestic_competition_id,
+			hf.from_club_competition_id,
 			hf.from_club_id,
 			hf.transfer_season,
 			SUM(hf.transfer_fee) AS total_transfers_value,
 			COUNT(hf.transfer_fee) AS n_players
 		FROM CTE_Transfers_Already_Happened_From_Top15_leagues AS hf
-		GROUP BY 	hf.domestic_competition_id, hf.from_club_id, hf.transfer_season
+		GROUP BY hf.from_club_competition_id, hf.from_club_id, hf.transfer_season
 	) AS t1
 ) AS t2
+INNER JOIN clean.clubs AS c
+	ON t2.from_club_id = c.club_id
 WHERE t2.ranking_spending IN (1,2,3)
-*/
+ORDER BY t2.from_club_competition_id, t2.transfer_season
 
--- Top clubes que mais arrecadaram em transferências por season
+
+-- Top clubes que mais gastaram em transferências por season
 /*
 SELECT 
-	*
+	t2.to_club_competition_id,
+	c.club_name,
+	t2.transfer_season,
+	t2.total_transfers_value,
+	t2.n_players,
+	t2.ranking_collected
 FROM (
 	SELECT 
-		t1.domestic_competition_id,
-		t1.from_club_id,
+		t1.to_club_competition_id,
+		t1.to_club_id,
 		t1.transfer_season,
 		t1.total_transfers_value,
 		t1.n_players,
-		ROW_NUMBER() OVER(PARTITION BY t1.domestic_competition_id, t1.transfer_season ORDER BY t1.total_transfers_value DESC, t1.n_players ASC) AS ranking_spending
+		ROW_NUMBER() OVER(PARTITION BY t1.to_club_competition_id, t1.transfer_season ORDER BY t1.total_transfers_value DESC, t1.n_players ASC) AS ranking_collected
 	FROM (
 		SELECT 
-			ht.domestic_competition_id,
-			ht.from_club_id,
+			ht.to_club_competition_id,
+			ht.to_club_id,
 			ht.transfer_season,
 			SUM(ht.transfer_fee) AS total_transfers_value,
 			COUNT(ht.transfer_fee) AS n_players
 		FROM CTE_Transfers_Already_Happened_To_Top15_leagues AS ht
-		GROUP BY ht.domestic_competition_id, ht.from_club_id, ht.transfer_season
+		GROUP BY ht.to_club_competition_id, ht.to_club_id, ht.transfer_season
 	) AS t1
 ) AS t2
-WHERE t2.ranking_spending IN (1,2,3) AND t2.total_transfers_value > 0
+INNER JOIN clean.clubs AS c
+	ON t2.to_club_id = c.club_id
+WHERE t2.ranking_collected IN (1,2,3) AND t2.total_transfers_value > 0
+ORDER BY t2.to_club_competition_id, t2.transfer_season
 */
+
 
 -- Top ligas que mais gastaram em transferências por season
 /*
@@ -160,7 +169,7 @@ WHERE t2.ranking_spending IN (1,2,3) AND t2.total_transfers_value > 0
 */
 
 -- Top ligas que mais arrecadaram em transferências por season
-
+/*
 SELECT 
 	*
 FROM (
@@ -179,11 +188,43 @@ FROM (
 	) AS t1
 ) AS t2
 WHERE t2.ranking_spending IN (1,2,3) AND t2.total_transfers_value > 0
+*/
 
-
-
-
-
+-- Maiores relações entre a taxa paga e o valor de mercado por liga
+/*
+SELECT
+	p.player_name,
+	t2.transfer_season,
+	t2.from_club_competition_id,
+	c1.club_name,
+	t2.to_club_competition_id,
+	c2.club_name,
+	t2.transfer_fee,
+	t2.market_value_in_eur,
+	t2.[transfer_fee_racio (%)],
+	t2.[premium/discount (%)]
+FROM (
+	SELECT 
+		*,	
+		ROW_NUMBER() OVER(PARTITION BY t1.from_club_competition_id,t1.transfer_season ORDER BY t1.[transfer_fee_racio (%)] DESC) AS ranking_transfer_fee_racio
+	FROM (
+		SELECT 
+			*,
+			CAST(CAST(hf.transfer_fee AS DECIMAL(20,2)) / hf.market_value_in_eur * 100 AS DECIMAL(20,2)) AS [transfer_fee_racio (%)],
+			CAST((CAST(hf.transfer_fee AS DECIMAL(20,2)) - CAST(hf.market_value_in_eur AS DECIMAL(20,2))) / hf.market_value_in_eur * 100 AS DECIMAL(20,2)) AS [premium/discount (%)]
+		FROM CTE_Transfers_Already_Happened_From_Top15_leagues as hf
+		WHERE hf.transfer_fee > 0 AND hf.market_value_in_eur IS NOT NULL
+	) AS t1
+) AS t2
+INNER JOIN clean.players AS p
+	ON t2.player_id = p.player_id
+INNER JOIN clean.clubs AS c1
+	ON t2.from_club_id = c1.club_id
+INNER JOIN clean.clubs AS c2
+	ON t2.to_club_id = c2.club_id
+WHERE t2.ranking_transfer_fee_racio IN (1,2,3)
+ORDER BY t2.from_club_competition_id, t2.transfer_season
+*/
 
 
 
