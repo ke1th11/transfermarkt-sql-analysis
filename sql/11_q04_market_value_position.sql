@@ -115,8 +115,7 @@ WITH CTE_Valuations_Top15 AS
 	FROM clean.player_valuations AS v
 	INNER JOIN clean.competitions AS c
 		ON v.club_domestic_competition = c.competition_id
-	WHERE c.is_top15_league = 1
-		AND v.market_value_in_eur IS NOT NULL
+	WHERE c.is_top15_league = 1 AND v.market_value_in_eur IS NOT NULL
 ),
 
 CTE_Player_Age_At_Valuation_Date AS
@@ -134,8 +133,7 @@ CTE_Player_Age_At_Valuation_Date AS
 	FROM CTE_Valuations_Top15 AS t
 	INNER JOIN clean.players AS p
 		ON t.player_id = p.player_id
-	WHERE t.season_start_year BETWEEN @first_season AND @last_complete_season
-		AND p.date_of_birth IS NOT NULL
+	WHERE t.season_start_year BETWEEN @first_season AND @last_complete_season AND p.date_of_birth IS NOT NULL
 ),
 
 CTE_Times_Played_At_Specific_Position AS
@@ -221,8 +219,7 @@ CTE_Peak_Market_Value AS
 			ROW_NUMBER() OVER(PARTITION BY vd.player_id ORDER BY vd.market_value_in_eur DESC, vd.valuation_date ASC) AS peak_order
 		FROM CTE_Player_Age_At_Valuation_Date AS vd
 	) AS t
-	WHERE t.peak_order = 1
-		AND t.market_value_in_eur >= @min_peak_value
+	WHERE t.peak_order = 1 AND t.market_value_in_eur >= @min_peak_value
 ),
 
 CTE_Market_Value_Change_By_Age AS
@@ -305,8 +302,7 @@ CTE_Peak_Goal_Participations AS
 			pa.goal_participations_per_90,
 			ROW_NUMBER() OVER(PARTITION BY pa.player_id ORDER BY pa.goal_participations_per_90 DESC, pa.total_goal_participations_by_age DESC, pa.age ASC) AS ranking_goal_participations
 		FROM CTE_Goal_Participations_Per_90_By_Age AS pa
-		WHERE pa.goal_participations_per_90 > 0
-			AND pa.n_ages_observed >= @min_ages_observed
+		WHERE pa.goal_participations_per_90 > 0 AND pa.n_ages_observed >= @min_ages_observed
 	) AS t1
 	WHERE t1.ranking_goal_participations = 1
 ),
@@ -364,8 +360,7 @@ CTE_Age_By_Start_Season AS
 	FROM CTE_Valuations_Top15 AS t
 	INNER JOIN clean.players AS p
 		ON t.player_id = p.player_id
-	WHERE t.season_start_year BETWEEN @first_season AND @last_complete_season
-		AND p.date_of_birth IS NOT NULL
+	WHERE t.season_start_year BETWEEN @first_season AND @last_complete_season AND p.date_of_birth IS NOT NULL
 ),
 
 CTE_Substitute_Or_Not_By_Game AS
@@ -396,8 +391,7 @@ CTE_Substitute_Or_Not_By_Game AS
 		ON a.competition_id = c.competition_id
 	INNER JOIN clean.players AS p
 		ON a.player_id = p.player_id
-	WHERE c.is_top15_league = 1
-		AND p.date_of_birth IS NOT NULL
+	WHERE c.is_top15_league = 1 AND p.date_of_birth IS NOT NULL
 ),
 
 CTE_Times_Substitute_By_Age_By_Position AS
@@ -530,10 +524,7 @@ SELECT
 FROM CTE_Age_By_Start_Season AS ss
 INNER JOIN clean.clubs AS c
 	ON ss.club_id = c.club_id
-GROUP BY ss.club_id,
-	c.club_name,
-	ss.club_domestic_competition,
-	ss.season_formatted
+GROUP BY ss.club_id, c.club_name, ss.club_domestic_competition, ss.season_formatted
 ORDER BY ss.club_domestic_competition, ss.season_formatted, c.club_name;
 */
 
@@ -546,9 +537,7 @@ SELECT
 	COUNT(*) AS n_players,
 	CAST(AVG(CAST(ss.age_at_start_season AS DECIMAL(5,2))) AS DECIMAL(5,2)) AS avg_age
 FROM CTE_Age_By_Start_Season AS ss
-GROUP BY 
-	ss.club_domestic_competition,
-	ss.season_formatted
+GROUP BY ss.club_domestic_competition, ss.season_formatted
 ORDER BY ss.club_domestic_competition, ss.season_formatted;
 */
 
@@ -566,10 +555,7 @@ SELECT
 FROM CTE_Minutes_Played_By_Player AS m
 INNER JOIN clean.clubs AS cl
 	ON m.player_club_id = cl.club_id
-GROUP BY m.player_club_id,
-	cl.club_name,
-	m.competition_id,
-	m.season_formatted
+GROUP BY m.player_club_id, cl.club_name, m.competition_id, m.season_formatted
 ORDER BY m.competition_id, m.season_formatted, cl.club_name;
 */
 
