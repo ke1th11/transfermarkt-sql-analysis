@@ -165,7 +165,7 @@ INNER JOIN clean.clubs AS c
 WHERE t1.top_points = 1
 */
 
-/*
+
 -- Menor pontuação da história de cada liga
 SELECT 
 	t1.season_formatted,
@@ -188,10 +188,11 @@ FROM (
 INNER JOIN clean.clubs AS c
 	ON t1.club_id = c.club_id
 WHERE t1.top_points = 1
-*/
+
 
 
 -- Top3 maior sequência de vitórias por liga por temporada
+/*
 SELECT 
 	t1.season_formatted,
 	t1.domestic_competition_id,
@@ -207,3 +208,4 @@ INNER JOIN clean.clubs AS c
 	ON t1.club_id = c.club_id
 WHERE t1.ranking IN (1,2,3)
 ORDER BY t1.season_formatted, t1.domestic_competition_id, t1.wins_in_sequence DESC
+*/
