@@ -148,7 +148,7 @@ ORDER BY t2.to_club_competition_id, t2.season_start_year, t2.ranking_spending;
 
 
 -- Output B: which clubs earned the most from transfers in each season, by league?
-
+/*
 SELECT
 	t2.from_club_competition_id AS competition_id,
 	c.club_name,
@@ -184,7 +184,7 @@ INNER JOIN clean.clubs AS c
 	ON t2.from_club_id = c.club_id
 WHERE t2.ranking_revenue <= @top_n
 ORDER BY t2.from_club_competition_id, t2.season_start_year, t2.ranking_revenue;
-
+*/
 
 
 -- Output C: which leagues spent the most on transfers in each season?
@@ -260,7 +260,7 @@ ORDER BY t2.season_start_year, t2.ranking_revenue;
 
 
 -- Output E: which transfers had the highest fee relative to the market value of the player, by league and season?
-/*
+
 SELECT
 	p.player_name,
 	t2.transfer_season,
@@ -303,4 +303,3 @@ LEFT JOIN clean.players AS p
 	ON t2.player_id = p.player_id
 WHERE t2.ranking_transfer_fee_ratio <= @top_n
 ORDER BY t2.to_club_competition_id, t2.season_start_year, t2.ranking_transfer_fee_ratio;
-*/
