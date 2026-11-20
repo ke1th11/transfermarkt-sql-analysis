@@ -48,7 +48,7 @@
 
 
 
-**• Pontos acumulados ao longo da época por equipa (3 por vitória, 1 por empate). (club\_games; soma acumulada com SUM() OVER)**
+~~• Pontos acumulados ao longo da época por equipa (3 por vitória, 1 por empate). (club\_games; soma acumulada com SUM() OVER)~~
 
 
 
@@ -96,5 +96,5 @@
 
 **• Valor por altura ou pé preferencial: só se clean.players tiver essas colunas (o dataset do Transfermarkt costuma ter height\_in\_cm e foot).**
 
-&#x20;         
+&#x20;
 
