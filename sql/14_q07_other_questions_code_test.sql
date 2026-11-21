@@ -16,39 +16,6 @@ WITH CTE_Month_Birth AS
 	WHERE MONTH(p.date_of_birth) IS NOT NULL
 ),
 
-CTE_Month_Name AS
-(
-	SELECT 
-		mb.month_of_birth,
-		CASE 
-			WHEN mb.month_of_birth = 1
-				THEN 'January'
-			WHEN mb.month_of_birth = 2
-				THEN 'February'
-			WHEN mb.month_of_birth = 3
-				THEN 'March'
-			WHEN mb.month_of_birth = 4
-				THEN 'April'
-			WHEN mb.month_of_birth = 5
-				THEN 'May'
-			WHEN mb.month_of_birth = 6
-				THEN 'June'
-			WHEN mb.month_of_birth = 7
-				THEN 'July'
-			WHEN mb.month_of_birth = 8
-				THEN 'August'
-			WHEN mb.month_of_birth = 9
-				THEN 'September'
-			WHEN mb.month_of_birth = 10
-				THEN 'October'
-			WHEN mb.month_of_birth = 11
-				THEN 'November'
-			WHEN mb.month_of_birth = 12
-				THEN 'December'
-		END AS month_name
-	FROM CTE_Month_Birth AS mb
-),
-
 CTE_N_Players_By_Month_Of_Birth AS
 (
 	SELECT 
@@ -68,8 +35,10 @@ CTE_N_Players_By_Country_Of_Citizenship AS
 	FROM clean.players AS p
 	WHERE p.country_of_citizenship IS NOT NULL
 	GROUP BY p.country_of_citizenship
-)
+),
 
+--4. Idade relativa.
+/*
 SELECT
 	t2.country_of_citizenship,
 	CASE 
@@ -142,20 +111,54 @@ FROM (
 		ON t1.country_of_citizenship = cc.country_of_citizenship
 ) AS t2
 ORDER BY t2.country_of_citizenship, t2.month_of_birth
-
-
-
-
-
-
-
-
-/*
-SELECT 
-	t.transfer_season,
-	t.to_club_id,
-	t.player_id
-FROM clean.transfers AS t
-WHERE t.is_scheduled = 0
-ORDER BY t.transfer_season, t.to_club_id, t.player_id
 */
+
+CTE_Last_Year_Playing AS
+(
+	SELECT 
+		p.player_id,
+		p.current_club_id,
+		CAST((RIGHT(p.last_season, 2)) AS VARCHAR) + '/' + CAST(CAST((RIGHT(p.last_season, 2)) AS INT) + 1 AS VARCHAR) AS last_season
+	FROM clean.players AS p
+),
+
+
+CTE_Club_By_Season AS
+(
+	SELECT 
+		t.player_id,
+		t.to_club_id,
+		t.transfer_season
+	FROM clean.transfers AS t
+	WHERE t.is_scheduled = 0
+)
+
+
+SELECT *
+FROM (
+	SELECT
+		t1.*,
+		CASE
+			WHEN t1.transfer_season = '26/27' 
+				THEN 1
+			ELSE ISNULL(CAST(LEFT(LEAD(t1.transfer_season) OVER(PARTITION BY t1.player_id ORDER BY t1.transfer_season), 2) AS INT) - CAST(LEFT(t1.transfer_season, 2) AS INT), 1)	/* CASE
+																										WHEN LEFT(t1.transfer_season, 2) >= '50'
+																											THEN 1900 + CAST(LEFT(t1.transfer_season, 2) AS INT)
+																										ELSE 2000 + CAST(LEFT(t1.transfer_season, 2) AS INT)
+																										END ASC), 2) AS INT) - CAST(LEFT(t1.transfer_season, 2) AS INT), 1)*/
+			END AS years_same_club_in_sequence
+	FROM (
+		SELECT *
+		FROM CTE_Club_By_Season
+
+		UNION ALL
+
+		SELECT *
+		FROM CTE_Last_Year_Playing
+	) AS t1
+) AS t2
+WHERE t2.player_id = 7825
+ORDER BY t2.player_id, t2.transfer_season
+
+
+
