@@ -1,8 +1,9 @@
 /* Questions: 1. Posição na tabela vs. resultado (a mais forte).
-			  2. Lealdade de jogadores.
-			  3. % de estrangeiros por liga.
-			  4. Idade relativa.
-			  5. Formação mais usada (para ver a evolução ao longo das epocas)
+			  -- 2. Lealdade de jogadores.
+			  -- 3. % de estrangeiros por liga.
+			  -- 4. Idade relativa.
+			  -- 5. Formação mais usada (para ver a evolução ao longo das epocas)
+			  -- Formações mais usadas de sempre
 */
 
 USE TransfermarktDB;
@@ -169,7 +170,62 @@ CTE_Player_And_League_Country AS
 		ON cs.to_club_id = fl.home_club_id AND cs.season_start_year = fl.season
 	INNER JOIN CTE_Month_Birth AS mb
 		ON cs.player_id = mb.player_id
+),
+
+CTE_Football_Formations AS
+(
+	SELECT DISTINCT *
+	FROM (
+		SELECT 
+			DISTINCT(g1.home_club_formation) AS formation
+		FROM clean.games AS g1
+
+		UNION ALL
+
+		SELECT 
+			DISTINCT(g2.away_club_formation)
+		FROM clean.games AS g2
+	) AS t1
+	WHERE LEFT(t1.formation, 8) != 'Starting' 
+),
+
+CTE_Formations_By_Game AS
+(
+	SELECT 
+		g.game_id,
+		g.competition_id,
+		CASE
+			WHEN g.competition_id IN ('BRA1', 'ARG1', 'NO1', 'MLS1', 'COL1')
+				THEN CONVERT(VARCHAR(4), g.season)
+			ELSE CONVERT(VARCHAR(4), g.season) + ' / ' + CONVERT(VARCHAR(4), g.season + 1)
+		END AS season_formatted,
+		g.home_club_formation,
+		g.away_club_formation
+	FROM clean.games AS g
+	INNER JOIN clean.competitions AS c
+		ON g.competition_id = c.competition_id
+	WHERE c.is_top15_league = 1
+),
+
+CTE_Games_By_Season AS
+(
+	SELECT 
+		fg.season_formatted,
+		fg.competition_id,
+		COUNT(*) AS games_by_season
+	FROM CTE_Formations_By_Game AS fg
+	GROUP BY fg.season_formatted, fg.competition_id
+),
+
+CTE_Formations_Every_Game AS
+(
+	SELECT 
+		g.game_id,
+		g.home_club_formation,
+		g.away_club_formation
+	FROM clean.games AS g
 )
+
 
 --4. Idade relativa.
 /*
@@ -285,6 +341,7 @@ ORDER BY t3.years_in_sequence DESC
 */
 
 -- 3. % de estrangeiros por liga.
+/*
 SELECT 
 	t1.transfer_season AS season,
 	c.competition_id,
@@ -308,5 +365,43 @@ INNER JOIN clean.competitions AS c
 	ON t1.league_country = c.country_name
 WHERE c.is_top15_league = 1
 ORDER BY c.competition_id, t1.transfer_season
+*/
 
+-- 5. Formação mais usada (para ver a evolução ao longo das epocas)
+/*
+SELECT 
+	t1.season_formatted,
+	t1.competition_id,
+	t1.formation,
+	t1.times_used,
+	CAST(CAST(t1.times_used AS DECIMAL(20,2)) / (gs.games_by_season * 2) * 100 AS DECIMAL(20,2)) AS [formation_usage (%)]
+FROM (
+	SELECT 
+		fg.season_formatted,
+		fg.competition_id,
+		ff.formation,
+		COUNT(*) AS times_used
+	FROM CTE_Formations_By_Game AS fg
+	INNER JOIN CTE_Football_Formations AS ff
+		ON fg.home_club_formation = ff.formation OR fg.away_club_formation = ff.formation
+	GROUP BY fg.season_formatted, fg.competition_id, ff.formation
+) AS t1
+INNER JOIN CTE_Games_By_Season AS gs
+	ON t1.season_formatted = gs.season_formatted AND t1.competition_id = gs.competition_id
+ORDER BY t1.competition_id, t1.season_formatted, [formation_usage (%)] DESC
+*/
 
+SELECT
+	t1.formation,
+	t1.times_used,
+	CAST(CAST(t1.times_used AS DECIMAL(20,3)) / (SUM(t1.times_used) OVER()) * 100 AS DECIMAL(20,3)) AS [formation_usage (%)]
+FROM (
+	SELECT 
+		ff.formation,
+		COUNT(*) AS times_used
+	FROM CTE_Formations_Every_Game AS eg
+	INNER JOIN CTE_Football_Formations AS ff
+			ON eg.home_club_formation = ff.formation OR eg.away_club_formation = ff.formation
+	GROUP BY ff.formation
+) AS t1
+ORDER BY t1.times_used DESC ,[formation_usage (%)] DESC
