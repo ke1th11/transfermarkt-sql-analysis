@@ -1,9 +1,9 @@
-/* Questions: 1. Posição na tabela vs. resultado (a mais forte).
+/* Questions: -- 1. Posição na tabela vs. resultado (a mais forte).
 			  -- 2. Lealdade de jogadores.
 			  -- 3. % de estrangeiros por liga.
 			  -- 4. Idade relativa.
 			  -- 5. Formação mais usada (para ver a evolução ao longo das epocas)
-			  -- Formações mais usadas de sempre
+			  -- 6. Formações mais usadas de sempre
 */
 
 USE TransfermarktDB;
@@ -224,8 +224,56 @@ CTE_Formations_Every_Game AS
 		g.home_club_formation,
 		g.away_club_formation
 	FROM clean.games AS g
-)
+),
 
+CTE_Games_Results AS
+(
+    SELECT 
+        g.game_id,
+        g.game_date,
+        CASE
+            WHEN LEN(g.round) = 11
+                THEN CAST(LEFT(g.round, 1) AS INT)
+            ELSE CAST(LEFT(g.round, 2) AS INT)
+        END AS round,
+        g.competition_id,
+        CASE
+            WHEN g.competition_id IN ('BRA1', 'ARG1', 'NO1', 'MLS1', 'COL1')
+                THEN CONVERT(VARCHAR(4), g.season)
+            ELSE CONVERT(VARCHAR(4), g.season) + ' / ' + CONVERT(VARCHAR(4), g.season + 1)
+        END AS season_formatted,
+        g.home_club_position,
+        g.away_club_position,
+        g.home_result,
+        g.home_club_position - g.away_club_position AS position_diff
+    FROM clean.games AS g
+    INNER JOIN clean.competitions AS c
+        ON g.competition_id = c.competition_id
+    WHERE c.is_top15_league = 1
+),
+
+CTE_N_Games_By_Position_Diff AS
+(
+	SELECT 
+		gr.season_formatted,
+        gr.competition_id,
+        gr.position_diff,
+        COUNT(*) AS n_games_by_position_diff,
+        COUNT(CASE
+				WHEN gr.home_result = 'Home win' 
+					THEN 1
+			  END) AS n_wins_by_position_diff,
+        COUNT(CASE
+				WHEN gr.home_result = 'Draw' 
+					THEN 1
+			  END) AS n_draws_by_position_diff,
+        COUNT(CASE
+				WHEN gr.home_result = 'Away win' 
+					THEN 1
+			  END) AS n_losses_by_position_diff
+    FROM CTE_Games_Results AS gr
+    GROUP BY gr.competition_id, gr.season_formatted, gr.position_diff
+)
 
 --4. Idade relativa.
 /*
@@ -391,6 +439,8 @@ INNER JOIN CTE_Games_By_Season AS gs
 ORDER BY t1.competition_id, t1.season_formatted, [formation_usage (%)] DESC
 */
 
+-- 6. Formações mais usadas de sempre
+/*
 SELECT
 	t1.formation,
 	t1.times_used,
@@ -405,3 +455,19 @@ FROM (
 	GROUP BY ff.formation
 ) AS t1
 ORDER BY t1.times_used DESC ,[formation_usage (%)] DESC
+*/
+
+-- 1. Posição na tabela vs. resultado (a mais forte).
+SELECT 
+    ng.season_formatted,
+    ng.competition_id,
+    ng.position_diff,
+    ng.n_games_by_position_diff,
+    ng.n_wins_by_position_diff,
+    ng.n_draws_by_position_diff,
+    ng.n_losses_by_position_diff,
+    CAST(CAST(ng.n_wins_by_position_diff AS DECIMAL(20,2)) / ng.n_games_by_position_diff * 100 AS DECIMAL(20,2)) AS [win (%)],
+    CAST(CAST(ng.n_draws_by_position_diff AS DECIMAL(20,2)) / ng.n_games_by_position_diff * 100 AS DECIMAL(20,2)) AS [draw (%)],
+	CAST(CAST(ng.n_losses_by_position_diff AS DECIMAL(20,2)) / ng.n_games_by_position_diff * 100 AS DECIMAL(20,2)) AS [loss (%)]
+FROM CTE_N_Games_By_Position_Diff AS ng
+ORDER BY ng.competition_id, ng.season_formatted, ng.position_diff;
