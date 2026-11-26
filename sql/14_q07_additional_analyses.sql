@@ -18,7 +18,7 @@
                relative_representation (%) = observed / expected * 100 (100 = as expected, above 100 = over-represented).
              - CTE_Club_By_Season, CTE_Last_Year_Playing, CTE_Transfer_Events, CTE_Distinct_Events (B, C): the moments when a player is known to be in a club:
                each completed transfer (to_club_id, season of the transfer) and the last season of the player in his current club (clean.players).
-               The season label ('99/00' = 1999) is converted to the start year of the season, as in 12_q05.
+               The season label ('99/00' = 1999) is converted to the start year of the season, as in 12_q05_transfer_market_spending.
              - CTE_Next_Transfer, CTE_Seasons_Recursive, CTE_Player_Club_By_Season (B, C): each event lasts until the next one (LEAD, by season and date),
                and the recursion fills the seasons in between, so there is one row per player, club and season (the club of the player in each season).
              - Output B: gaps and islands on CTE_Player_Club_By_Season. Seasons in a row at the same club have the same (season_start_year - ROW_NUMBER),
