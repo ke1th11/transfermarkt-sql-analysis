@@ -1,15 +1,15 @@
 /* Question: Market value, performance and playing time by age and position: at what age does it peak?
-			 A) How does the market value of a player change with age, for each general position?
-			 B) At what age does a player reach the highest market value of his career, and how does it change with the position?
-			 C) How many players peaked at each age, by position?
-			 D) At what age do players have their best goal participations (goals + assists) per 90 minutes?
-			 E) How do goal participations per 90 minutes change with age, by position?
-			 F) From what age does the average change in market value turn negative?
-			 G) What is the average age by club?
-			 H) What is the average age by league?
-			 I) What is the average number of minutes played per season?
-			 J) What percentage of games are played as a starter, by age?
-			 K) What percentage of games are played as a starter, by position?
+             A) How does the market value of a player change with age, for each general position?
+             B) At what age does a player reach the highest market value of his career, and how does it change with the position?
+             C) How many players peaked at each age, by position?
+             D) At what age do players have their best goal participations (goals + assists) per 90 minutes?
+             E) How do goal participations per 90 minutes change with age, by position?
+             F) From what age does the average change in market value turn negative?
+             G) What is the average age by club?
+             H) What is the average age by league?
+             I) What is the average number of minutes played per season?
+             J) What percentage of games are played as a starter, by age?
+             K) What percentage of games are played as a starter, by position?
 
    Approach: - CTE_Valuations_Top15: valuations of players at clubs of the top 15 leagues. The season label and a season reference date
                (1 January for calendar-year leagues, 1 July for the others) are built once.
@@ -39,36 +39,49 @@
              - Output J: games as starter and as substitute, and their percentages, by age. Output K: the same by position.
              (Only one final SELECT runs at a time: comment out the others.)
 
-   Insight: - Peak age (B, C): the career peak in market value comes at 24.1 for Attack (median 24), 24.3 for Midfield, 24.8 for Defender and 26.4 for Goalkeeper (16,571 players).
-              58% of all players peak between 22 and 27; only 6% to 8% of outfield players peak at 30 or later, against 21% of goalkeepers.
-            - Value by age (A): the average value is highest at 27 for Attack (7.37M EUR), at 26 for Midfield (7.09M) and Defender (5.34M) and at 28 for Goalkeeper (4.32M).
-              The mean is about 3 times the median at the peak (Attack at 27: 7.37M vs 2.28M), so a few stars lift the average. Attack and Midfield are worth the most and goalkeepers the least.
-              Attack keeps 74% of its peak value at 30, 37% at 33 and 23% at 35; goalkeepers decline more slowly (still 3.66M at 30).
-            - Change by age (F): following the same player, the median change in value is 0 from about 22 to 27-28 and turns negative at 28 for Attack, 29 for Defender and Midfield and 30 for Goalkeeper.
-              The average absolute change turns negative at 28 for Attack, 27 for Defender and Midfield and 29 for Goalkeeper. From 33 to 36 the median fall is about 33% a year for outfield players.
-            - Performance (D, E): goal participations per 90 minutes peak at a median age of 25 for Attack and 26 for Midfield and Defender, about 1.3 years later than market value.
-              The rate is flat from about 22 to 30 (Attack 0.45 to 0.50 per 90, Midfield 0.22 to 0.24, Defender 0.10) and does not fall for attackers, which is partly survivorship (only those still good remain at 33 to 36).
-            - Playing time (J, K): the share of games as a starter rises from 46% at 17 and 64% at 20 to 78% to 81% from 25 to 35. By position, goalkeepers start 98.8% of their games, defenders 85.6%, midfielders 73.9% and attackers 62.0%.
-            - Minutes (I): a club uses about 28 players, who average about 1,230 minutes (regular players, with 900 or more minutes, about 1,950). The Premier League has the most stable squads (1,362 minutes per player, 60% regular players),
-              Belgium and Portugal the most rotation (about 1,060 minutes, 50% regular players).
-            - Age of squads (G, H): Spain is the oldest league on average (26.1) and Norway (22.7) and the Netherlands (23.5) the youngest. Genk, Heerenveen, AZ, Ajax and Groningen are consistently young clubs,
-              while Spanish clubs (Cádiz, Rayo Vallecano, Eibar, Osasuna) dominate the oldest list. The Premier League got younger, from 25.8 in 2018/19 to about 24.9-25.1 since 2023/24, while Mexico (23.4 to 25.8) and Brazil (22.3 to 26.2) got older.
+   Insight: A) Value by age
+              - The average value is highest at 27 for Attack (7.37M EUR), at 26 for Midfield (7.09M) and Defender (5.34M) and at 28 for Goalkeeper (4.32M).
+                The mean is about 3 times the median at the peak (Attack at 27: 7.37M vs 2.28M), so a few stars lift the average. Attack and Midfield are worth the most and goalkeepers the least.
+                Attack keeps 74% of its peak value at 30, 37% at 33 and 23% at 35; goalkeepers decline more slowly (still 3.66M at 30).
+
+            B, C) Peak age
+              - The career peak in market value comes at 24.1 for Attack (median 24), 24.3 for Midfield, 24.8 for Defender and 26.4 for Goalkeeper (16,571 players).
+                58% of all players peak between 22 and 27; only 6% to 8% of outfield players peak at 30 or later, against 21% of goalkeepers.
+
+            D, E) Performance
+              - Goal participations per 90 minutes peak at a median age of 25 for Attack and 26 for Midfield and Defender, about 1.3 years later than market value.
+                The rate is flat from about 22 to 30 (Attack 0.45 to 0.50 per 90, Midfield 0.22 to 0.24, Defender 0.10) and does not fall for attackers, which is partly survivorship (only those still good remain at 33 to 36).
+
+            F) Change by age
+              - Following the same player, the median change in value is 0 from about 22 to 27-28 and turns negative at 28 for Attack, 29 for Defender and Midfield and 30 for Goalkeeper.
+                The average absolute change turns negative at 28 for Attack, 27 for Defender and Midfield and 29 for Goalkeeper. From 33 to 36 the median fall is about 33% a year for outfield players.
+
+            G, H) Age of squads
+              - Spain is the oldest league on average (26.1) and Norway (22.7) and the Netherlands (23.5) the youngest. Genk, Heerenveen, AZ, Ajax and Groningen are consistently young clubs,
+                while Spanish clubs (Cádiz, Rayo Vallecano, Eibar, Osasuna) dominate the oldest list. The Premier League got younger, from 25.8 in 2018/19 to about 24.9-25.1 since 2023/24, while Mexico (23.4 to 25.8) and Brazil (22.3 to 26.2) got older.
+
+            I) Minutes
+              - A club uses about 28 players, who average about 1,230 minutes (regular players, with 900 or more minutes, about 1,950). The Premier League has the most stable squads (1,362 minutes per player, 60% regular players),
+                Belgium and Portugal the most rotation (about 1,060 minutes, 50% regular players).
+
+            J, K) Playing time
+              - The share of games as a starter rises from 46% at 17 and 64% at 20 to 78% to 81% from 25 to 35. By position, goalkeepers start 98.8% of their games, defenders 85.6%, midfielders 73.9% and attackers 62.0%.
 
    Note: Outputs D, E, I, J and K only contain the 8 European leagues (appearances table); outputs A, B, C, F, G and H cover 14 leagues.
    Note: In Output I, games of the 2019/20 season played in July and August 2020 are assigned to 2020/21 by the July cutoff. This understates 2019/20 and inflates 2020/21
-		 (clubs relegated in 2020 appear with a few games and no regular players), so both seasons are unreliable.
+         (clubs relegated in 2020 appear with a few games and no regular players), so both seasons are unreliable.
    Note: Output G has 1,407 club-seasons with fewer than 15 valued players; use clubs with at least 15 for rankings. COL1, MLS1 and MEX1 have very few players in their first seasons (Output H).
    Note: In outputs D and E, the flat or rising rate of attackers at older ages is partly survivorship.
 
    Note: Only valuations at clubs of the top 15 leagues count; a player's value while at another league is not in the data.
    Note: Peak age is censored by the time window: players still young have not peaked yet and older players may have peaked before @first_season.
-		 The peak age must be read with this in mind (check MIN(valuation_date) to see if earlier seasons can be used).
+         The peak age must be read with this in mind (check MIN(valuation_date) to see if earlier seasons can be used).
    Note: The position is the one played the most over the whole career (all competitions in game_lineups), not the position at each age.
    Note: Valuations are rounded and often stay flat for a long time, so the "peak" is the first valuation that reached the maximum.
    Note: Outputs A, B, C and F only include players whose peak is at least @min_peak_value, so young ages favour players who later succeeded.
    Note: Ignore ages or positions with few players (for example n_players < 30), as their averages are not reliable.
    Note: Output F follows the same player from one age to the next (it does not compare different players), which avoids the survivorship effect of comparing averages by age.
-		 It uses the highest valuation of each age and a change is only computed when the player has valuations at two consecutive ages. % changes are very large at young ages, so prefer the median.
+         It uses the highest valuation of each age and a change is only computed when the player has valuations at two consecutive ages. % changes are very large at young ages, so prefer the median.
    Note: Outputs G and H take as squad the players with a valuation at the club in that season, not the players who played. Ages are measured on the season reference date.
    Note: Output I only counts league games, so players of clubs that also play in Europe have more minutes than shown for those competitions.
    Note: In outputs J and K, substitutes who stayed on the bench are not counted. Goalkeepers almost always start, which pushes up the starter % of their position.

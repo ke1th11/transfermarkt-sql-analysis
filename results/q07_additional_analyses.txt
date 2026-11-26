@@ -1,0 +1,1664 @@
+-- Output A: does the difference between the league positions of the two clubs explain the result?
+competition_id	position_diff	n_games	n_home_wins	n_draws	n_home_losses	home win (%)	draw (%)	home loss (%)
+ALL	-19	54	53	1	0	98.15	1.85	0.00
+ALL	-18	104	94	8	2	90.38	7.69	1.92
+ALL	-17	220	199	20	1	90.45	9.09	0.45
+ALL	-16	310	279	26	5	90.00	8.39	1.61
+ALL	-15	426	367	50	9	86.15	11.74	2.11
+ALL	-14	512	434	62	16	84.77	12.11	3.13
+ALL	-13	642	534	80	28	83.18	12.46	4.36
+ALL	-12	794	616	139	39	77.58	17.51	4.91
+ALL	-11	855	654	153	48	76.49	17.89	5.61
+ALL	-10	951	680	186	85	71.50	19.56	8.94
+ALL	-9	1030	734	203	93	71.26	19.71	9.03
+ALL	-8	1135	766	252	117	67.49	22.20	10.31
+ALL	-7	1263	853	279	131	67.54	22.09	10.37
+ALL	-6	1315	840	311	164	63.88	23.65	12.47
+ALL	-5	1407	870	348	189	61.83	24.73	13.43
+ALL	-4	1564	886	421	257	56.65	26.92	16.43
+ALL	-3	1651	912	442	297	55.24	26.77	17.99
+ALL	-2	1718	899	482	337	52.33	28.06	19.62
+ALL	-1	1796	906	519	371	50.45	28.90	20.66
+ALL	1	1781	641	562	578	35.99	31.56	32.45
+ALL	2	1726	623	546	557	36.10	31.63	32.27
+ALL	3	1609	509	495	605	31.63	30.76	37.60
+ALL	4	1508	425	490	593	28.18	32.49	39.32
+ALL	5	1420	378	423	619	26.62	29.79	43.59
+ALL	6	1299	317	355	627	24.40	27.33	48.27
+ALL	7	1192	267	349	576	22.40	29.28	48.32
+ALL	8	1109	246	282	581	22.18	25.43	52.39
+ALL	9	974	178	243	553	18.28	24.95	56.78
+ALL	10	925	143	230	552	15.46	24.86	59.68
+ALL	11	831	121	189	521	14.56	22.74	62.70
+ALL	12	682	85	151	446	12.46	22.14	65.40
+ALL	13	602	69	127	406	11.46	21.10	67.44
+ALL	14	521	41	118	362	7.87	22.65	69.48
+ALL	15	389	34	56	299	8.74	14.40	76.86
+ALL	16	275	15	37	223	5.45	13.45	81.09
+ALL	17	197	11	31	155	5.58	15.74	78.68
+ALL	18	103	2	12	89	1.94	11.65	86.41
+ALL	19	51	2	4	45	3.92	7.84	88.24
+BE1	-13	53	44	7	2	83.02	13.21	3.77
+BE1	-12	51	41	8	2	80.39	15.69	3.92
+BE1	-11	69	55	10	4	79.71	14.49	5.80
+BE1	-10	108	76	24	8	70.37	22.22	7.41
+BE1	-9	91	68	16	7	74.73	17.58	7.69
+BE1	-8	101	74	17	10	73.27	16.83	9.90
+BE1	-7	133	93	26	14	69.92	19.55	10.53
+BE1	-6	120	75	28	17	62.50	23.33	14.17
+BE1	-5	134	80	35	19	59.70	26.12	14.18
+BE1	-4	154	91	34	29	59.09	22.08	18.83
+BE1	-3	165	97	43	25	58.79	26.06	15.15
+BE1	-2	171	82	40	49	47.95	23.39	28.65
+BE1	-1	178	89	51	38	50.00	28.65	21.35
+BE1	1	185	62	58	65	33.51	31.35	35.14
+BE1	2	166	65	47	54	39.16	28.31	32.53
+BE1	3	159	49	50	60	30.82	31.45	37.74
+BE1	4	146	41	47	58	28.08	32.19	39.73
+BE1	5	123	27	43	53	21.95	34.96	43.09
+BE1	6	124	24	33	67	19.35	26.61	54.03
+BE1	7	112	24	33	55	21.43	29.46	49.11
+BE1	8	95	20	25	50	21.05	26.32	52.63
+BE1	9	80	21	19	40	26.25	23.75	50.00
+BE1	10	92	17	17	58	18.48	18.48	63.04
+BE1	11	66	5	17	44	7.58	25.76	66.67
+BE1	12	58	6	12	40	10.34	20.69	68.97
+BE1	13	39	5	5	29	12.82	12.82	74.36
+BE1	14	34	2	5	27	5.88	14.71	79.41
+ES1	-17	36	35	1	0	97.22	2.78	0.00
+ES1	-16	53	47	6	0	88.68	11.32	0.00
+ES1	-15	82	73	9	0	89.02	10.98	0.00
+ES1	-14	86	70	12	4	81.40	13.95	4.65
+ES1	-13	75	61	10	4	81.33	13.33	5.33
+ES1	-12	122	97	20	5	79.51	16.39	4.10
+ES1	-11	130	104	16	10	80.00	12.31	7.69
+ES1	-10	123	80	31	12	65.04	25.20	9.76
+ES1	-9	130	95	19	16	73.08	14.62	12.31
+ES1	-8	157	108	35	14	68.79	22.29	8.92
+ES1	-7	160	98	43	19	61.25	26.88	11.88
+ES1	-6	184	117	48	19	63.59	26.09	10.33
+ES1	-5	180	111	44	25	61.67	24.44	13.89
+ES1	-4	216	135	57	24	62.50	26.39	11.11
+ES1	-3	228	137	57	34	60.09	25.00	14.91
+ES1	-2	245	133	73	39	54.29	29.80	15.92
+ES1	-1	222	126	52	44	56.76	23.42	19.82
+ES1	1	197	64	65	68	32.49	32.99	34.52
+ES1	2	192	64	73	55	33.33	38.02	28.65
+ES1	3	209	60	59	90	28.71	28.23	43.06
+ES1	4	205	58	79	68	28.29	38.54	33.17
+ES1	5	190	51	51	88	26.84	26.84	46.32
+ES1	6	191	59	47	85	30.89	24.61	44.50
+ES1	7	157	42	47	68	26.75	29.94	43.31
+ES1	8	133	34	30	69	25.56	22.56	51.88
+ES1	9	120	22	30	68	18.33	25.00	56.67
+ES1	10	122	30	36	56	24.59	29.51	45.90
+ES1	11	127	18	40	69	14.17	31.50	54.33
+ES1	12	95	14	20	61	14.74	21.05	64.21
+ES1	13	92	19	28	45	20.65	30.43	48.91
+ES1	14	81	10	25	46	12.35	30.86	56.79
+ES1	15	54	6	8	40	11.11	14.81	74.07
+ES1	16	41	6	7	28	14.63	17.07	68.29
+ES1	17	50	5	10	35	10.00	20.00	70.00
+FR1	-17	37	34	3	0	91.89	8.11	0.00
+FR1	-16	52	43	4	5	82.69	7.69	9.62
+FR1	-15	52	40	8	4	76.92	15.38	7.69
+FR1	-14	61	49	9	3	80.33	14.75	4.92
+FR1	-13	102	84	14	4	82.35	13.73	3.92
+FR1	-12	114	88	20	6	77.19	17.54	5.26
+FR1	-11	115	85	24	6	73.91	20.87	5.22
+FR1	-10	136	95	32	9	69.85	23.53	6.62
+FR1	-9	131	91	19	21	69.47	14.50	16.03
+FR1	-8	134	75	39	20	55.97	29.10	14.93
+FR1	-7	157	102	33	22	64.97	21.02	14.01
+FR1	-6	146	88	35	23	60.27	23.97	15.75
+FR1	-5	166	99	44	23	59.64	26.51	13.86
+FR1	-4	191	102	48	41	53.40	25.13	21.47
+FR1	-3	194	112	47	35	57.73	24.23	18.04
+FR1	-2	191	87	67	37	45.55	35.08	19.37
+FR1	-1	223	115	62	46	51.57	27.80	20.63
+FR1	1	234	95	74	65	40.60	31.62	27.78
+FR1	2	225	80	76	69	35.56	33.78	30.67
+FR1	3	190	64	62	64	33.68	32.63	33.68
+FR1	4	182	54	60	68	29.67	32.97	37.36
+FR1	5	187	43	58	86	22.99	31.02	45.99
+FR1	6	159	40	46	73	25.16	28.93	45.91
+FR1	7	164	35	51	78	21.34	31.10	47.56
+FR1	8	126	27	33	66	21.43	26.19	52.38
+FR1	9	109	18	31	60	16.51	28.44	55.05
+FR1	10	110	14	33	63	12.73	30.00	57.27
+FR1	11	103	22	19	62	21.36	18.45	60.19
+FR1	12	105	13	32	60	12.38	30.48	57.14
+FR1	13	82	7	25	50	8.54	30.49	60.98
+FR1	14	72	8	19	45	11.11	26.39	62.50
+FR1	15	63	9	11	43	14.29	17.46	68.25
+FR1	16	40	1	7	32	2.50	17.50	80.00
+GB1	-18	34	31	1	2	91.18	2.94	5.88
+GB1	-17	44	37	6	1	84.09	13.64	2.27
+GB1	-16	59	55	4	0	93.22	6.78	0.00
+GB1	-15	68	57	9	2	83.82	13.24	2.94
+GB1	-14	80	67	10	3	83.75	12.50	3.75
+GB1	-13	90	73	15	2	81.11	16.67	2.22
+GB1	-12	110	79	23	8	71.82	20.91	7.27
+GB1	-11	107	84	18	5	78.50	16.82	4.67
+GB1	-10	121	78	26	17	64.46	21.49	14.05
+GB1	-9	156	107	37	12	68.59	23.72	7.69
+GB1	-8	150	98	32	20	65.33	21.33	13.33
+GB1	-7	171	122	29	20	71.35	16.96	11.70
+GB1	-6	168	99	41	28	58.93	24.40	16.67
+GB1	-5	185	127	32	26	68.65	17.30	14.05
+GB1	-4	179	94	54	31	52.51	30.17	17.32
+GB1	-3	211	114	55	42	54.03	26.07	19.91
+GB1	-2	220	126	51	43	57.27	23.18	19.55
+GB1	-1	236	112	69	55	47.46	29.24	23.31
+GB1	1	229	92	62	75	40.17	27.07	32.75
+GB1	2	210	86	63	61	40.95	30.00	29.05
+GB1	3	226	77	68	81	34.07	30.09	35.84
+GB1	4	191	56	61	74	29.32	31.94	38.74
+GB1	5	189	59	45	85	31.22	23.81	44.97
+GB1	6	151	34	43	74	22.52	28.48	49.01
+GB1	7	149	33	47	69	22.15	31.54	46.31
+GB1	8	163	31	46	86	19.02	28.22	52.76
+GB1	9	136	24	38	74	17.65	27.94	54.41
+GB1	10	130	21	28	81	16.15	21.54	62.31
+GB1	11	114	16	32	66	14.04	28.07	57.89
+GB1	12	96	17	18	61	17.71	18.75	63.54
+GB1	13	87	8	21	58	9.20	24.14	66.67
+GB1	14	89	5	18	66	5.62	20.22	74.16
+GB1	15	64	4	6	54	6.25	9.38	84.38
+GB1	16	60	5	11	44	8.33	18.33	73.33
+GB1	17	31	2	3	26	6.45	9.68	83.87
+IT1	-17	48	42	6	0	87.50	12.50	0.00
+IT1	-16	57	50	7	0	87.72	12.28	0.00
+IT1	-15	61	52	8	1	85.25	13.11	1.64
+IT1	-14	77	63	12	2	81.82	15.58	2.60
+IT1	-13	120	93	17	10	77.50	14.17	8.33
+IT1	-12	97	69	23	5	71.13	23.71	5.15
+IT1	-11	113	85	22	6	75.22	19.47	5.31
+IT1	-10	128	91	23	14	71.09	17.97	10.94
+IT1	-9	142	93	35	14	65.49	24.65	9.86
+IT1	-8	156	105	34	17	67.31	21.79	10.90
+IT1	-7	144	90	44	10	62.50	30.56	6.94
+IT1	-6	171	111	37	23	64.91	21.64	13.45
+IT1	-5	169	102	44	23	60.36	26.04	13.61
+IT1	-4	230	121	75	34	52.61	32.61	14.78
+IT1	-3	207	100	71	36	48.31	34.30	17.39
+IT1	-2	195	101	58	36	51.79	29.74	18.46
+IT1	-1	238	125	72	41	52.52	30.25	17.23
+IT1	1	212	69	75	68	32.55	35.38	32.08
+IT1	2	256	76	88	92	29.69	34.38	35.94
+IT1	3	201	63	64	74	31.34	31.84	36.82
+IT1	4	201	44	63	94	21.89	31.34	46.77
+IT1	5	183	55	54	74	30.05	29.51	40.44
+IT1	6	174	33	58	83	18.97	33.33	47.70
+IT1	7	168	43	44	81	25.60	26.19	48.21
+IT1	8	160	37	42	81	23.13	26.25	50.63
+IT1	9	133	22	24	87	16.54	18.05	65.41
+IT1	10	125	17	33	75	13.60	26.40	60.00
+IT1	11	133	23	20	90	17.29	15.04	67.67
+IT1	12	71	6	15	50	8.45	21.13	70.42
+IT1	13	72	4	15	53	5.56	20.83	73.61
+IT1	14	88	8	21	59	9.09	23.86	67.05
+IT1	15	64	6	12	46	9.38	18.75	71.88
+IT1	16	52	0	7	45	0.00	13.46	86.54
+IT1	17	41	1	8	32	2.44	19.51	78.05
+L1	-15	45	36	8	1	80.00	17.78	2.22
+L1	-14	50	42	7	1	84.00	14.00	2.00
+L1	-13	68	57	7	4	83.82	10.29	5.88
+L1	-12	82	60	15	7	73.17	18.29	8.54
+L1	-11	78	54	18	6	69.23	23.08	7.69
+L1	-10	115	87	19	9	75.65	16.52	7.83
+L1	-9	116	84	24	8	72.41	20.69	6.90
+L1	-8	112	80	25	7	71.43	22.32	6.25
+L1	-7	137	89	37	11	64.96	27.01	8.03
+L1	-6	155	101	37	17	65.16	23.87	10.97
+L1	-5	161	89	46	26	55.28	28.57	16.15
+L1	-4	172	99	39	34	57.56	22.67	19.77
+L1	-3	190	102	53	35	53.68	27.89	18.42
+L1	-2	203	96	59	48	47.29	29.06	23.65
+L1	-1	204	102	59	43	50.00	28.92	21.08
+L1	1	208	69	67	72	33.17	32.21	34.62
+L1	2	197	83	55	59	42.13	27.92	29.95
+L1	3	154	52	47	55	33.77	30.52	35.71
+L1	4	157	49	51	57	31.21	32.48	36.31
+L1	5	164	48	41	75	29.27	25.00	45.73
+L1	6	141	33	38	70	23.40	26.95	49.65
+L1	7	137	29	45	63	21.17	32.85	45.99
+L1	8	130	34	25	71	26.15	19.23	54.62
+L1	9	123	19	32	72	15.45	26.02	58.54
+L1	10	110	18	24	68	16.36	21.82	61.82
+L1	11	80	14	13	53	17.50	16.25	66.25
+L1	12	72	8	14	50	11.11	19.44	69.44
+L1	13	63	6	8	49	9.52	12.70	77.78
+L1	14	43	4	8	31	9.30	18.60	72.09
+L1	15	36	5	3	28	13.89	8.33	77.78
+MLS1	-5	33	19	7	7	57.58	21.21	21.21
+MLS1	-4	49	24	16	9	48.98	32.65	18.37
+MLS1	-3	34	18	7	9	52.94	20.59	26.47
+MLS1	-2	47	26	13	8	55.32	27.66	17.02
+MLS1	-1	41	17	14	10	41.46	34.15	24.39
+MLS1	1	31	12	7	12	38.71	22.58	38.71
+MLS1	3	35	11	12	12	31.43	34.29	34.29
+MLS1	4	33	9	9	15	27.27	27.27	45.45
+NL1	-16	30	26	4	0	86.67	13.33	0.00
+NL1	-15	35	33	2	0	94.29	5.71	0.00
+NL1	-14	59	50	7	2	84.75	11.86	3.39
+NL1	-13	61	58	2	1	95.08	3.28	1.64
+NL1	-12	91	79	10	2	86.81	10.99	2.20
+NL1	-11	85	66	15	4	77.65	17.65	4.71
+NL1	-10	78	61	9	8	78.21	11.54	10.26
+NL1	-9	112	84	22	6	75.00	19.64	5.36
+NL1	-8	122	82	30	10	67.21	24.59	8.20
+NL1	-7	151	104	32	15	68.87	21.19	9.93
+NL1	-6	157	104	36	17	66.24	22.93	10.83
+NL1	-5	157	100	36	21	63.69	22.93	13.38
+NL1	-4	157	86	45	26	54.78	28.66	16.56
+NL1	-3	183	106	45	32	57.92	24.59	17.49
+NL1	-2	194	106	54	34	54.64	27.84	17.53
+NL1	-1	192	85	63	44	44.27	32.81	22.92
+NL1	1	215	83	64	68	38.60	29.77	31.63
+NL1	2	168	60	37	71	35.71	22.02	42.26
+NL1	3	186	57	58	71	30.65	31.18	38.17
+NL1	4	171	49	51	71	28.65	29.82	41.52
+NL1	5	146	41	51	54	28.08	34.93	36.99
+NL1	6	149	44	39	66	29.53	26.17	44.30
+NL1	7	126	29	28	69	23.02	22.22	54.76
+NL1	8	124	32	35	57	25.81	28.23	45.97
+NL1	9	102	17	28	57	16.67	27.45	55.88
+NL1	10	88	12	19	57	13.64	21.59	64.77
+NL1	11	86	8	20	58	9.30	23.26	67.44
+NL1	12	73	10	17	46	13.70	23.29	63.01
+NL1	13	74	8	15	51	10.81	20.27	68.92
+NL1	14	45	1	9	35	2.22	20.00	77.78
+NL1	15	40	1	5	34	2.50	12.50	85.00
+PO1	-15	36	33	2	1	91.67	5.56	2.78
+PO1	-14	53	50	3	0	94.34	5.66	0.00
+PO1	-13	55	48	6	1	87.27	10.91	1.82
+PO1	-12	89	72	13	4	80.90	14.61	4.49
+PO1	-11	97	76	17	4	78.35	17.53	4.12
+PO1	-10	103	78	20	5	75.73	19.42	4.85
+PO1	-9	102	73	24	5	71.57	23.53	4.90
+PO1	-8	127	89	28	10	70.08	22.05	7.87
+PO1	-7	126	94	19	13	74.60	15.08	10.32
+PO1	-6	129	86	30	13	66.67	23.26	10.08
+PO1	-5	156	98	43	15	62.82	27.56	9.62
+PO1	-4	162	100	38	24	61.73	23.46	14.81
+PO1	-3	188	103	47	38	54.79	25.00	20.21
+PO1	-2	187	103	50	34	55.08	26.74	18.18
+PO1	-1	183	100	49	34	54.64	26.78	18.58
+PO1	1	193	63	66	64	32.64	34.20	33.16
+PO1	2	200	65	73	62	32.50	36.50	31.00
+PO1	3	190	56	58	76	29.47	30.53	40.00
+PO1	4	162	45	48	69	27.78	29.63	42.59
+PO1	5	161	34	61	66	21.12	37.89	40.99
+PO1	6	146	33	36	77	22.60	24.66	52.74
+PO1	7	111	13	36	62	11.71	32.43	55.86
+PO1	8	119	20	27	72	16.81	22.69	60.50
+PO1	9	114	20	30	64	17.54	26.32	56.14
+PO1	10	100	8	26	66	8.00	26.00	66.00
+PO1	11	76	9	14	53	11.84	18.42	69.74
+PO1	12	75	7	11	57	9.33	14.67	76.00
+PO1	13	58	5	5	48	8.62	8.62	82.76
+PO1	14	51	3	7	41	5.88	13.73	80.39
+PO1	15	39	0	5	34	0.00	12.82	87.18
+
+-- Output B: which players were the most loyal to a club (@min_years_loyalty or more consecutive seasons)?
+player_name	club_name	first_season	last_season	years_in_sequence
+Igor Akinfeev	PFK CSKA Moskva	2002/2026	2025/2026	24
+Hisashi Jogo	Avispa Fukuoka	2004/2026	2025/2026	22
+Ali Khaseif	Al-Jazira Club	2005/2026	2025/2026	21
+Benjí Villalobos	CD Águila	2005/2026	2025/2026	21
+Zhenpeng Wang	Kitchee	2005/2026	2025/2026	21
+Junling Yan	Shanghai SIPG	2006/2026	2025/2026	20
+Hasan Al-Haydos	Al-Sadd SC	2007/2026	2025/2026	19
+Petr Reinberk	1.FC Slovacko	2007/2026	2025/2026	19
+Anton Shunin	FK Dinamo Moskva	2006/2024	2023/2024	18
+Jin-hyeon Kim	Cerezo Osaka	2008/2026	2025/2026	18
+Rhyan Grant	Sydney FC	2008/2026	2025/2026	18
+Séamus Coleman	Everton FC	2008/2026	2025/2026	18
+Stanislav Dostal	FC Zlin	2008/2026	2025/2026	18
+Andy Considine	Aberdeen FC	2005/2022	2021/2022	17
+Bram van Polen	PEC Zwolle	2007/2024	2023/2024	17
+Carlos Arce	Club Atlético Barracas Central	2009/2026	2025/2026	17
+Fábio	Cruzeiro Esporte Clube	2004/2021	2020/2021	17
+Francesco Rossi	Atalanta BC	2009/2026	2025/2026	17
+Guilherme	Футбольный клуб "Локомотив" Москва	2007/2024	2023/2024	17
+Julio César Domínguez	CD Cruz Azul	2006/2023	2022/2023	17
+Lewis Stevenson	Hibernian FC	2007/2024	2023/2024	17
+Mahmut Tekdemir	Basaksehir FK	2007/2024	2023/2024	17
+Masato Morishige	Tokyo Football Club	2009/2026	2025/2026	17
+Necip Uysal	Beşiktaş Jimnastik Kulübü	2009/2026	2025/2026	17
+Rizvan Utsiev	RFK Akhmat Grozny	2009/2026	2025/2026	17
+Vlastimil Danicek	1.FC Slovacko	2009/2026	2025/2026	17
+Volodymyr Chesnakov	Vorskla Poltava	2007/2024	2023/2024	17
+Yu Kobayashi	Kawasaki Frontale	2009/2026	2025/2026	17
+Andrey Malykh	FC Orenburg	2009/2025	2024/2025	16
+Diego Chará	Portland Timbers	2010/2026	2025/2026	16
+James Forrest	Celtic FC	2010/2026	2025/2026	16
+Karim Boudiaf	Al-Duhail SC	2010/2026	2025/2026	16
+Koke	Atlético de Madrid	2010/2026	2025/2026	16
+Lewis Dunk	Brighton & Hove Albion	2010/2026	2025/2026	16
+Lionel Messi	FC Barcelona	2005/2021	2020/2021	16
+Óscar de Marcos	Athletic Bilbao	2009/2025	2024/2025	16
+Paul Hanlon	Hibernian FC	2008/2024	2023/2024	16
+Ryota Oshima	Kawasaki Frontale	2010/2026	2025/2026	16
+Salman Al-Faraj	Al-Hilal Saudi Football Club	2008/2024	2023/2024	16
+Sergio Ramos	Real Madrid	2005/2021	2020/2021	16
+Shu Kurata	Gamba Osaka	2010/2026	2025/2026	16
+Stefan Bell	1.FSV Mainz 05	2010/2026	2025/2026	16
+Thomas Müller	Bayern Munich	2009/2025	2024/2025	16
+Ahmed Fathi	Al-Arabi SC	2011/2026	2025/2026	15
+Alan Dzagoev	PFK CSKA Moskva	2007/2022	2021/2022	15
+César Rigamonti	Club Atlético Belgrano	2006/2021	2020/2021	15
+Denis Onyango	Mamelodi Sundowns FC	2011/2026	2025/2026	15
+Iker Muniain	Athletic Bilbao	2009/2024	2023/2024	15
+Ismail Mohamad	Al-Duhail SC	2011/2026	2025/2026	15
+Kassem El Zein	Nejmeh SC	2011/2026	2025/2026	15
+Khoren Bayramyan	FK Rostov	2011/2026	2025/2026	15
+Kirill Nababkin	PFK CSKA Moskva	2009/2024	2023/2024	15
+Kyohei Noborizato	Kawasaki Frontale	2008/2023	2022/2023	15
+Leândro	Radomiak Radom	2011/2026	2025/2026	15
+Manuel Neuer	Bayern Munich	2011/2026	2025/2026	15
+Marcelo Grohe	Grêmio Foot-Ball Porto Alegrense	2003/2018	2017/2018	15
+Mário Camora	CFR Cluj	2011/2026	2025/2026	15
+Mark van der Maarel	FC Utrecht	2009/2024	2023/2024	15
+Maximilian Arnold	VfL Wolfsburg	2011/2026	2025/2026	15
+Páll Klettskard	KÍ Klaksvík	2011/2026	2025/2026	15
+Patrick Herrmann	Borussia Mönchengladbach	2009/2024	2023/2024	15
+Per Frick	Idrottsföreningen Elfsborg	2011/2026	2025/2026	15
+Salem Al-Dawsari	Al-Hilal Saudi Football Club	2011/2026	2025/2026	15
+Tony Jantschke	Borussia Mönchengladbach	2009/2024	2023/2024	15
+Ulrik Saltnes	Fotballklubben Bodø/Glimt	2011/2026	2025/2026	15
+Yanick Brecher	FC Zürich	2011/2026	2025/2026	15
+Ziya Erdal	Sivasspor	2010/2025	2024/2025	15
+Andrew Farrell	New England Revolution	2012/2026	2025/2026	14
+Badavi Hüseynov	Qarabağ FK	2012/2026	2025/2026	14
+Christian Günter	SC Freiburg	2012/2026	2025/2026	14
+Dan Peter Ulvestad	Kristiansund Ballklubb	2012/2026	2025/2026	14
+Daniel Paulson	Örgryte IS	2012/2026	2025/2026	14
+Denys Garmash	Dynamo Kyiv	2009/2023	2022/2023	14
+Fernando Muslera	Galatasaray	2011/2025	2024/2025	14
+Hugo Mallo	Celta de Vigo	2009/2023	2022/2023	14
+James Aguirre	Atlético Bucaramanga	2009/2023	2022/2023	14
+Jeppe Grønning	Viborg FF	2012/2026	2025/2026	14
+Jonathan Osorio	Toronto FC	2012/2026	2025/2026	14
+Karim Benzema	Real Madrid	2009/2023	2022/2023	14
+Keigo Higashi	Tokyo Football Club	2012/2026	2025/2026	14
+Marko Malenica	NK Osijek	2012/2026	2025/2026	14
+Nazariy Fedorivskyi	Obolon Kyiv	2012/2026	2025/2026	14
+Nicolas Höfler	SC Freiburg	2012/2026	2025/2026	14
+Niklas Lomb	Bayer 04 Leverkusen	2012/2026	2025/2026	14
+Oleg Slobodyan	Obolon Kyiv	2012/2026	2025/2026	14
+Rory McKenzie	Kilmarnock FC	2012/2026	2025/2026	14
+Sergey Petrov	FK Krasnodar	2012/2026	2025/2026	14
+Takuya Kida	Yokohama Marinos	2012/2026	2025/2026	14
+Taras Stepanenko	FC Shakhtar Donetsk	2010/2024	2023/2024	14
+Thomas Castella	Football Club Lausanne-Sport	2012/2026	2025/2026	14
+Víctor Bernat	UE Santa Coloma	2007/2021	2020/2021	14
+Abdullah Madu	Al-Nassr Football Club	2011/2024	2023/2024	13
+Adam Smith	AFC Bournemouth	2013/2026	2025/2026	13
+Alex Rufer	Wellington Phoenix	2013/2026	2025/2026	13
+Alfonso Blanco	CF Pachuca	2007/2020	2019/2020	13
+Andre Blake	Philadelphia Union	2013/2026	2025/2026	13
+Anthony Lopes	Olympique Lyon	2011/2024	2023/2024	13
+Brandon Mechele	Club Brugge KV	2013/2026	2025/2026	13
+Brendan Chardonnet	Stade Brestois 29	2013/2026	2025/2026	13
+Callum McGregor	Celtic FC	2013/2026	2025/2026	13
+Cássio	Sport Club Corinthians Paulista	2011/2024	2023/2024	13
+Charalampos Kyriakou	Apollon Limassol	2012/2025	2024/2025	13
+Dalei Wang	Shandong Luneng Taishan	2013/2026	2025/2026	13
+Daniel Carvajal	Real Madrid	2013/2026	2025/2026	13
+Daniele Rugani	Juventus FC	2013/2026	2025/2026	13
+Danilo Cataldi	Società Sportiva Lazio S.p.A.	2013/2026	2025/2026	13
+Dénes Dibusz	Ferencvárosi TC	2013/2026	2025/2026	13
+Efecan Karaca	Alanyaspor	2013/2026	2025/2026	13
+Harry Kane	Tottenham Hotspur	2010/2023	2022/2023	13
+Håvar Jenssen	Fredrikstad Fotballklubb	2012/2025	2024/2025	13
+Hiroki Iikura	Yokohama Marinos	2006/2019	2018/2019	13
+Igor Perduta	Vorskla Poltava	2012/2025	2024/2025	13
+Jamie Vardy	Leicester City	2012/2025	2024/2025	13
+Jesper Gustavsson	Mjällby Almänna Idrottsförening	2013/2026	2025/2026	13
+Jin Cheng	ZJ Greentown	2013/2026	2025/2026	13
+Joel Ward	Crystal Palace	2012/2025	2024/2025	13
+José María Giménez	Atlético de Madrid	2013/2026	2025/2026	13
+Khalid Eisa	Al-Ain FC	2013/2026	2025/2026	13
+Koen Van Langendonck	KVC Westerlo	2013/2026	2025/2026	13
+Luka Modrić	Real Madrid	2012/2025	2024/2025	13
+Marek Havlík	1.FC Slovacko	2013/2026	2025/2026	13
+Marquinhos	Paris Saint-Germain	2013/2026	2025/2026	13
+Masaaki Higashiguchi	Gamba Osaka	2013/2026	2025/2026	13
+Mohamed Bassam	Tala'ea El Gaish	2009/2022	2021/2022	13
+Shusaku Nishikawa	Urawa Red Diamonds	2013/2026	2025/2026	13
+Solly March	Brighton & Hove Albion	2013/2026	2025/2026	13
+Stefan Frei	Seattle Sounders FC	2013/2026	2025/2026	13
+Yasser Al-Shahrani	Al-Hilal Saudi Football Club	2012/2025	2024/2025	13
+Abdelkarim Hassan	Al-Sadd SC	2010/2022	2021/2022	12
+Ahmed Al-Kaabi	Al-Nahda Club	2014/2026	2025/2026	12
+Ahmed Basil Fadhil	Al-Shorta SC	2014/2026	2025/2026	12
+Aleksandr Martynovich	FK Krasnodar	2010/2022	2021/2022	12
+Alessandro Deiola	Cagliari Calcio	2014/2026	2025/2026	12
+Attila Csürös	FK Csikszereda Miercurea Ciuc	2014/2026	2025/2026	12
+Ben Davies	Tottenham Hotspur	2014/2026	2025/2026	12
+Carlo Pinsoglio	Juventus FC	2014/2026	2025/2026	12
+Christopher Trimmel	1.FC Union Berlin	2014/2026	2025/2026	12
+Cristian Roldán	Seattle Sounders FC	2014/2026	2025/2026	12
+David de Gea	Manchester United	2011/2023	2022/2023	12
+David Nwolokor	HNK Rijeka	2014/2026	2025/2026	12
+David Silva	Millonarios FC	2014/2026	2025/2026	12
+Duy Manh Do	Hanoi T&amp;T FC	2014/2026	2025/2026	12
+Edrick Menjívar	CD Olimpia	2014/2026	2025/2026	12
+Hakan Arslan	Sivasspor	2012/2024	2023/2024	12
+Hung-Fai Yapp	Eastern	2014/2026	2025/2026	12
+Hussein Zein	Al-Ahed	2012/2024	2023/2024	12
+Jack Stephens	Southampton FC	2013/2025	2024/2025	12
+Jákup Andreasen	KÍ Klaksvík	2014/2026	2025/2026	12
+Jamaal Lascelles	Newcastle United	2014/2026	2025/2026	12
+Jan Oblak	Atlético de Madrid	2014/2026	2025/2026	12
+João Paulo	Santos Futebol Clube	2014/2026	2025/2026	12
+Joe Hart	Manchester City	2006/2018	2017/2018	12
+Jordan Henderson	Liverpool FC	2011/2023	2022/2023	12
+José Gayà	Valencia CF	2014/2026	2025/2026	12
+Krya Saret	Svay Rieng	2014/2026	2025/2026	12
+Louis Bostyn	Zulte Waregem	2014/2026	2025/2026	12
+Lukas Klostermann	RB Leipzig	2014/2026	2025/2026	12
+Luke Shaw	Manchester United	2014/2026	2025/2026	12
+Manu Trigueros	Villarreal CF	2012/2024	2023/2024	12
+Marc-André ter Stegen	FC Barcelona	2014/2026	2025/2026	12
+Marco Reus	Borussia Dortmund	2012/2024	2023/2024	12
+Mergim Krasniqi	Norrby IF	2008/2020	2019/2020	12
+Mohamed Hany	Al Ahly FC	2014/2026	2025/2026	12
+Nacho Fernández	Real Madrid	2012/2024	2023/2024	12
+Nahuel Guzmán	Tigres UANL	2014/2026	2025/2026	12
+Nemanja Jorgic	FK TSC Backa Topola	2014/2026	2025/2026	12
+Nicușor Bancu	Universitatea Craiova	2014/2026	2025/2026	12
+Oleksandr Sklyar	Vorskla Poltava	2012/2024	2023/2024	12
+Oliver Baumann	TSG 1899 Hoffenheim	2014/2026	2025/2026	12
+Paul Dummett	Newcastle United	2012/2024	2023/2024	12
+Pei-Lun Wei	Tatung	2014/2026	2025/2026	12
+Peter Pekarík	Hertha BSC	2012/2024	2023/2024	12
+Petros Mantalos	Athlitiki Enosi Konstantinoupoleos	2014/2026	2025/2026	12
+Pyae Phyo Aung	Southern Myanmar FC	2008/2020	2019/2020	12
+Rafael	Cruzeiro Esporte Clube	2007/2019	2018/2019	12
+Ronwen Williams	SuperSport Utd.	2010/2022	2021/2022	12
+Rui Patrício	Sporting CP	2006/2018	2017/2018	12
+Sabri Ben Hessen	CS Sfaxien	2013/2025	2024/2025	12
+Santos	Clube Atlético Paranaense	2009/2021	2020/2021	12
+Santos Ortiz	CD Águila	2014/2026	2025/2026	12
+Saúl Ñíguez	Atlético de Madrid	2013/2025	2024/2025	12
+Scott Pittman	Livingston FC	2014/2026	2025/2026	12
+Sho Sasaki	Sanfrecce Hiroshima	2014/2026	2025/2026	12
+Taras Romanczuk	Jagiellonia Bialystok	2014/2026	2025/2026	12
+Timo Horn	1.FC Köln	2011/2023	2022/2023	12
+Timothy Chandler	Eintracht Frankfurt	2014/2026	2025/2026	12
+Uğurcan Çakır	Trabzonspor	2014/2026	2025/2026	12
+Vitaliy Buyalskyi	Dynamo Kyiv	2014/2026	2025/2026	12
+Volkan Babacan	Basaksehir FK	2014/2026	2025/2026	12
+Yussuf Poulsen	RB Leipzig	2013/2025	2024/2025	12
+Aaron Cresswell	West Ham United	2014/2025	2024/2025	11
+Abdülkerim Bardakcı	Konyaspor	2011/2022	2021/2022	11
+Abdullah Otayf	Al-Hilal Saudi Football Club	2012/2023	2022/2023	11
+Alain Baroja	Caracas FC	2008/2019	2018/2019	11
+Alphonse Areola	Paris Saint-Germain	2011/2022	2021/2022	11
+Álvaro Madrid	CD Everton	2014/2025	2024/2025	11
+Andreas Leitner	FC Admira Wacker Mödling	2011/2022	2021/2022	11
+Andrej Kramaric	TSG 1899 Hoffenheim	2015/2026	2025/2026	11
+André-Pierre Gignac	Tigres UANL	2015/2026	2025/2026	11
+Andrey Semenov	RFK Akhmat Grozny	2013/2024	2023/2024	11
+Ángel Correa	Atlético de Madrid	2014/2025	2024/2025	11
+Anthony Losilla	VfL Bochum	2014/2025	2024/2025	11
+Anthony Stewart	Wycombe Wanderers	2011/2022	2021/2022	11
+Aritz Elustondo	Real Sociedad	2015/2026	2025/2026	11
+Artem Putivtsev	Termalica Bruk-Bet Nieciecza Klub Sportowy	2015/2026	2025/2026	11
+Artur Jędrzejczyk	Legia Warszawa	2015/2026	2025/2026	11
+Ben Mee	Burnley FC	2011/2022	2021/2022	11
+Berat Djimsiti	Atalanta BC	2015/2026	2025/2026	11
+Bryan Heynen	KRC Genk	2015/2026	2025/2026	11
+César Azpilicueta	Chelsea FC	2012/2023	2022/2023	11
+Constantin Toma	AFC Unirea 04 Slobozia	2015/2026	2025/2026	11
+David Alaba	Bayern Munich	2010/2021	2020/2021	11
+Diego Novoa	Internacional de Bogotá	2009/2020	2019/2020	11
+Domenico Berardi	US Sassuolo	2015/2026	2025/2026	11
+Erkan Değişmez	Bodrum FK	2014/2025	2024/2025	11
+Fagner	Sport Club Corinthians Paulista	2013/2024	2023/2024	11
+Faisal Al-Badri	Al-Hilal	2015/2026	2025/2026	11
+Fredy Pérez	Comunicaciones FC	2015/2026	2025/2026	11
+Gianluca Pegolo	US Sassuolo	2013/2024	2023/2024	11
+Gonzalo Maffini	Asociación Atlética Estudiantes	2015/2026	2025/2026	11
+Halil Akbunar	Göztepe	2011/2022	2021/2022	11
+Hans Vanaken	Club Brugge KV	2015/2026	2025/2026	11
+Hugo Lloris	Tottenham Hotspur	2012/2023	2022/2023	11
+Iago Aspas	Celta de Vigo	2015/2026	2025/2026	11
+Iñaki Williams	Athletic Bilbao	2015/2026	2025/2026	11
+James Tavernier	Rangers FC	2015/2026	2025/2026	11
+James Ward-Prowse	Southampton FC	2012/2023	2022/2023	11
+Jan Boril	SK Slavia Prague	2015/2026	2025/2026	11
+Jasmin Buric	Lech Poznan	2008/2019	2018/2019	11
+Javier Aquino	Tigres UANL	2015/2026	2025/2026	11
+Jeffrey Gouweleeuw	FC Augsburg	2015/2026	2025/2026	11
+Joe Gomez	Liverpool FC	2015/2026	2025/2026	11
+Jordan Morris	Seattle Sounders FC	2015/2026	2025/2026	11
+José Luis Chunga	Junior FC	2009/2020	2019/2020	11
+Joshua Kimmich	Bayern Munich	2015/2026	2025/2026	11
+Julián Quiñónes	Deportes Tolima	2014/2025	2024/2025	11
+Jürgen Heil	TSV Hartberg	2015/2026	2025/2026	11
+Justen Glad	Real Salt Lake	2015/2026	2025/2026	11
+Kasper Schmeichel	Leicester City	2011/2022	2021/2022	11
+Kevin Müller	1. Fußballclub Heidenheim 1846	2015/2026	2025/2026	11
+Kevin Strootman	Sparta Youth	1996/2007	2006/2007	11
+Khozhiakbar Alizhonov	Pakhtakor Tashkent	2015/2026	2025/2026	11
+Kyriakos Kivrakidis	APS Atromitos Athinon	2013/2024	2023/2024	11
+Laurențiu Popescu	Universitatea Craiova	2015/2026	2025/2026	11
+Lukas Kübler	SC Freiburg	2015/2026	2025/2026	11
+Malkolm Nilsson Säfqvist	Halmstads BK	2012/2023	2022/2023	11
+Marcus Rashford	Manchester United	2015/2026	2025/2026	11
+Matheus	SC Braga	2014/2025	2024/2025	11
+Michael Brouwer	Heracles Almelo	2013/2024	2023/2024	11
+Mikel Oyarzabal	Real Sociedad	2015/2026	2025/2026	11
+Mikhail Kerzhakov	AO FK Zenit Sankt-Peterburg	2015/2026	2025/2026	11
+Nico Elvedi	Borussia Mönchengladbach	2015/2026	2025/2026	11
+Nicolás Colazo	Club Atlético Boca Juniors	2008/2019	2018/2019	11
+Nikita Contini	SSC Napoli	2015/2026	2025/2026	11
+Ole Kristian Lauvli	Raufoss IL	2013/2024	2023/2024	11
+Patric	Società Sportiva Lazio S.p.A.	2015/2026	2025/2026	11
+Pedro Miguel	Al-Sadd SC	2015/2026	2025/2026	11
+Pelly Ruddock Mpanzu	Luton Town	2013/2024	2023/2024	11
+Péter Gulácsi	RB Leipzig	2015/2026	2025/2026	11
+Pierrick Capelle	Angers SCO	2015/2026	2025/2026	11
+Robin Rasch	KFUM-Kameratene Oslo	2015/2026	2025/2026	11
+Ryo Takeuchi	S-Pulse	2012/2023	2022/2023	11
+Sami Al-Najei	Al-Nassr Football Club	2015/2026	2025/2026	11
+Sébastien Thill	FC Progrès Niederkorn	2011/2022	2021/2022	11
+Sergi Roberto	FC Barcelona	2013/2024	2023/2024	11
+Stiven Vega	Millonarios FC	2015/2026	2025/2026	11
+Suhana Sos	Nagaworld FC	2015/2026	2025/2026	11
+Thanh Chung Nguyen	Hanoi T&amp;T FC	2015/2026	2025/2026	11
+Tiago Sá	SC Braga	2015/2026	2025/2026	11
+Tien Dung Bui	Viettel FC	2015/2026	2025/2026	11
+Tobias Sippel	Borussia Mönchengladbach	2015/2026	2025/2026	11
+Tom Cairney	Fulham FC	2015/2026	2025/2026	11
+Will Nightingale	AFC Wimbledon	2014/2025	2024/2025	11
+Willi Orbán	RB Leipzig	2015/2026	2025/2026	11
+Yohei Takeda	Nagoya Grampus Eight	2015/2026	2025/2026	11
+Zander Clark	St. Johnstone FC	2011/2022	2021/2022	11
+Abdoulaye Bamba	Angers SCO	2016/2026	2025/2026	10
+Abdulelah Al-Khaibri	Al-Riyadh Saudi Club	2016/2026	2025/2026	10
+Adel Al-Hosani	Sharjah FC	2016/2026	2025/2026	10
+Adrian Păun	CFR Cluj	2013/2023	2022/2023	10
+Adrien Silva	Sporting CP	2007/2017	2016/2017	10
+Afiq Fazail	Johor DT	2016/2026	2025/2026	10
+Akihiro Ienaga	Kawasaki Frontale	2016/2026	2025/2026	10
+Alejandro Bedoya	Philadelphia Union	2016/2026	2025/2026	10
+Aleksandr Mishchenko	FK Dordoi Bishkek	2016/2026	2025/2026	10
+Alessandro Florenzi	Associazione Sportiva Roma	2012/2022	2021/2022	10
+Alexandre Letellier	Angers SCO	2010/2020	2019/2020	10
+Alexandru Mateiu	Universitatea Craiova	2014/2024	2023/2024	10
+Alfonso Pedraza	Villarreal CF	2016/2026	2025/2026	10
+Ali Kadhim	Naft Al-Wassat SC	2013/2023	2022/2023	10
+Almoez Ali	Al-Duhail SC	2016/2026	2025/2026	10
+Andrea Consigli	US Sassuolo	2014/2024	2023/2024	10
+Andrei Sava	FC Metaloglobus Bucharest	2016/2026	2025/2026	10
+Antonijs Cernomordijs	Riga FC	2016/2026	2025/2026	10
+Antonio Raíllo	RCD Mallorca	2016/2026	2025/2026	10
+Arturo González	CF Monterrey	2016/2026	2025/2026	10
+Ashley Barnes	Burnley FC	2013/2023	2022/2023	10
+Assim Madibo	Al-Duhail SC	2016/2026	2025/2026	10
+Bakery Jatta	Hamburger SV	2016/2026	2025/2026	10
+Boris Céspedes	Servette FC	2013/2023	2022/2023	10
+Brice Maubleu	Grenoble Foot 38	2014/2024	2023/2024	10
+Burak Öğür	Ümraniyespor	2012/2022	2021/2022	10
+Cammy Kerr	Dundee FC	2014/2024	2023/2024	10
+Chris Basham	Sheffield United	2014/2024	2023/2024	10
+Chris Kane	St. Johnstone FC	2014/2024	2023/2024	10
+Chris Smalling	Manchester United	2010/2020	2019/2020	10
+Ciprian Deac	CFR Cluj	2016/2026	2025/2026	10
+Constantin Toma	AFC Unirea 04 Slobozia	2004/2014	2013/2014	10
+Cristopher Meléndez	FC Motagua	2016/2026	2025/2026	10
+Daiya Maekawa	Rakuten Vissel Kobe	2016/2026	2025/2026	10
+Dániel Sallói	Sporting Kansas City	2015/2025	2024/2025	10
+Danijel Zagorac	GNK Dinamo Zagreb	2016/2026	2025/2026	10
+Danilo D'Ambrosio	Inter Milan	2013/2023	2022/2023	10
+Dante	OGC Nice	2016/2026	2025/2026	10
+David García	CA Osasuna	2014/2024	2023/2024	10
+David von Ballmoos	BSC Young Boys	2016/2026	2025/2026	10
+Davide Calabria	AC Milan	2015/2025	2024/2025	10
+Denis Thomalla	1. Fußballclub Heidenheim 1846	2015/2025	2024/2025	10
+Dennis Geiger	TSG 1899 Hoffenheim	2016/2026	2025/2026	10
+Diego Fagúndez	New England Revolution	2010/2020	2019/2020	10
+Dino Peric	GNK Dinamo Zagreb	2016/2026	2025/2026	10
+Dmitriy Barinov	Футбольный клуб "Локомотив" Москва	2016/2026	2025/2026	10
+Dudu	Sociedade Esportiva Palmeiras	2014/2024	2023/2024	10
+Edin Visca	Basaksehir FK	2011/2021	2020/2021	10
+Endre Botka	Ferencvárosi TC	2016/2026	2025/2026	10
+Eric Dier	Tottenham Hotspur	2014/2024	2023/2024	10
+Evan Bush	Club de Foot Montréal	2010/2020	2019/2020	10
+Fabian Holland	SV Darmstadt 98	2014/2024	2023/2024	10
+Filip Spatenka	Dukla Yth.	2010/2020	2019/2020	10
+Flavius Iacob	Corvinul Hunedoara	2016/2026	2025/2026	10
+Frank Fabra	Club Atlético Boca Juniors	2015/2025	2024/2025	10
+Genta Miura	Gamba Osaka	2016/2026	2025/2026	10
+George Caramalău	FC Metaloglobus Bucharest	2016/2026	2025/2026	10
+Giorgi Loria	Dinamo Tbilisi	2004/2014	2013/2014	10
+Golib Gaybullaev	Nasaf Qarshi	2016/2026	2025/2026	10
+Guido Herrera	Club Atlético Talleres	2015/2025	2024/2025	10
+Harry Arter	AFC Bournemouth	2010/2020	2019/2020	10
+Haruki Saruta	Hitachi Kashiwa Reysol	2016/2026	2025/2026	10
+Henry Bonello	Sliema Wanderers	2006/2016	2015/2016	10
+Hernán Galíndez	Uni. Católica	2011/2021	2020/2021	10
+Heung-min Son	Tottenham Hotspur	2015/2025	2024/2025	10
+Iñigo Lekue	Athletic Bilbao	2016/2026	2025/2026	10
+Isaac Portillo	Alianza FC	2013/2023	2022/2023	10
+Ismaily	FC Shakhtar Donetsk	2012/2022	2021/2022	10
+Issiaga Sylla	FC Toulouse	2012/2022	2021/2022	10
+Jan Mikula	FC Slovan Liberec	2016/2026	2025/2026	10
+Jaume Doménech	Valencia CF	2015/2025	2024/2025	10
+Jérémy Frick	Servette FC	2016/2026	2025/2026	10
+Jérôme Boateng	Bayern Munich	2011/2021	2020/2021	10
+Jesper Hansen	FC Nordsjaelland	2003/2013	2012/2013	10
+Jessic Ngankam	Hertha BSC Yth.	2006/2016	2015/2016	10
+Jesús Vallejo	Real Madrid	2015/2025	2024/2025	10
+John Stones	Manchester City	2016/2026	2025/2026	10
+Jonathan Tah	Bayer 04 Leverkusen	2015/2025	2024/2025	10
+José Carlos Martinez	CSD Municipal	2016/2026	2025/2026	10
+Justin Bijlow	Feyenoord Rotterdam	2016/2026	2025/2026	10
+Kemar Foster	Portmore United	2011/2021	2020/2021	10
+Ken Matsubara	Yokohama Marinos	2016/2026	2025/2026	10
+Kevin Akpoguma	TSG 1899 Hoffenheim	2016/2026	2025/2026	10
+Kevin De Bruyne	Manchester City	2015/2025	2024/2025	10
+Koen Casteels	VfL Wolfsburg	2014/2024	2023/2024	10
+Konstantinos Fortounis	Olympiakos Syndesmos Filathlon Peiraios	2014/2024	2023/2024	10
+Lewis Cook	AFC Bournemouth	2016/2026	2025/2026	10
+Lucas Vázquez	Real Madrid	2015/2025	2024/2025	10
+Luis Cárdenas	CF Monterrey	2016/2026	2025/2026	10
+Luis García	Deportivo Toluca	2016/2026	2025/2026	10
+Luis Quiñónes	Tigres UANL	2015/2025	2024/2025	10
+Lukas Graf	Grazer AK 1902	2016/2026	2025/2026	10
+Lukas Hulka	Boleslav Yth.	2001/2011	2010/2011	10
+Lukas Willen	Club Brugge Yth	2009/2019	2018/2019	10
+Mahmoud El Wensh	Zamalek SC	2016/2026	2025/2026	10
+Makoto Hasebe	Eintracht Frankfurt	2014/2024	2023/2024	10
+Marcel Hartel	1.FC Köln Yth.	2002/2012	2011/2012	10
+Mário Fernandes	PFK CSKA Moskva	2012/2022	2021/2022	10
+Marko Docic	FK Cukaricki	2016/2026	2025/2026	10
+Mason Holgate	Everton FC	2015/2025	2024/2025	10
+Mats Knoester	Feyenoord Youth	2005/2015	2014/2015	10
+Matt Doherty	Wolverhampton Wanderers	2010/2020	2019/2020	10
+Matthieu Udol	FC Metz	2015/2025	2024/2025	10
+Max O'Leary	Bristol City	2015/2025	2024/2025	10
+Michail Antonio	West Ham United	2015/2025	2024/2025	10
+Mikel Vesga	Athletic Bilbao	2016/2026	2025/2026	10
+Mikkel Kallesøe	Randers FC	2014/2024	2023/2024	10
+Milos Veljkovic	SV Werder Bremen	2015/2025	2024/2025	10
+Milton Casco	Club Atlético River Plate	2015/2025	2024/2025	10
+Mohamed El Shenawy	Al Ahly FC	2016/2026	2025/2026	10
+Mohamed Omar Al-Attas	Al-Jazira Club	2016/2026	2025/2026	10
+Mohammed Al-Burayk	Al-Hilal Saudi Football Club	2014/2024	2023/2024	10
+Mohammed Waad	Al-Sadd SC	2016/2026	2025/2026	10
+Nassar Nassar	Al-Ansar FC	2016/2026	2025/2026	10
+Nattapong Sayriya	Swat Cat	2015/2025	2024/2025	10
+Nazmi Faiz	Johor DT	2016/2026	2025/2026	10
+Nazrul Nazari	Hougang Utd.	2015/2025	2024/2025	10
+Norman Theuerkauf	1. Fußballclub Heidenheim 1846	2015/2025	2024/2025	10
+Oğuzhan Özyakup	Beşiktaş Jimnastik Kulübü	2012/2022	2021/2022	10
+Ondrej Zmrzly	SK Sigma Youth	2005/2015	2014/2015	10
+Pansa Hemviboon	PEA FC	2016/2026	2025/2026	10
+Paul Gartler	Rapid Vienna	2016/2026	2025/2026	10
+Paulo Victor	Clube de Regatas do Flamengo	2007/2017	2016/2017	10
+Pavel Kaderabek	TSG 1899 Hoffenheim	2015/2025	2024/2025	10
+Pepe	Real Madrid	2007/2017	2016/2017	10
+Presnel Kimpembe	Paris Saint-Germain	2015/2025	2024/2025	10
+Rafael Tolói	Atalanta BC	2015/2025	2024/2025	10
+Ramy Rabia	Al Ahly FC	2015/2025	2024/2025	10
+Raphael Framberger	FC Augsburg	2014/2024	2023/2024	10
+Raphaël Varane	Real Madrid	2011/2021	2020/2021	10
+Rayane Bounida	Anderlecht Yth.	2012/2022	2021/2022	10
+Régis Gurtner	Amiens SC	2015/2025	2024/2025	10
+Ricardo Horta	SC Braga	2016/2026	2025/2026	10
+Rico Henry	Brentford FC	2016/2026	2025/2026	10
+Robin Zentner	1.FSV Mainz 05	2016/2026	2025/2026	10
+Roger Martí	Levante UD	2012/2022	2021/2022	10
+Roman Zobnin	FK Spartak Moskva	2016/2026	2025/2026	10
+Ryan Kitto	Adelaide United	2016/2026	2025/2026	10
+Ryan Yates	Nottingham Forest	2016/2026	2025/2026	10
+Ryoya Ogawa	Tokyo Football Club	2014/2024	2023/2024	10
+San Sat Naing	Yangon United	2016/2026	2025/2026	10
+Sergiy Sydorchuk	Dynamo Kyiv	2013/2023	2022/2023	10
+Seung-gyu Kim	Ulsan HD U18	2005/2015	2014/2015	10
+Simone Bastoni	Spezia Calcio	2014/2024	2023/2024	10
+Stefan Hierländer	Sportklub Puntigamer Sturm Graz	2016/2026	2025/2026	10
+Stefan Medina	CF Monterrey	2016/2026	2025/2026	10
+Supachai Chaided	PEA FC	2016/2026	2025/2026	10
+Tae-heui Lee	Incheon United Football Club	2013/2023	2022/2023	10
+Takashi Sawada	V-Varen Nagasaki	2016/2026	2025/2026	10
+Takuji Yonemoto	Tokyo Football Club	2008/2018	2017/2018	10
+Thapelo Morena	Mamelodi Sundowns FC	2016/2026	2025/2026	10
+Thomas Strakosha	Società Sportiva Lazio S.p.A.	2012/2022	2021/2022	10
+Tien Linh Nguyen	Binh Duong FC	2015/2025	2024/2025	10
+Tim Krul	Newcastle United	2008/2018	2017/2018	10
+Tomas Ladra	FK Mlada Boleslav	2015/2025	2024/2025	10
+Toni Kroos	Real Madrid	2014/2024	2023/2024	10
+Ui-young Song	Lion City Sailors	2012/2022	2021/2022	10
+Unai García	CA Osasuna	2015/2025	2024/2025	10
+Víctor Cabezas	Asociación Deportivo Pasto	2015/2025	2024/2025	10
+Victor Lekhal	Le Havre AC	2013/2023	2022/2023	10
+Vincent Le Goff	FC Lorient	2014/2024	2023/2024	10
+Walter Kannemann	Grêmio Foot-Ball Porto Alegrense	2016/2026	2025/2026	10
+Witi	CD Nacional	2014/2024	2023/2024	10
+Wladimiro Falcone	UC Sampdoria	2013/2023	2022/2023	10
+Wolke Janssens	Sint-Truidense VV	2016/2026	2025/2026	10
+Yannick Gerhardt	VfL Wolfsburg	2016/2026	2025/2026	10
+Yeray Álvarez	Athletic Bilbao	2016/2026	2025/2026	10
+Yevgen Zaporozhets	Ingulets Petrove	2013/2023	2022/2023	10
+Yoav Gerafi	FC Ashdod	2013/2023	2022/2023	10
+Zhen Wei	Shanghai SIPG	2016/2026	2025/2026	10
+Zvonimir Katalinic	D. Zagreb Yth.	2011/2021	2020/2021	10
+
+-- Output C: what is the percentage of foreign players in each top 15 league, by season?
+season	competition_id	league_country	total_foreign_players	total_players	foreign_players (%)
+2024/2025	ARG1	Argentina	156	1036	15.06
+2025/2026	ARG1	Argentina	169	990	17.07
+2012/2013	BE1	Belgium	96	188	51.06
+2013/2014	BE1	Belgium	106	207	51.21
+2014/2015	BE1	Belgium	136	270	50.37
+2015/2016	BE1	Belgium	150	249	60.24
+2016/2017	BE1	Belgium	160	291	54.98
+2017/2018	BE1	Belgium	170	291	58.42
+2018/2019	BE1	Belgium	233	350	66.57
+2019/2020	BE1	Belgium	218	348	62.64
+2020/2021	BE1	Belgium	282	454	62.11
+2021/2022	BE1	Belgium	305	490	62.24
+2022/2023	BE1	Belgium	330	545	60.55
+2023/2024	BE1	Belgium	329	538	61.15
+2024/2025	BE1	Belgium	315	543	58.01
+2025/2026	BE1	Belgium	353	587	60.14
+2024/2025	BRA1	Brazil	165	1027	16.07
+2025/2026	BRA1	Brazil	185	751	24.63
+2025/2026	COL1	Colombia	71	566	12.54
+2012/2013	ES1	Spain	71	200	35.50
+2013/2014	ES1	Spain	92	237	38.82
+2014/2015	ES1	Spain	96	251	38.25
+2015/2016	ES1	Spain	134	291	46.05
+2016/2017	ES1	Spain	146	315	46.35
+2017/2018	ES1	Spain	184	395	46.58
+2018/2019	ES1	Spain	202	425	47.53
+2019/2020	ES1	Spain	203	458	44.32
+2020/2021	ES1	Spain	206	526	39.16
+2021/2022	ES1	Spain	245	602	40.70
+2022/2023	ES1	Spain	262	635	41.26
+2023/2024	ES1	Spain	267	647	41.27
+2024/2025	ES1	Spain	259	671	38.60
+2025/2026	ES1	Spain	301	798	37.72
+2012/2013	FR1	France	100	202	49.50
+2013/2014	FR1	France	146	275	53.09
+2014/2015	FR1	France	143	259	55.21
+2015/2016	FR1	France	161	303	53.14
+2016/2017	FR1	France	184	364	50.55
+2017/2018	FR1	France	223	393	56.74
+2018/2019	FR1	France	255	448	56.92
+2019/2020	FR1	France	275	465	59.14
+2020/2021	FR1	France	311	522	59.58
+2021/2022	FR1	France	355	600	59.17
+2022/2023	FR1	France	388	650	59.69
+2023/2024	FR1	France	375	617	60.78
+2024/2025	FR1	France	404	633	63.82
+2025/2026	FR1	France	436	732	59.56
+2012/2013	GB1	England	140	234	59.83
+2013/2014	GB1	England	189	290	65.17
+2014/2015	GB1	England	215	317	67.82
+2015/2016	GB1	England	247	378	65.34
+2016/2017	GB1	England	279	420	66.43
+2017/2018	GB1	England	308	456	67.54
+2018/2019	GB1	England	354	505	70.10
+2019/2020	GB1	England	392	583	67.24
+2020/2021	GB1	England	390	608	64.14
+2021/2022	GB1	England	438	663	66.06
+2022/2023	GB1	England	491	729	67.35
+2023/2024	GB1	England	491	762	64.44
+2024/2025	GB1	England	471	726	64.88
+2025/2026	GB1	England	524	831	63.06
+2012/2013	IT1	Italy	126	282	44.68
+2013/2014	IT1	Italy	200	459	43.57
+2014/2015	IT1	Italy	185	374	49.47
+2015/2016	IT1	Italy	204	395	51.65
+2016/2017	IT1	Italy	242	455	53.19
+2017/2018	IT1	Italy	271	483	56.11
+2018/2019	IT1	Italy	337	755	44.64
+2019/2020	IT1	Italy	332	579	57.34
+2020/2021	IT1	Italy	378	658	57.45
+2021/2022	IT1	Italy	415	723	57.40
+2022/2023	IT1	Italy	442	743	59.49
+2023/2024	IT1	Italy	463	768	60.29
+2024/2025	IT1	Italy	514	814	63.14
+2025/2026	IT1	Italy	551	865	63.70
+2012/2013	L1	Germany	112	214	52.34
+2013/2014	L1	Germany	110	244	45.08
+2014/2015	L1	Germany	135	252	53.57
+2015/2016	L1	Germany	147	281	52.31
+2016/2017	L1	Germany	193	360	53.61
+2017/2018	L1	Germany	211	360	58.61
+2018/2019	L1	Germany	230	410	56.10
+2019/2020	L1	Germany	269	471	57.11
+2020/2021	L1	Germany	303	497	60.97
+2021/2022	L1	Germany	311	550	56.55
+2022/2023	L1	Germany	332	601	55.24
+2023/2024	L1	Germany	312	596	52.35
+2024/2025	L1	Germany	332	619	53.63
+2025/2026	L1	Germany	395	670	58.96
+2024/2025	MEX1	Mexico	174	519	33.53
+2025/2026	MEX1	Mexico	217	694	31.27
+2024/2025	MLS1	United States	538	909	59.19
+2025/2026	MLS1	United States	536	901	59.49
+2012/2013	NL1	Netherlands	90	210	42.86
+2013/2014	NL1	Netherlands	95	224	42.41
+2014/2015	NL1	Netherlands	104	237	43.88
+2015/2016	NL1	Netherlands	107	257	41.63
+2016/2017	NL1	Netherlands	147	314	46.82
+2017/2018	NL1	Netherlands	158	335	47.16
+2018/2019	NL1	Netherlands	168	373	45.04
+2019/2020	NL1	Netherlands	214	396	54.04
+2020/2021	NL1	Netherlands	239	443	53.95
+2021/2022	NL1	Netherlands	249	473	52.64
+2022/2023	NL1	Netherlands	262	522	50.19
+2023/2024	NL1	Netherlands	281	565	49.73
+2024/2025	NL1	Netherlands	294	574	51.22
+2025/2026	NL1	Netherlands	298	672	44.35
+2024/2025	NO1	Norway	121	389	31.11
+2025/2026	NO1	Norway	155	443	34.99
+2012/2013	PO1	Portugal	122	205	59.51
+2013/2014	PO1	Portugal	139	229	60.70
+2014/2015	PO1	Portugal	152	265	57.36
+2015/2016	PO1	Portugal	171	303	56.44
+2016/2017	PO1	Portugal	195	336	58.04
+2017/2018	PO1	Portugal	185	325	56.92
+2018/2019	PO1	Portugal	265	415	63.86
+2019/2020	PO1	Portugal	270	434	62.21
+2020/2021	PO1	Portugal	299	467	64.03
+2021/2022	PO1	Portugal	311	513	60.62
+2022/2023	PO1	Portugal	354	563	62.88
+2023/2024	PO1	Portugal	372	591	62.94
+2024/2025	PO1	Portugal	389	620	62.74
+2025/2026	PO1	Portugal	456	686	66.47
+
+-- Output D: relative age effect (observed vs expected players by month of birth and country)
+country_of_citizenship	month_name	n_players_expected	n_players	relative_representation (%)
+Argentina	January	148.53	248	166.97
+Argentina	February	135.35	179	132.25
+Argentina	March	148.53	216	145.43
+Argentina	April	143.74	174	121.05
+Argentina	May	148.53	141	94.93
+Argentina	June	143.74	157	109.22
+Argentina	July	148.53	137	92.24
+Argentina	August	148.53	116	78.10
+Argentina	September	143.74	114	79.31
+Argentina	October	148.53	105	70.69
+Argentina	November	143.74	92	64.00
+Argentina	December	148.53	71	47.80
+Belgium	January	104.73	154	147.04
+Belgium	February	95.44	134	140.40
+Belgium	March	104.73	128	122.22
+Belgium	April	101.36	130	128.26
+Belgium	May	104.73	119	113.63
+Belgium	June	101.36	89	87.81
+Belgium	July	104.73	100	95.48
+Belgium	August	104.73	88	84.03
+Belgium	September	101.36	69	68.07
+Belgium	October	104.73	80	76.39
+Belgium	November	101.36	76	74.98
+Belgium	December	104.73	67	63.97
+Brazil	January	232.21	316	136.08
+Brazil	February	211.61	299	141.30
+Brazil	March	232.21	334	143.84
+Brazil	April	224.72	289	128.60
+Brazil	May	232.21	270	116.27
+Brazil	June	224.72	224	99.68
+Brazil	July	232.21	204	87.85
+Brazil	August	232.21	208	89.57
+Brazil	September	224.72	181	80.54
+Brazil	October	232.21	151	65.03
+Brazil	November	224.72	127	56.51
+Brazil	December	232.21	133	57.28
+Colombia	January	82.75	122	147.43
+Colombia	February	75.41	104	137.91
+Colombia	March	82.75	99	119.64
+Colombia	April	80.08	78	97.40
+Colombia	May	82.75	108	130.51
+Colombia	June	80.08	77	96.15
+Colombia	July	82.75	73	88.22
+Colombia	August	82.75	57	68.88
+Colombia	September	80.08	81	101.15
+Colombia	October	82.75	66	79.76
+Colombia	November	80.08	57	71.18
+Colombia	December	82.75	53	64.05
+Croatia	January	54.57	84	153.93
+Croatia	February	49.73	55	110.60
+Croatia	March	54.57	63	115.45
+Croatia	April	52.81	64	121.19
+Croatia	May	54.57	58	106.29
+Croatia	June	52.81	59	111.72
+Croatia	July	54.57	52	95.29
+Croatia	August	54.57	54	98.96
+Croatia	September	52.81	47	89.00
+Croatia	October	54.57	39	71.47
+Croatia	November	52.81	36	68.17
+Croatia	December	54.57	32	58.64
+Czech Republic	January	53.98	70	129.68
+Czech Republic	February	49.19	56	113.84
+Czech Republic	March	53.98	67	124.12
+Czech Republic	April	52.24	62	118.68
+Czech Republic	May	53.98	65	120.41
+Czech Republic	June	52.24	61	116.77
+Czech Republic	July	53.98	61	113.00
+Czech Republic	August	53.98	55	101.89
+Czech Republic	September	52.24	48	91.88
+Czech Republic	October	53.98	36	66.69
+Czech Republic	November	52.24	22	42.11
+Czech Republic	December	53.98	33	61.13
+Denmark	January	103.63	169	163.08
+Denmark	February	94.44	125	132.36
+Denmark	March	103.63	124	119.66
+Denmark	April	100.29	115	114.67
+Denmark	May	103.63	120	115.80
+Denmark	June	100.29	100	99.71
+Denmark	July	103.63	98	94.57
+Denmark	August	103.63	93	89.74
+Denmark	September	100.29	74	73.79
+Denmark	October	103.63	78	75.27
+Denmark	November	100.29	70	69.80
+Denmark	December	103.63	55	53.07
+England	January	149.55	195	130.39
+England	February	136.28	156	114.47
+England	March	149.55	159	106.32
+England	April	144.72	106	73.24
+England	May	149.55	113	75.56
+England	June	144.72	75	51.82
+England	July	149.55	110	73.55
+England	August	149.55	95	63.52
+England	September	144.72	223	154.09
+England	October	149.55	190	127.05
+England	November	144.72	168	116.09
+England	December	149.55	172	115.01
+France	January	167.46	209	124.81
+France	February	152.60	215	140.89
+France	March	167.46	215	128.39
+France	April	162.05	183	112.93
+France	May	167.46	196	117.04
+France	June	162.05	167	103.05
+France	July	167.46	183	109.28
+France	August	167.46	143	85.39
+France	September	162.05	132	81.46
+France	October	167.46	104	62.10
+France	November	162.05	122	75.29
+France	December	167.46	104	62.10
+Germany	January	123.83	201	162.32
+Germany	February	112.85	154	136.46
+Germany	March	123.83	174	140.52
+Germany	April	119.84	140	116.82
+Germany	May	123.83	118	95.29
+Germany	June	119.84	107	89.29
+Germany	July	123.83	126	101.75
+Germany	August	123.83	92	74.30
+Germany	September	119.84	115	95.96
+Germany	October	123.83	86	69.45
+Germany	November	119.84	81	67.59
+Germany	December	123.83	65	52.49
+Greece	January	112.54	125	111.07
+Greece	February	102.56	141	137.48
+Greece	March	112.54	149	132.40
+Greece	April	108.91	121	111.10
+Greece	May	112.54	137	121.73
+Greece	June	108.91	115	105.59
+Greece	July	112.54	119	105.74
+Greece	August	112.54	98	87.08
+Greece	September	108.91	96	88.15
+Greece	October	112.54	84	74.64
+Greece	November	108.91	72	66.11
+Greece	December	112.54	69	61.31
+Italy	January	176.11	278	157.86
+Italy	February	160.49	261	162.63
+Italy	March	176.11	252	143.09
+Italy	April	170.43	200	117.35
+Italy	May	176.11	189	107.32
+Italy	June	170.43	164	96.23
+Italy	July	176.11	181	102.78
+Italy	August	176.11	140	79.50
+Italy	September	170.43	126	73.93
+Italy	October	176.11	104	59.05
+Italy	November	170.43	88	51.63
+Italy	December	176.11	92	52.24
+Japan	January	79.70	54	67.75
+Japan	February	72.63	55	75.73
+Japan	March	79.70	57	71.52
+Japan	April	77.13	113	146.51
+Japan	May	79.70	100	125.47
+Japan	June	77.13	92	119.28
+Japan	July	79.70	97	121.71
+Japan	August	79.70	105	131.74
+Japan	September	77.13	80	103.72
+Japan	October	79.70	75	94.10
+Japan	November	77.13	54	70.01
+Japan	December	79.70	57	71.52
+Korea, South	January	52.54	67	127.52
+Korea, South	February	47.88	58	121.14
+Korea, South	March	52.54	72	137.04
+Korea, South	April	50.84	61	119.98
+Korea, South	May	52.54	66	125.62
+Korea, South	June	50.84	44	86.55
+Korea, South	July	52.54	54	102.78
+Korea, South	August	52.54	48	91.36
+Korea, South	September	50.84	48	94.41
+Korea, South	October	52.54	36	68.52
+Korea, South	November	50.84	32	62.94
+Korea, South	December	52.54	33	62.81
+Mexico	January	52.96	82	154.83
+Mexico	February	48.26	67	138.83
+Mexico	March	52.96	56	105.74
+Mexico	April	51.25	76	148.29
+Mexico	May	52.96	49	92.52
+Mexico	June	51.25	49	95.61
+Mexico	July	52.96	52	98.19
+Mexico	August	52.96	45	84.97
+Mexico	September	51.25	47	91.71
+Mexico	October	52.96	46	86.86
+Mexico	November	51.25	27	52.68
+Mexico	December	52.96	28	52.87
+Netherlands	January	137.92	205	148.64
+Netherlands	February	125.68	174	138.45
+Netherlands	March	137.92	176	127.61
+Netherlands	April	133.47	174	130.37
+Netherlands	May	137.92	153	110.93
+Netherlands	June	133.47	131	98.15
+Netherlands	July	137.92	118	85.56
+Netherlands	August	137.92	122	88.46
+Netherlands	September	133.47	98	73.42
+Netherlands	October	137.92	95	68.88
+Netherlands	November	133.47	95	71.18
+Netherlands	December	137.92	84	60.90
+Nigeria	January	45.58	67	146.99
+Nigeria	February	41.53	29	69.83
+Nigeria	March	45.58	33	72.40
+Nigeria	April	44.11	44	99.75
+Nigeria	May	45.58	59	129.44
+Nigeria	June	44.11	46	104.28
+Nigeria	July	45.58	33	72.40
+Nigeria	August	45.58	47	103.12
+Nigeria	September	44.11	32	72.55
+Nigeria	October	45.58	56	122.86
+Nigeria	November	44.11	43	97.48
+Nigeria	December	45.58	48	105.31
+Norway	January	48.38	56	115.75
+Norway	February	44.09	58	131.55
+Norway	March	48.38	48	99.21
+Norway	April	46.82	56	119.61
+Norway	May	48.38	57	117.82
+Norway	June	46.82	42	89.71
+Norway	July	48.38	55	113.68
+Norway	August	48.38	55	113.68
+Norway	September	46.82	42	89.71
+Norway	October	48.38	42	86.81
+Norway	November	46.82	24	51.26
+Norway	December	48.38	35	72.34
+Poland	January	57.80	89	153.98
+Poland	February	52.67	83	157.58
+Poland	March	57.80	53	91.70
+Poland	April	55.93	66	118.00
+Poland	May	57.80	67	115.92
+Poland	June	55.93	64	114.43
+Poland	July	57.80	41	70.93
+Poland	August	57.80	52	89.97
+Poland	September	55.93	53	94.76
+Poland	October	57.80	40	69.20
+Poland	November	55.93	34	60.79
+Poland	December	57.80	39	67.47
+Portugal	January	109.91	147	133.75
+Portugal	February	100.16	127	126.80
+Portugal	March	109.91	150	136.48
+Portugal	April	106.37	122	114.69
+Portugal	May	109.91	132	120.10
+Portugal	June	106.37	101	94.95
+Portugal	July	109.91	84	76.43
+Portugal	August	109.91	116	105.54
+Portugal	September	106.37	91	85.55
+Portugal	October	109.91	72	65.51
+Portugal	November	106.37	82	77.09
+Portugal	December	109.91	71	64.60
+Romania	January	52.71	68	129.01
+Romania	February	48.03	64	133.25
+Romania	March	52.71	59	111.93
+Romania	April	51.01	67	131.35
+Romania	May	52.71	60	113.83
+Romania	June	51.01	48	94.10
+Romania	July	52.71	52	98.65
+Romania	August	52.71	40	75.89
+Romania	September	51.01	51	99.98
+Romania	October	52.71	49	92.96
+Romania	November	51.01	30	58.81
+Romania	December	52.71	33	62.61
+Russia	January	139.45	229	164.22
+Russia	February	127.08	177	139.28
+Russia	March	139.45	178	127.64
+Russia	April	134.95	155	114.86
+Russia	May	139.45	152	109.00
+Russia	June	134.95	152	112.63
+Russia	July	139.45	126	90.35
+Russia	August	139.45	133	95.37
+Russia	September	134.95	94	69.66
+Russia	October	139.45	88	63.11
+Russia	November	134.95	79	58.54
+Russia	December	139.45	80	57.37
+Saudi Arabia	January	46.51	66	141.90
+Saudi Arabia	February	42.38	47	110.90
+Saudi Arabia	March	46.51	56	120.40
+Saudi Arabia	April	45.01	61	135.53
+Saudi Arabia	May	46.51	58	124.70
+Saudi Arabia	June	45.01	35	77.76
+Saudi Arabia	July	46.51	41	88.15
+Saudi Arabia	August	46.51	43	92.45
+Saudi Arabia	September	45.01	38	84.43
+Saudi Arabia	October	46.51	35	75.25
+Saudi Arabia	November	45.01	29	64.43
+Saudi Arabia	December	46.51	39	83.85
+Scotland	January	90.05	107	118.82
+Scotland	February	82.06	109	132.83
+Scotland	March	90.05	136	151.03
+Scotland	April	87.15	93	106.71
+Scotland	May	90.05	77	85.51
+Scotland	June	87.15	87	99.83
+Scotland	July	90.05	82	91.06
+Scotland	August	90.05	83	92.17
+Scotland	September	87.15	92	105.57
+Scotland	October	90.05	68	75.51
+Scotland	November	87.15	65	74.58
+Scotland	December	90.05	62	68.85
+Serbia	January	80.46	103	128.01
+Serbia	February	73.32	103	140.48
+Serbia	March	80.46	87	108.13
+Serbia	April	77.86	90	115.59
+Serbia	May	80.46	72	89.49
+Serbia	June	77.86	69	88.62
+Serbia	July	80.46	79	98.19
+Serbia	August	80.46	93	115.59
+Serbia	September	77.86	71	91.19
+Serbia	October	80.46	63	78.30
+Serbia	November	77.86	57	73.21
+Serbia	December	80.46	61	75.81
+Spain	January	194.19	279	143.67
+Spain	February	176.96	264	149.19
+Spain	March	194.19	257	132.34
+Spain	April	187.93	237	126.11
+Spain	May	194.19	216	111.23
+Spain	June	187.93	177	94.18
+Spain	July	194.19	181	93.21
+Spain	August	194.19	174	89.60
+Spain	September	187.93	151	80.35
+Spain	October	194.19	127	65.40
+Spain	November	187.93	118	62.79
+Spain	December	194.19	107	55.10
+Sweden	January	65.95	80	121.30
+Sweden	February	60.10	86	143.09
+Sweden	March	65.95	76	115.24
+Sweden	April	63.82	84	131.62
+Sweden	May	65.95	72	109.17
+Sweden	June	63.82	63	98.72
+Sweden	July	65.95	66	100.08
+Sweden	August	65.95	67	101.59
+Sweden	September	63.82	66	103.42
+Sweden	October	65.95	47	71.27
+Sweden	November	63.82	29	45.44
+Sweden	December	65.95	41	62.17
+Turkey	January	117.80	276	234.30
+Turkey	February	107.35	156	145.32
+Turkey	March	117.80	147	124.79
+Turkey	April	114.00	120	105.26
+Turkey	May	117.80	105	89.13
+Turkey	June	114.00	99	86.84
+Turkey	July	117.80	94	79.80
+Turkey	August	117.80	100	84.89
+Turkey	September	114.00	103	90.35
+Turkey	October	117.80	86	73.01
+Turkey	November	114.00	56	49.12
+Turkey	December	117.80	46	39.05
+Türkiye	January	76.98	166	215.64
+Türkiye	February	70.15	74	105.49
+Türkiye	March	76.98	92	119.51
+Türkiye	April	74.50	85	114.09
+Türkiye	May	76.98	82	106.52
+Türkiye	June	74.50	82	110.07
+Türkiye	July	76.98	80	103.92
+Türkiye	August	76.98	72	93.53
+Türkiye	September	74.50	44	59.06
+Türkiye	October	76.98	51	66.25
+Türkiye	November	74.50	52	69.80
+Türkiye	December	76.98	27	35.07
+Ukraine	January	145.90	232	159.01
+Ukraine	February	132.95	170	127.87
+Ukraine	March	145.90	179	122.69
+Ukraine	April	141.19	171	121.11
+Ukraine	May	145.90	163	111.72
+Ukraine	June	141.19	163	115.45
+Ukraine	July	145.90	144	98.70
+Ukraine	August	145.90	139	95.27
+Ukraine	September	141.19	106	75.08
+Ukraine	October	145.90	105	71.97
+Ukraine	November	141.19	87	61.62
+Ukraine	December	145.90	60	41.12
+United States	January	52.96	57	107.63
+United States	February	48.26	68	140.90
+United States	March	52.96	63	118.96
+United States	April	51.25	64	124.88
+United States	May	52.96	52	98.19
+United States	June	51.25	45	87.80
+United States	July	52.96	53	100.08
+United States	August	52.96	49	92.52
+United States	September	51.25	42	81.95
+United States	October	52.96	41	77.42
+United States	November	51.25	51	99.51
+United States	December	52.96	39	73.64
+
+-- Output E: which formations are the most used in each league and season?
+season_formatted	competition_id	formation	times_used	formation_usage (%)	ranking_formation
+2024	ARG1	4-2-3-1	90	35.16	1
+2024	ARG1	4-4-2	38	14.84	2
+2024	ARG1	4-3-3 Attacking	27	10.55	3
+2025	ARG1	4-2-3-1	148	30.83	1
+2025	ARG1	4-4-2	82	17.08	2
+2025	ARG1	4-3-3 Attacking	73	15.21	3
+2013 / 2014	BE1	4-3-3 Defending	164	34.17	1
+2013 / 2014	BE1	4-4-2 double 6	102	21.25	2
+2013 / 2014	BE1	4-3-3 Attacking	88	18.33	3
+2014 / 2015	BE1	4-3-3 Defending	195	40.79	1
+2014 / 2015	BE1	4-4-2 double 6	72	15.06	2
+2014 / 2015	BE1	4-2-3-1	45	9.41	3
+2015 / 2016	BE1	4-3-3 Defending	177	36.88	1
+2015 / 2016	BE1	4-2-3-1	77	16.04	2
+2015 / 2016	BE1	4-4-2 double 6	54	11.25	3
+2016 / 2017	BE1	4-3-3 Defending	158	32.92	1
+2016 / 2017	BE1	4-2-3-1	95	19.79	2
+2016 / 2017	BE1	4-4-2 double 6	64	13.33	3
+2017 / 2018	BE1	4-2-3-1	141	29.38	1
+2017 / 2018	BE1	4-4-2 double 6	72	15.00	2
+2017 / 2018	BE1	4-3-3 Defending	60	12.50	3
+2018 / 2019	BE1	4-2-3-1	134	27.92	1
+2018 / 2019	BE1	4-3-3 Defending	99	20.63	2
+2018 / 2019	BE1	4-3-3 Attacking	59	12.29	3
+2019 / 2020	BE1	4-2-3-1	118	25.43	1
+2019 / 2020	BE1	4-3-3 Attacking	76	16.38	2
+2019 / 2020	BE1	4-3-3 Defending	73	15.73	3
+2020 / 2021	BE1	4-3-3 Attacking	118	19.28	1
+2020 / 2021	BE1	4-2-3-1	110	17.97	2
+2020 / 2021	BE1	5-3-2	109	17.81	3
+2021 / 2022	BE1	4-2-3-1	90	14.75	1
+2021 / 2022	BE1	5-3-2	86	14.10	2
+2021 / 2022	BE1	3-5-2	67	10.98	3
+2022 / 2023	BE1	4-2-3-1	107	17.48	1
+2022 / 2023	BE1	3-5-2	83	13.56	2
+2022 / 2023	BE1	3-4-1-2	74	12.09	3
+2023 / 2024	BE1	4-2-3-1	125	26.04	1
+2023 / 2024	BE1	3-4-2-1	78	16.25	2
+2023 / 2024	BE1	3-4-1-2	55	11.46	3
+2024 / 2025	BE1	4-2-3-1	177	36.88	1
+2024 / 2025	BE1	3-4-3	57	11.88	2
+2024 / 2025	BE1	3-4-1-2	41	8.54	3
+2025 / 2026	BE1	4-2-3-1	224	46.67	1
+2025 / 2026	BE1	3-4-1-2	114	23.75	2
+2025 / 2026	BE1	3-4-2-1	43	8.96	3
+2024	BRA1	4-2-3-1	431	56.71	1
+2024	BRA1	4-3-3 Attacking	91	11.97	2
+2024	BRA1	3-4-2-1	46	6.05	3
+2025	BRA1	4-2-3-1	183	51.69	1
+2025	BRA1	4-3-3 Attacking	38	10.73	2
+2025	BRA1	3-4-2-1	26	7.34	3
+2025	COL1	4-2-3-1	189	47.25	1
+2025	COL1	4-1-4-1	51	12.75	2
+2025	COL1	4-4-2	48	12.00	3
+2013 / 2014	ES1	4-2-3-1	528	69.47	1
+2013 / 2014	ES1	4-3-3 Attacking	98	12.89	2
+2013 / 2014	ES1	4-4-2 double 6	80	10.53	3
+2014 / 2015	ES1	4-2-3-1	389	51.18	1
+2014 / 2015	ES1	4-4-2 double 6	127	16.71	2
+2014 / 2015	ES1	4-3-3 Attacking	116	15.26	3
+2015 / 2016	ES1	4-2-3-1	349	45.92	1
+2015 / 2016	ES1	4-4-2 double 6	158	20.79	2
+2015 / 2016	ES1	4-3-3 Attacking	144	18.95	3
+2016 / 2017	ES1	4-2-3-1	319	41.97	1
+2016 / 2017	ES1	4-4-2 double 6	138	18.16	2
+2016 / 2017	ES1	4-3-3 Attacking	132	17.37	3
+2017 / 2018	ES1	4-2-3-1	255	33.55	1
+2017 / 2018	ES1	4-4-2 double 6	195	25.66	2
+2017 / 2018	ES1	4-3-3 Attacking	135	17.76	3
+2018 / 2019	ES1	4-4-2 double 6	199	29.97	1
+2018 / 2019	ES1	4-3-3 Attacking	126	18.98	2
+2018 / 2019	ES1	4-2-3-1	110	16.57	3
+2019 / 2020	ES1	4-4-2 double 6	238	31.32	1
+2019 / 2020	ES1	4-2-3-1	159	20.92	2
+2019 / 2020	ES1	4-3-3 Attacking	148	19.47	3
+2020 / 2021	ES1	4-4-2 double 6	163	21.53	1
+2020 / 2021	ES1	4-2-3-1	155	20.48	2
+2020 / 2021	ES1	4-3-3 Attacking	123	16.25	3
+2021 / 2022	ES1	4-2-3-1	183	24.14	1
+2021 / 2022	ES1	4-4-2 double 6	155	20.45	2
+2021 / 2022	ES1	4-3-3 Attacking	139	18.34	3
+2022 / 2023	ES1	4-2-3-1	211	27.76	1
+2022 / 2023	ES1	4-3-3 Attacking	187	24.61	2
+2022 / 2023	ES1	4-4-2	54	7.11	3
+2023 / 2024	ES1	4-2-3-1	249	32.76	1
+2023 / 2024	ES1	4-3-3 Attacking	142	18.68	2
+2023 / 2024	ES1	4-4-2	90	11.84	3
+2024 / 2025	ES1	4-2-3-1	327	43.03	1
+2024 / 2025	ES1	4-4-2	108	14.21	2
+2024 / 2025	ES1	4-3-3 Attacking	100	13.16	3
+2025 / 2026	ES1	4-2-3-1	323	42.50	1
+2025 / 2026	ES1	4-4-2	125	16.45	2
+2025 / 2026	ES1	4-3-3 Attacking	69	9.08	3
+2013 / 2014	FR1	4-2-3-1	224	29.47	1
+2013 / 2014	FR1	4-4-2 double 6	156	20.53	2
+2013 / 2014	FR1	4-3-3 Attacking	139	18.29	3
+2014 / 2015	FR1	4-2-3-1	262	34.47	1
+2014 / 2015	FR1	4-3-3 Attacking	173	22.76	2
+2014 / 2015	FR1	4-4-2 double 6	99	13.03	3
+2015 / 2016	FR1	4-2-3-1	245	32.24	1
+2015 / 2016	FR1	4-3-3 Attacking	158	20.79	2
+2015 / 2016	FR1	4-3-1-2	102	13.42	3
+2016 / 2017	FR1	4-3-3 Attacking	258	33.95	1
+2016 / 2017	FR1	4-4-2 double 6	122	16.05	2
+2016 / 2017	FR1	4-2-3-1	105	13.82	3
+2017 / 2018	FR1	4-2-3-1	295	38.92	1
+2017 / 2018	FR1	4-3-3 Attacking	171	22.56	2
+2017 / 2018	FR1	4-4-2 double 6	70	9.23	3
+2018 / 2019	FR1	4-2-3-1	280	36.84	1
+2018 / 2019	FR1	4-3-3 Attacking	149	19.61	2
+2018 / 2019	FR1	5-3-2	60	7.89	3
+2019 / 2020	FR1	4-2-3-1	175	31.36	1
+2019 / 2020	FR1	4-3-3 Attacking	113	20.25	2
+2019 / 2020	FR1	4-4-2 double 6	49	8.78	3
+2020 / 2021	FR1	4-2-3-1	178	23.42	1
+2020 / 2021	FR1	4-3-3 Attacking	154	20.26	2
+2020 / 2021	FR1	4-4-2 double 6	94	12.37	3
+2021 / 2022	FR1	4-2-3-1	150	19.74	1
+2021 / 2022	FR1	4-3-3 Attacking	104	13.68	2
+2021 / 2022	FR1	4-4-2 double 6	91	11.97	3
+2022 / 2023	FR1	4-2-3-1	186	24.60	1
+2022 / 2023	FR1	3-4-2-1	119	15.74	2
+2022 / 2023	FR1	4-3-3 Attacking	116	15.34	3
+2023 / 2024	FR1	4-3-3 Attacking	174	28.43	1
+2023 / 2024	FR1	4-2-3-1	150	24.51	2
+2023 / 2024	FR1	3-4-2-1	84	13.73	3
+2024 / 2025	FR1	4-2-3-1	172	28.10	1
+2024 / 2025	FR1	4-3-3 Attacking	129	21.08	2
+2024 / 2025	FR1	3-4-3	85	13.89	3
+2025 / 2026	FR1	4-2-3-1	191	31.31	1
+2025 / 2026	FR1	4-3-3 Attacking	118	19.34	2
+2025 / 2026	FR1	3-4-3	84	13.77	3
+2013 / 2014	GB1	4-2-3-1	354	46.58	1
+2013 / 2014	GB1	4-4-2 double 6	114	15.00	2
+2013 / 2014	GB1	4-3-3 Defending	64	8.42	3
+2014 / 2015	GB1	4-2-3-1	272	35.79	1
+2014 / 2015	GB1	4-1-4-1	85	11.18	2
+2014 / 2015	GB1	4-4-2 double 6	80	10.53	3
+2015 / 2016	GB1	4-2-3-1	356	46.84	1
+2015 / 2016	GB1	4-1-4-1	103	13.55	2
+2015 / 2016	GB1	4-4-2 double 6	77	10.13	3
+2016 / 2017	GB1	4-2-3-1	223	29.34	1
+2016 / 2017	GB1	4-1-4-1	139	18.29	2
+2016 / 2017	GB1	4-3-3 Attacking	92	12.11	3
+2017 / 2018	GB1	4-2-3-1	205	26.97	1
+2017 / 2018	GB1	4-3-3 Attacking	86	11.32	2
+2017 / 2018	GB1	4-4-2 double 6	86	11.32	3
+2018 / 2019	GB1	4-2-3-1	158	20.79	1
+2018 / 2019	GB1	4-3-3 Attacking	144	18.95	2
+2018 / 2019	GB1	4-4-2 double 6	141	18.55	3
+2019 / 2020	GB1	4-2-3-1	183	24.08	1
+2019 / 2020	GB1	4-3-3 Attacking	127	16.71	2
+2019 / 2020	GB1	4-1-4-1	85	11.18	3
+2020 / 2021	GB1	4-2-3-1	198	26.05	1
+2020 / 2021	GB1	4-3-3 Attacking	114	15.00	2
+2020 / 2021	GB1	4-4-2 double 6	73	9.61	3
+2021 / 2022	GB1	4-3-3 Attacking	172	22.63	1
+2021 / 2022	GB1	4-2-3-1	163	21.45	2
+2021 / 2022	GB1	4-4-2 double 6	76	10.00	3
+2022 / 2023	GB1	4-2-3-1	272	35.79	1
+2022 / 2023	GB1	4-3-3 Attacking	210	27.63	2
+2022 / 2023	GB1	3-4-2-1	61	8.03	3
+2023 / 2024	GB1	4-2-3-1	297	39.08	1
+2023 / 2024	GB1	4-3-3 Attacking	168	22.11	2
+2023 / 2024	GB1	3-4-2-1	68	8.95	3
+2024 / 2025	GB1	4-2-3-1	402	52.89	1
+2024 / 2025	GB1	3-4-2-1	122	16.05	2
+2024 / 2025	GB1	4-3-3 Attacking	120	15.79	3
+2025 / 2026	GB1	4-2-3-1	416	54.74	1
+2025 / 2026	GB1	4-3-3 Attacking	109	14.34	2
+2025 / 2026	GB1	3-4-2-1	67	8.82	3
+2013 / 2014	IT1	3-5-2 flat	216	28.42	1
+2013 / 2014	IT1	4-3-3 Attacking	166	21.84	2
+2013 / 2014	IT1	4-2-3-1	93	12.24	3
+2014 / 2015	IT1	4-3-3 Attacking	213	28.03	1
+2014 / 2015	IT1	4-3-1-2	135	17.76	2
+2014 / 2015	IT1	3-5-2 flat	130	17.11	3
+2015 / 2016	IT1	4-3-3 Attacking	224	29.47	1
+2015 / 2016	IT1	3-5-2 flat	140	18.42	2
+2015 / 2016	IT1	4-3-1-2	113	14.87	3
+2016 / 2017	IT1	4-3-3 Attacking	251	33.03	1
+2016 / 2017	IT1	4-3-1-2	143	18.82	2
+2016 / 2017	IT1	4-2-3-1	82	10.79	3
+2017 / 2018	IT1	4-3-3 Attacking	222	29.21	1
+2017 / 2018	IT1	3-5-2 flat	179	23.55	2
+2017 / 2018	IT1	4-2-3-1	85	11.18	3
+2018 / 2019	IT1	3-5-2 flat	197	25.92	1
+2018 / 2019	IT1	4-3-3 Attacking	167	21.97	2
+2018 / 2019	IT1	4-3-1-2	98	12.89	3
+2019 / 2020	IT1	3-5-2 flat	199	26.18	1
+2019 / 2020	IT1	4-3-3 Attacking	118	15.53	2
+2019 / 2020	IT1	4-2-3-1	111	14.61	3
+2020 / 2021	IT1	3-5-2 flat	254	33.42	1
+2020 / 2021	IT1	4-2-3-1	165	21.71	2
+2020 / 2021	IT1	3-4-2-1	100	13.16	3
+2021 / 2022	IT1	4-2-3-1	163	21.45	1
+2021 / 2022	IT1	3-5-2 flat	140	18.42	2
+2021 / 2022	IT1	4-3-3 Attacking	133	17.50	3
+2022 / 2023	IT1	4-3-3 Attacking	196	25.79	1
+2022 / 2023	IT1	3-4-2-1	171	22.50	2
+2022 / 2023	IT1	3-5-2 flat	168	22.11	3
+2023 / 2024	IT1	3-5-2 flat	184	24.21	1
+2023 / 2024	IT1	4-2-3-1	175	23.03	2
+2023 / 2024	IT1	4-3-3 Attacking	155	20.39	3
+2024 / 2025	IT1	4-2-3-1	253	33.29	1
+2024 / 2025	IT1	3-5-2 flat	174	22.89	2
+2024 / 2025	IT1	3-4-2-1	154	20.26	3
+2025 / 2026	IT1	3-5-2 flat	287	37.86	1
+2025 / 2026	IT1	3-4-2-1	149	19.66	2
+2025 / 2026	IT1	4-3-3 Attacking	126	16.62	3
+2013 / 2014	L1	4-2-3-1	292	47.71	1
+2013 / 2014	L1	4-4-2 double 6	120	19.61	2
+2013 / 2014	L1	4-1-4-1	64	10.46	3
+2014 / 2015	L1	4-2-3-1	291	47.55	1
+2014 / 2015	L1	4-4-2 double 6	150	24.51	2
+2014 / 2015	L1	4-1-4-1	50	8.17	3
+2015 / 2016	L1	4-2-3-1	211	34.48	1
+2015 / 2016	L1	4-4-2 double 6	119	19.44	2
+2015 / 2016	L1	4-1-4-1	85	13.89	3
+2016 / 2017	L1	4-2-3-1	199	32.52	1
+2016 / 2017	L1	4-4-2 double 6	126	20.59	2
+2016 / 2017	L1	3-5-2 flat	43	7.03	3
+2017 / 2018	L1	4-2-3-1	134	21.90	1
+2017 / 2018	L1	4-4-2 double 6	123	20.10	2
+2017 / 2018	L1	4-3-3 Attacking	64	10.46	3
+2018 / 2019	L1	4-2-3-1	132	21.57	1
+2018 / 2019	L1	4-3-3 Attacking	103	16.83	2
+2018 / 2019	L1	4-4-2 double 6	71	11.60	3
+2019 / 2020	L1	4-2-3-1	155	25.33	1
+2019 / 2020	L1	4-4-2 double 6	86	14.05	2
+2019 / 2020	L1	4-3-3 Attacking	62	10.13	3
+2020 / 2021	L1	4-2-3-1	187	30.56	1
+2020 / 2021	L1	3-4-2-1	101	16.50	2
+2020 / 2021	L1	3-4-1-2	69	11.27	3
+2021 / 2022	L1	4-2-3-1	167	27.29	1
+2021 / 2022	L1	3-4-2-1	94	15.36	2
+2021 / 2022	L1	3-4-1-2	46	7.52	3
+2022 / 2023	L1	4-2-3-1	175	28.59	1
+2022 / 2023	L1	4-3-3 Attacking	75	12.25	2
+2022 / 2023	L1	3-4-2-1	74	12.09	3
+2023 / 2024	L1	4-2-3-1	156	25.49	1
+2023 / 2024	L1	3-4-2-1	102	16.67	2
+2023 / 2024	L1	3-4-3	52	8.50	3
+2024 / 2025	L1	4-2-3-1	172	28.10	1
+2024 / 2025	L1	3-4-2-1	143	23.37	2
+2024 / 2025	L1	3-4-1-2	50	8.17	3
+2025 / 2026	L1	3-4-2-1	172	28.10	1
+2025 / 2026	L1	4-2-3-1	166	27.12	2
+2025 / 2026	L1	3-4-3	58	9.48	3
+2024 / 2025	MEX1	4-2-3-1	40	33.90	1
+2024 / 2025	MEX1	3-4-2-1	16	13.56	2
+2024 / 2025	MEX1	3-4-3	9	7.63	3
+2025 / 2026	MEX1	4-2-3-1	93	30.39	1
+2025 / 2026	MEX1	4-1-4-1	42	13.73	2
+2025 / 2026	MEX1	3-4-2-1	40	13.07	3
+2024	MLS1	4-3-3 Defending	179	25.07	1
+2024	MLS1	4-3-3 Attacking	158	22.13	2
+2024	MLS1	4-4-2 double 6	87	12.18	3
+2025	MLS1	4-3-3 Defending	112	25.81	1
+2025	MLS1	4-3-3 Attacking	99	22.81	2
+2025	MLS1	4-4-2 double 6	57	13.13	3
+2013 / 2014	NL1	4-3-3 Defending	309	50.49	1
+2013 / 2014	NL1	4-3-3 Attacking	193	31.54	2
+2013 / 2014	NL1	4-4-2 Diamond	34	5.56	3
+2014 / 2015	NL1	4-3-3 Defending	335	54.74	1
+2014 / 2015	NL1	4-3-3 Attacking	175	28.59	2
+2014 / 2015	NL1	4-2-3-1	43	7.03	3
+2015 / 2016	NL1	4-3-3 Defending	249	41.36	1
+2015 / 2016	NL1	4-3-3 Attacking	152	25.25	2
+2015 / 2016	NL1	4-4-2 Diamond	91	15.12	3
+2016 / 2017	NL1	4-3-3 Defending	245	40.03	1
+2016 / 2017	NL1	4-3-3 Attacking	203	33.17	2
+2016 / 2017	NL1	4-2-3-1	39	6.37	3
+2017 / 2018	NL1	4-3-3 Defending	285	46.57	1
+2017 / 2018	NL1	4-3-3 Attacking	178	29.08	2
+2017 / 2018	NL1	4-4-2 Diamond	40	6.54	3
+2018 / 2019	NL1	4-3-3 Defending	314	51.99	1
+2018 / 2019	NL1	4-3-3 Attacking	130	21.52	2
+2018 / 2019	NL1	4-2-3-1	31	5.13	3
+2019 / 2020	NL1	4-3-3 Defending	179	38.58	1
+2019 / 2020	NL1	4-3-3 Attacking	134	28.88	2
+2019 / 2020	NL1	4-2-3-1	56	12.07	3
+2020 / 2021	NL1	4-3-3 Defending	220	36.07	1
+2020 / 2021	NL1	4-3-3 Attacking	160	26.23	2
+2020 / 2021	NL1	4-2-3-1	87	14.26	3
+2021 / 2022	NL1	4-3-3 Defending	342	55.88	1
+2021 / 2022	NL1	3-5-2	79	12.91	2
+2021 / 2022	NL1	4-3-3 Attacking	50	8.17	3
+2022 / 2023	NL1	4-3-3 Defending	393	64.22	1
+2022 / 2023	NL1	4-3-3 Attacking	88	14.38	2
+2022 / 2023	NL1	3-4-1-2	58	9.48	3
+2023 / 2024	NL1	4-3-3 Defending	461	75.33	1
+2023 / 2024	NL1	4-3-3 Attacking	70	11.44	2
+2023 / 2024	NL1	3-4-1-2	32	5.23	3
+2024 / 2025	NL1	4-3-3 Defending	328	53.59	1
+2024 / 2025	NL1	4-3-3 Attacking	107	17.48	2
+2024 / 2025	NL1	4-2-3-1	71	11.60	3
+2025 / 2026	NL1	4-3-3 Defending	224	36.60	1
+2025 / 2026	NL1	4-2-3-1	139	22.71	2
+2025 / 2026	NL1	4-3-3 Attacking	113	18.46	3
+2024	NO1	4-3-3 Attacking	188	55.62	1
+2024	NO1	3-5-2 flat	56	16.57	2
+2024	NO1	3-4-3	30	8.88	3
+2025	NO1	4-3-3 Attacking	73	41.01	1
+2025	NO1	3-5-2 flat	51	28.65	2
+2025	NO1	3-4-3	17	9.55	3
+2013 / 2014	PO1	4-2-3-1	112	23.38	1
+2013 / 2014	PO1	4-3-3 Attacking	104	21.71	2
+2013 / 2014	PO1	4-3-3	59	12.32	3
+2014 / 2015	PO1	4-3-3 Attacking	218	35.86	1
+2014 / 2015	PO1	4-2-3-1	173	28.45	2
+2014 / 2015	PO1	4-3-3 Defending	97	15.95	3
+2015 / 2016	PO1	4-3-3 Attacking	171	27.99	1
+2015 / 2016	PO1	4-2-3-1	124	20.29	2
+2015 / 2016	PO1	4-4-2 double 6	122	19.97	3
+2016 / 2017	PO1	4-2-3-1	212	34.64	1
+2016 / 2017	PO1	4-3-3 Attacking	118	19.28	2
+2016 / 2017	PO1	4-4-2 double 6	108	17.65	3
+2017 / 2018	PO1	4-2-3-1	177	28.92	1
+2017 / 2018	PO1	4-4-2 double 6	121	19.77	2
+2017 / 2018	PO1	4-3-3 Attacking	114	18.63	3
+2018 / 2019	PO1	4-2-3-1	111	24.13	1
+2018 / 2019	PO1	4-3-3 Attacking	93	20.22	2
+2018 / 2019	PO1	4-1-4-1	75	16.30	3
+2019 / 2020	PO1	4-2-3-1	143	23.56	1
+2019 / 2020	PO1	4-3-3 Attacking	112	18.45	2
+2019 / 2020	PO1	4-4-2 double 6	89	14.66	3
+2020 / 2021	PO1	4-3-3 Attacking	170	27.96	1
+2020 / 2021	PO1	3-4-3	99	16.28	2
+2020 / 2021	PO1	4-2-3-1	89	14.64	3
+2021 / 2022	PO1	4-2-3-1	156	25.53	1
+2021 / 2022	PO1	3-4-3	139	22.75	2
+2021 / 2022	PO1	4-3-3 Attacking	137	22.42	3
+2022 / 2023	PO1	4-2-3-1	183	30.10	1
+2022 / 2023	PO1	3-4-3	139	22.86	2
+2022 / 2023	PO1	4-3-3 Attacking	98	16.12	3
+2023 / 2024	PO1	4-2-3-1	212	34.64	1
+2023 / 2024	PO1	3-4-3	197	32.19	2
+2023 / 2024	PO1	4-3-3 Attacking	67	10.95	3
+2024 / 2025	PO1	4-2-3-1	220	35.95	1
+2024 / 2025	PO1	3-4-3	182	29.74	2
+2024 / 2025	PO1	4-3-3 Attacking	77	12.58	3
+2025 / 2026	PO1	4-2-3-1	230	37.58	1
+2025 / 2026	PO1	4-3-3 Attacking	128	20.92	2
+2025 / 2026	PO1	3-4-3	114	18.63	3
+
+-- Output F: which formations are the most used overall?
+formation	times_used	formation_usage (%)
+4-2-3-1	51041	31.594
+4-3-3 Attacking	24980	15.463
+4-4-2 double 6	13767	8.522
+4-1-4-1	8953	5.542
+4-3-3 Defending	8125	5.029
+3-4-2-1	7415	4.590
+4-4-2	7384	4.571
+3-5-2 flat	6642	4.111
+3-4-3	6396	3.959
+3-4-1-2	3492	2.162
+5-3-2	3319	2.054
+5-4-1	3128	1.936
+3-5-2	2994	1.853
+4-3-1-2	2954	1.829
+4-4-1-1	2609	1.615
+4-4-2 Diamond	1730	1.071
+3-5-2 Attacking	977	0.605
+4-3-3	852	0.527
+3-1-4-2	836	0.517
+4-5-1	733	0.454
+4-3-2-1	690	0.427
+4-5-1 flat	643	0.398
+4-1-3-2	512	0.317
+5-4-1 Diamond	242	0.150
+4-2-4	216	0.134
+5-2-3	180	0.111
+3-3-4	101	0.063
+3-4-3 Diamond	96	0.059
+3-6-1	71	0.044
+3-3-3-1	65	0.040
+6-2-2	48	0.030
+5-1-4	42	0.026
+2-6-2	42	0.026
+6-3-1	37	0.023
+2-5-3	36	0.022
+2-4-4	34	0.021
+6-1-3	33	0.020
+3-2-5	21	0.013
+4-1-5	17	0.011
+2-7-1	15	0.009
+7-1-2	11	0.007
+4-6-0	11	0.007
+5-5-0	10	0.006
+3-7-0	10	0.006
+2-3-5	10	0.006
+1-6-3	4	0.002
+7-2-1	4	0.002
+1-5-4	3	0.002
+1-7-2	3	0.002
+2-2-6	3	0.002
+6-4-0	2	0.001
+1-9-0	2	0.001
+0-10-0	2	0.001
+3-1-6	2	0.001
+0-7-3	2	0.001
+7-3-0	1	0.001
+1-8-1	1	0.001
+6-0-4	1	0.001
+1-4-5	1	0.001
+2-8-0	1	0.001

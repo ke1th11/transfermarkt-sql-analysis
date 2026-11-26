@@ -1,10 +1,10 @@
 /* Question: League classifications: how do the clubs of the top 15 leagues perform across the seasons, and what are the records of each league?
-			 A) How many points does each club accumulate along a season (3 per win, 1 per draw)?
-			 B) Which champions were unbeaten (no losses in a full season)?
-			 C) What are the longest winning streaks in each league and season?
-			 D) What is the longest winning streak in the history of each league?
-			 E) What is the highest number of points in the history of each league?
-			 F) What is the lowest number of points in the history of each league?
+             A) How many points does each club accumulate along a season (3 per win, 1 per draw)?
+             B) Which champions were unbeaten (no losses in a full season)?
+             C) What are the longest winning streaks in each league and season?
+             D) What is the longest winning streak in the history of each league?
+             E) What is the highest number of points in the history of each league?
+             F) What is the lowest number of points in the history of each league?
 
    Approach: - CTE_Games_Of_Interest: one row per club and game played in a top 15 league (clean.club_games + clean.games + clean.competitions).
                The league of a game is the competition of the game itself (g.competition_id), not the current league of the club,

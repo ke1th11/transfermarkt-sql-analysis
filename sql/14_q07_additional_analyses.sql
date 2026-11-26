@@ -1,9 +1,9 @@
-/* Questions: A) Does the difference between the league positions of the two clubs of a game explain the result (home win, draw, away win)?
-              B) Which players were the most loyal to a club (10 or more consecutive seasons at the same club)?
-              C) What is the percentage of foreign players in each top 15 league, by season?
-              D) Relative age effect: are the players born in some months over-represented, by country of citizenship?
-              E) Which formations are the most used in each league and season (evolution along the seasons)?
-              F) Which formations are the most used overall?
+/* Question: A) Does the difference between the league positions of the two clubs of a game explain the result (home win, draw, away win)?
+             B) Which players were the most loyal to a club (10 or more consecutive seasons at the same club)?
+             C) What is the percentage of foreign players in each top 15 league, by season?
+             D) Relative age effect: are the players born in some months over-represented, by country of citizenship?
+             E) Which formations are the most used in each league and season (evolution along the seasons)?
+             F) Which formations are the most used overall?
 
    Approach: - CTE_Games_Results (A): games of the top 15 leagues with both positions known. The position difference is home position - away position
                (negative = the home club is higher in the table). The round number is read from the text of the round ('1. Matchday' = 1); TRY_CAST makes
@@ -34,105 +34,105 @@
              - The outputs that use the recursion (B, C) have OPTION (MAXRECURSION 200).
              (Only one final SELECT runs at a time: comment out the others.)
 
-	Insight: Data window: seasons 2012/13 to 2025/26 (formations from 2013/14). The numbers below come from the outputs with @top_n = 3, @min_round = 5, @min_games = 30, @min_years_loyalty = 10 and @min_players_country = 500.
+   Insight: Data window: seasons 2012/13 to 2025/26 (formations from 2013/14). The numbers below come from the outputs with @top_n = 3, @min_round = 5, @min_games = 30, @min_years_loyalty = 10 and @min_players_country = 500.
 
-             A) League position vs result (34,941 games, rounds 5 onwards)
-               - Only 9 leagues have rows (BE1, ES1, FR1, GB1, IT1, L1, NL1, PO1 and MLS1, the last one with only 303 games). BRA1, ARG1, COL1, MEX1 and NO1 do not appear,
-                 because their round is not a numeric 'N. Matchday' (or their positions are missing), so the filter by round removed them.
-               - Overall result of the home club in these games: 44.9% wins, 24.8% draws, 30.3% losses.
-               - The relation is strong and goes in one direction. Home win % by position difference (home position - away position; negative = home club higher):
-                 -19 to -13: 86.4% (loss 2.7%) | -12 to -8: 72.4% | -7 to -4: 62.2% | -3 to -1: 52.6% | +1 to +3: 34.7% (loss 34.0%) | +4 to +7: 25.6% (loss 44.6%) | +8 to +12: 17.1% (loss 58.7%) | +13 to +19: 8.1% (loss 73.9%).
-               - The home advantage is visible: with a difference of only one place, the home club wins 50.5% of the games when it is above the visitor (-1), but the visitor wins
-                 only 32.5% when it is above the home club (+1). The home win % only falls below the home loss % between +2 (36.1% vs 32.3%) and +3 (31.6% vs 37.6%):
-                 the home club needs to be about 3 places below the visitor to be the underdog.
-               - Draws are more frequent when the clubs are close (30.8% to 32.5% for +1 to +4, 28.9% at -1) and almost disappear at the extremes (18.0% for +13 to +19,
-                 10.9% for -19 to -13 and 1.9% at -19 alone).
-               - The leagues are very similar. When the home club is 8 or more places above, it wins 73.2% (FR1) to 77.5% (ES1) of the games; when it is 8 or more places below,
-                 it wins only 13.2% (IT1) to 17.9% (ES1). The best placed club wins 54.5% (FR1) to 58.9% (PO1) of all the games and the worse placed club wins 16.2% (PO1)
-                 to 19.7% (L1 and BE1). IT1 and FR1 have the most draws (26.3%) and GB1 the least (23.9%).
-               - MLS1 (small sample, 303 games): the best placed club wins 47.2%, the worse placed 24.8% and 28.1% are draws, so the position explains less than in Europe, but the sample is small.
-               - Caution: the position is itself built from past results, so part of this relation is expected, and it is only as clean as the assumption that the positions are the ones before the game.
+            A) League position vs result (34,941 games, rounds 5 onwards)
+              - Only 9 leagues have rows (BE1, ES1, FR1, GB1, IT1, L1, NL1, PO1 and MLS1, the last one with only 303 games). BRA1, ARG1, COL1, MEX1 and NO1 do not appear,
+                because their round is not a numeric 'N. Matchday' (or their positions are missing), so the filter by round removed them.
+              - Overall result of the home club in these games: 44.9% wins, 24.8% draws, 30.3% losses.
+              - The relation is strong and goes in one direction. Home win % by position difference (home position - away position; negative = home club higher):
+                -19 to -13: 86.4% (loss 2.7%) | -12 to -8: 72.4% | -7 to -4: 62.2% | -3 to -1: 52.6% | +1 to +3: 34.7% (loss 34.0%) | +4 to +7: 25.6% (loss 44.6%) | +8 to +12: 17.1% (loss 58.7%) | +13 to +19: 8.1% (loss 73.9%).
+              - The home advantage is visible: with a difference of only one place, the home club wins 50.5% of the games when it is above the visitor (-1), but the visitor wins
+                only 32.5% when it is above the home club (+1). The home win % only falls below the home loss % between +2 (36.1% vs 32.3%) and +3 (31.6% vs 37.6%):
+                the home club needs to be about 3 places below the visitor to be the underdog.
+              - Draws are more frequent when the clubs are close (30.8% to 32.5% for +1 to +4, 28.9% at -1) and almost disappear at the extremes (18.0% for +13 to +19,
+                10.9% for -19 to -13 and 1.9% at -19 alone).
+              - The leagues are very similar. When the home club is 8 or more places above, it wins 73.2% (FR1) to 77.5% (ES1) of the games; when it is 8 or more places below,
+                it wins only 13.2% (IT1) to 17.9% (ES1). The best placed club wins 54.5% (FR1) to 58.9% (PO1) of all the games and the worse placed club wins 16.2% (PO1)
+                to 19.7% (L1 and BE1). IT1 and FR1 have the most draws (26.3%) and GB1 the least (23.9%).
+              - MLS1 (small sample, 303 games): the best placed club wins 47.2%, the worse placed 24.8% and 28.1% are draws, so the position explains less than in Europe, but the sample is small.
+              - Caution: the position is itself built from past results, so part of this relation is expected, and it is only as clean as the assumption that the positions are the ones before the game.
 
-             B) Loyalty (10 or more consecutive seasons at the same club)
-               - 447 sequences of 10 or more seasons. The number falls fast with the length: 171 with exactly 10 seasons, 86 with 11, 62 with 12, 37 with 13, 24 with 14, 24 with 15; 67 have 15 or more and only 13 have 18 or more.
-               - Longest: Igor Akinfeev (PFK CSKA Moskva, 24 seasons from 2002/03), Hisashi Jogo (Avispa Fukuoka, 22), Ali Khaseif (Al-Jazira), Benji Villalobos (CD Aguila)
-                 and Zhenpeng Wang (Kitchee), 21 each. The top of the list is mostly in clubs outside the big European leagues (Output B is not limited to the top 15 leagues).
-               - Top 15 leagues: Seamus Coleman (Everton) 18; Francesco Rossi (Atalanta) 17; Koke (Atletico de Madrid), Lewis Dunk (Brighton), Messi (Barcelona, 2005 to 2021),
-                 Sergio Ramos (Real Madrid, 2005 to 2021), Oscar de Marcos (Athletic Bilbao) and Thomas Muller (Bayern, 2009 to 2025) 16 each; Neuer, Muniain, Maximilian Arnold,
-                 Herrmann and Jantschke 15.
-               - Clubs with more 10+ sequences: Real Madrid 10, Athletic Bilbao 6, and Atletico de Madrid, Bayern, Tottenham, Hoffenheim and Al-Hilal 5 each.
-               - 236 of the 447 sequences (53%) are still open in 2025/26, so their length is a minimum. Several names are goalkeepers (for example Akinfeev, Neuer, Rossi),
-                 which fits the idea that they stay longer at a club, but the position is not in the output, so it is only an observation.
+            B) Loyalty (10 or more consecutive seasons at the same club)
+              - 447 sequences of 10 or more seasons. The number falls fast with the length: 171 with exactly 10 seasons, 86 with 11, 62 with 12, 37 with 13, 24 with 14, 24 with 15; 67 have 15 or more and only 13 have 18 or more.
+              - Longest: Igor Akinfeev (PFK CSKA Moskva, 24 seasons from 2002/03), Hisashi Jogo (Avispa Fukuoka, 22), Ali Khaseif (Al-Jazira), Benji Villalobos (CD Aguila)
+                and Zhenpeng Wang (Kitchee), 21 each. The top of the list is mostly in clubs outside the big European leagues (Output B is not limited to the top 15 leagues).
+              - Top 15 leagues: Seamus Coleman (Everton) 18; Francesco Rossi (Atalanta) 17; Koke (Atletico de Madrid), Lewis Dunk (Brighton), Messi (Barcelona, 2005 to 2021),
+                Sergio Ramos (Real Madrid, 2005 to 2021), Oscar de Marcos (Athletic Bilbao) and Thomas Muller (Bayern, 2009 to 2025) 16 each; Neuer, Muniain, Maximilian Arnold,
+                Herrmann and Jantschke 15.
+              - Clubs with more 10+ sequences: Real Madrid 10, Athletic Bilbao 6, and Atletico de Madrid, Bayern, Tottenham, Hoffenheim and Al-Hilal 5 each.
+              - 236 of the 447 sequences (53%) are still open in 2025/26, so their length is a minimum. Several names are goalkeepers (for example Akinfeev, Neuer, Rossi),
+                which fits the idea that they stay longer at a club, but the position is not in the output, so it is only an observation.
 
-             C) Foreign players by league (share of the players with a club in the season, citizenship different from the country of the league)
-               - 2025/26 (2012/13 in brackets): PO1 66.5% (59.5%), IT1 63.7% (44.7%), GB1 63.1% (59.8%), BE1 60.1% (51.1%), FR1 59.6% (49.5%), L1 59.0% (52.3%),
-                 NL1 44.4% (42.9%), ES1 37.7% (35.5%). Spain and the Netherlands are clearly below the other European leagues.
-               - Italy has the biggest increase (+19.0 points: 44.7% in 2012/13, 56.1% in 2017/18, an isolated drop to 44.6% in 2018/19 that may be a data problem, and 57% to 64% since then).
-                 France increased 10.1 points, Belgium 9.1, Portugal 7.0 and Germany 6.6.
-               - England (peak 70.1% in 2018/19), Spain (47.5%) and Belgium (66.6%) had their peak in 2018/19 and decreased afterwards; the Netherlands peaked at 54.0% in 2019/20.
-                 France peaked in 2024/25 (63.8%) and Germany in 2020/21 (61.0%).
-               - England has more than 59% foreign players in every season, even counting the players from Scotland, Wales and Northern Ireland as foreign.
-               - Leagues with only 1 or 2 seasons in the data: MLS1 59.2% to 59.5% (similar to the big European leagues), MEX1 33.5% to 31.3%, NO1 31.1% to 35.0%,
-                 ARG1 15.1% to 17.1%, BRA1 16.1% to 24.6% and COL1 12.5% (1 season). The South American leagues have by far the lowest shares.
-               - The last season (2025/26) is not complete, so changes in the last year (for example NL1 from 51.2% to 44.4%) should be read with care.
+            C) Foreign players by league (share of the players with a club in the season, citizenship different from the country of the league)
+              - 2025/26 (2012/13 in brackets): PO1 66.5% (59.5%), IT1 63.7% (44.7%), GB1 63.1% (59.8%), BE1 60.1% (51.1%), FR1 59.6% (49.5%), L1 59.0% (52.3%),
+                NL1 44.4% (42.9%), ES1 37.7% (35.5%). Spain and the Netherlands are clearly below the other European leagues.
+              - Italy has the biggest increase (+19.0 points: 44.7% in 2012/13, 56.1% in 2017/18, an isolated drop to 44.6% in 2018/19 that may be a data problem, and 57% to 64% since then).
+                France increased 10.1 points, Belgium 9.1, Portugal 7.0 and Germany 6.6.
+              - England (peak 70.1% in 2018/19), Spain (47.5%) and Belgium (66.6%) had their peak in 2018/19 and decreased afterwards; the Netherlands peaked at 54.0% in 2019/20.
+                France peaked in 2024/25 (63.8%) and Germany in 2020/21 (61.0%).
+              - England has more than 59% foreign players in every season, even counting the players from Scotland, Wales and Northern Ireland as foreign.
+              - Leagues with only 1 or 2 seasons in the data: MLS1 59.2% to 59.5% (similar to the big European leagues), MEX1 33.5% to 31.3%, NO1 31.1% to 35.0%,
+                ARG1 15.1% to 17.1%, BRA1 16.1% to 24.6% and COL1 12.5% (1 season). The South American leagues have by far the lowest shares.
+              - The last season (2025/26) is not complete, so changes in the last year (for example NL1 from 51.2% to 44.4%) should be read with care.
 
-             D) Relative age effect (31 country labels with at least 500 players)
-               - Pooling the countries, the players born in January are 145.7% of the expected number, February 133.7% and March 125.3%, while October is 74.3%, November 67.2%
-                 and December 61.3%. The first quarter has 134.9% of the expected births and the last quarter 67.6%, so a player born in January to March is about twice as likely
-                 to be in the data as one born in October to December.
-               - The effect appears in 30 of the 31 country labels (January above December). Strong examples: Argentina (January 167.0%, December 47.8%), Italy (February 162.6%),
-                 Germany (January 162.3%), Spain (January 143.7%, February 149.2%, December 55.1%), Brazil, the Netherlands and Portugal.
-               - The exceptions are consistent with a different cut-off date: in England the peak is in September (154.1%) and the lowest months are June (51.8%) and August (63.5%),
-                 which fits the school year starting in September; in Japan the peak is in April (146.5%), with January to March at 68% to 76%, which fits a school year starting in April.
-               - No clear pattern in Nigeria (months between 70% and 147%, no ordered shape) and a weak one in the United States and Norway.
-               - The strongest single month is January in Turkey (234.3%), which may be partly caused by default or rounded birth dates in the source. Turkey and 'Turkiye' appear as two
-                 different countries (1,388 and 907 players), so they should be merged before using these two rows.
+            D) Relative age effect (31 country labels with at least 500 players)
+              - Pooling the countries, the players born in January are 145.7% of the expected number, February 133.7% and March 125.3%, while October is 74.3%, November 67.2%
+                and December 61.3%. The first quarter has 134.9% of the expected births and the last quarter 67.6%, so a player born in January to March is about twice as likely
+                to be in the data as one born in October to December.
+              - The effect appears in 30 of the 31 country labels (January above December). Strong examples: Argentina (January 167.0%, December 47.8%), Italy (February 162.6%),
+                Germany (January 162.3%), Spain (January 143.7%, February 149.2%, December 55.1%), Brazil, the Netherlands and Portugal.
+              - The exceptions are consistent with a different cut-off date: in England the peak is in September (154.1%) and the lowest months are June (51.8%) and August (63.5%),
+                which fits the school year starting in September; in Japan the peak is in April (146.5%), with January to March at 68% to 76%, which fits a school year starting in April.
+              - No clear pattern in Nigeria (months between 70% and 147%, no ordered shape) and a weak one in the United States and Norway.
+              - The strongest single month is January in Turkey (234.3%), which may be partly caused by default or rounded birth dates in the source. Turkey and 'Turkiye' appear as two
+                different countries (1,388 and 907 players), so they should be merged before using these two rows.
 
-             E) Most used formations by league and season
-               - In the 8 European leagues, 4-2-3-1 is the most used formation in 65 of the 104 league-seasons, followed by 4-3-3 Defending (17), 4-3-3 Attacking (12), 3-5-2 flat (6),
-                 4-4-2 double 6 (3) and 3-4-2-1 (1).
-                 Rank 1 by league: GB1 4-2-3-1 in 12 of 13 seasons (4-3-3 Attacking in 2021/22), L1 4-2-3-1 in 12 of 13 (3-4-2-1 in 2025/26), FR1 11 of 13, ES1 10 of 13 (4-4-2 double 6
-                 from 2018/19 to 2020/21), PO1 10 of 13 and BE1 8 of 13.
-               - The Netherlands is different: 4-3-3 Defending is the most used in all 13 seasons (36.1% to 75.3%; peak 75.3% in 2023/24).
-               - Italy is the most varied: 3-5-2 flat (6 seasons), 4-3-3 Attacking (5) and 4-2-3-1 (2) share the first place; the leader never has more than 37.9% of the usage.
-               - The dominance of the leader changes along the time: 4-2-3-1 in Spain fell from 69.5% (2013/14) to 21.5% in 2020/21 (4-4-2 double 6 on top) and went back to 43.0% and 42.5%
-                 in the last two seasons. In England it went from 46.8% (2015/16) to 20.8% in 2018/19 and reached 52.9% in 2024/25 and 54.7% in 2025/26.
-               - Back three: in the 8 European leagues, only 1 of the 24 top 3 positions of each season (Italy, in the seasons checked) had a three-man defence until 2019/20; from 2020/21 the number goes to 5,
-                 6 and then 9 of 24 in each season from 2022/23 to 2025/26.
+            E) Most used formations by league and season
+              - In the 8 European leagues, 4-2-3-1 is the most used formation in 65 of the 104 league-seasons, followed by 4-3-3 Defending (17), 4-3-3 Attacking (12), 3-5-2 flat (6),
+                4-4-2 double 6 (3) and 3-4-2-1 (1).
+                Rank 1 by league: GB1 4-2-3-1 in 12 of 13 seasons (4-3-3 Attacking in 2021/22), L1 4-2-3-1 in 12 of 13 (3-4-2-1 in 2025/26), FR1 11 of 13, ES1 10 of 13 (4-4-2 double 6
+                from 2018/19 to 2020/21), PO1 10 of 13 and BE1 8 of 13.
+              - The Netherlands is different: 4-3-3 Defending is the most used in all 13 seasons (36.1% to 75.3%; peak 75.3% in 2023/24).
+              - Italy is the most varied: 3-5-2 flat (6 seasons), 4-3-3 Attacking (5) and 4-2-3-1 (2) share the first place; the leader never has more than 37.9% of the usage.
+              - The dominance of the leader changes along the time: 4-2-3-1 in Spain fell from 69.5% (2013/14) to 21.5% in 2020/21 (4-4-2 double 6 on top) and went back to 43.0% and 42.5%
+                in the last two seasons. In England it went from 46.8% (2015/16) to 20.8% in 2018/19 and reached 52.9% in 2024/25 and 54.7% in 2025/26.
+              - Back three: in the 8 European leagues, only 1 of the 24 top 3 positions of each season (Italy, in the seasons checked) had a three-man defence until 2019/20; from 2020/21 the number goes to 5,
+                6 and then 9 of 24 in each season from 2022/23 to 2025/26.
 
-             F) Most used formations overall (161,552 formations of all the games in clean.games)
-               - 4-2-3-1 is clearly the first (31.6%), then 4-3-3 Attacking (15.5%), 4-4-2 double 6 (8.5%), 4-1-4-1 (5.5%) and 4-3-3 Defending (5.0%). The first 3 have 55.6% of the usage
-                 and the first 5 have 66.2%.
-               - Grouping the variants by the first numbers: 4-2-3-1 31.6%, 4-3-3 21.0%, 4-4-2 14.2%, 3-5-2 6.6%, 4-1-4-1 5.5%, 3-4-2-1 4.6%, 3-4-3 4.0%.
-                 By defence: four defenders 77.5%, three defenders 18.0% and five defenders 4.3%.
-               - There are 60 different formations, but 22 of them have fewer than 20 uses (116 uses in total), and some are impossible or very unlikely (for example 7-3-0 or 1-8-1),
-                 so they are probably data entry errors.
+            F) Most used formations overall (161,552 formations of all the games in clean.games)
+              - 4-2-3-1 is clearly the first (31.6%), then 4-3-3 Attacking (15.5%), 4-4-2 double 6 (8.5%), 4-1-4-1 (5.5%) and 4-3-3 Defending (5.0%). The first 3 have 55.6% of the usage
+                and the first 5 have 66.2%.
+              - Grouping the variants by the first numbers: 4-2-3-1 31.6%, 4-3-3 21.0%, 4-4-2 14.2%, 3-5-2 6.6%, 4-1-4-1 5.5%, 3-4-2-1 4.6%, 3-4-3 4.0%.
+                By defence: four defenders 77.5%, three defenders 18.0% and five defenders 4.3%.
+              - There are 60 different formations, but 22 of them have fewer than 20 uses (116 uses in total), and some are impossible or very unlikely (for example 7-3-0 or 1-8-1),
+                so they are probably data entry errors.
 
-       Note: Output A assumes that home_club_position and away_club_position are the positions BEFORE the game. If they were the positions after the game, the result
-             would be part of the position and the relation would be inflated. Check it with the first round of a league: before the game the positions should be
-             equal or empty, after the game the winners would already be at the top.
-       Note: The first rounds are excluded with @min_round because the table is very volatile at the start. The rounds that are not 'N. Matchday' have a NULL round and
-             are excluded too, so playoff games are not used. Postponed games keep their real date and round; the effect of the postponements is not corrected.
-       Note: The position difference is the raw difference of positions, not the difference of points: a gap of 3 positions at the top of the table does not mean the same
-             as a gap of 3 positions in the middle. The groups are small at the extreme differences, so @min_games removes them.
-       Note: Output B depends on the transfers of the players. A player that never transferred (for example a youth player that stayed in his club) has no start season
-             and appears with only one season. A loan breaks the sequence of the club of origin.
-       Note: In Output B the season of the arrival counts as a full season and the season of the departure belongs to the next club, so the number of seasons is an approximation.
-             Clubs without a record in clean.clubs (for example 'Retired' or 'Without club') end the previous sequence but are not shown.
-       Note: Output C counts the players that have the club in that season (reconstructed from the transfers), not the players that played minutes: players that did not play
-             and players of the youth teams can be included. The citizenship is the first one of the player, so dual nationals are counted only by one country.
-       Note: The names of the countries of clean.competitions and clean.players must be the same to compare them (for example 'England', 'Netherlands'); a different name makes
-             all the players of that country foreign.
-       Note: Output D uses all the players of clean.players (not only the ones of the top 15 leagues), with a known birth date and country. The expected distribution is the calendar one
-             (days of each month); the countries have different cut-off dates in the youth categories, which is why the results are by country.
-       Note: Formations (E, F) only exist for the games where the line-ups are in the data, so the first seasons can be empty or have fewer games.
-       Note: The season label of the leagues played in a calendar year (BRA1, ARG1, NO1, MLS1, COL1) is the value of clean.games.season and can be one year behind the calendar year;
-             check season vs game_date in clean.games before quoting these years. It also affects the join between the seasons of the players and of the games in Output C.
-       Note: Output B is not limited to the top 15 leagues: it uses every club of the transfers and of clean.players.
-       Note: The formations include the labels of the source ('4-3-3 Attacking', '4-3-3 Defending', '4-4-2 double 6', '3-5-2 flat'), which are counted as different formations; group
-             them by the first numbers if only the shape is needed. Output F uses all the competitions of clean.games, not only the top 15 leagues.
-       Note: 'Turkey' and 'Turkiye' are different values of country_of_citizenship, so they are two separate countries in Output D.
-       Note: In Output A only the leagues with numeric rounds and known positions appear (BE1, ES1, FR1, GB1, IT1, L1, NL1, PO1 and a small part of MLS1).
+   Note: Output A assumes that home_club_position and away_club_position are the positions BEFORE the game. If they were the positions after the game, the result
+         would be part of the position and the relation would be inflated. Check it with the first round of a league: before the game the positions should be
+         equal or empty, after the game the winners would already be at the top.
+   Note: The first rounds are excluded with @min_round because the table is very volatile at the start. The rounds that are not 'N. Matchday' have a NULL round and
+         are excluded too, so playoff games are not used. Postponed games keep their real date and round; the effect of the postponements is not corrected.
+   Note: The position difference is the raw difference of positions, not the difference of points: a gap of 3 positions at the top of the table does not mean the same
+         as a gap of 3 positions in the middle. The groups are small at the extreme differences, so @min_games removes them.
+   Note: Output B depends on the transfers of the players. A player that never transferred (for example a youth player that stayed in his club) has no start season
+         and appears with only one season. A loan breaks the sequence of the club of origin.
+   Note: In Output B the season of the arrival counts as a full season and the season of the departure belongs to the next club, so the number of seasons is an approximation.
+         Clubs without a record in clean.clubs (for example 'Retired' or 'Without club') end the previous sequence but are not shown.
+   Note: Output C counts the players that have the club in that season (reconstructed from the transfers), not the players that played minutes: players that did not play
+         and players of the youth teams can be included. The citizenship is the first one of the player, so dual nationals are counted only by one country.
+   Note: The names of the countries of clean.competitions and clean.players must be the same to compare them (for example 'England', 'Netherlands'); a different name makes
+         all the players of that country foreign.
+   Note: Output D uses all the players of clean.players (not only the ones of the top 15 leagues), with a known birth date and country. The expected distribution is the calendar one
+         (days of each month); the countries have different cut-off dates in the youth categories, which is why the results are by country.
+   Note: Formations (E, F) only exist for the games where the line-ups are in the data, so the first seasons can be empty or have fewer games.
+   Note: The season label of the leagues played in a calendar year (BRA1, ARG1, NO1, MLS1, COL1) is the value of clean.games.season and can be one year behind the calendar year;
+         check season vs game_date in clean.games before quoting these years. It also affects the join between the seasons of the players and of the games in Output C.
+   Note: Output B is not limited to the top 15 leagues: it uses every club of the transfers and of clean.players.
+   Note: The formations include the labels of the source ('4-3-3 Attacking', '4-3-3 Defending', '4-4-2 double 6', '3-5-2 flat'), which are counted as different formations; group
+         them by the first numbers if only the shape is needed. Output F uses all the competitions of clean.games, not only the top 15 leagues.
+   Note: 'Turkey' and 'Turkiye' are different values of country_of_citizenship, so they are two separate countries in Output D.
+   Note: In Output A only the leagues with numeric rounds and known positions appear (BE1, ES1, FR1, GB1, IT1, L1, NL1, PO1 and a small part of MLS1).
 */
 
 USE TransfermarktDB;

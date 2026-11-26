@@ -1,8 +1,8 @@
-/* Question: Who were the top scorers of each major league in each season? 
-			 For each of them: 
-				What was their longest streak of consecutive games with a goal (and how many goals did it include)?
-				How many minutes did they need on average to score a goal?
-				How did their market value change during that season?
+/* Question: Who were the top scorers of each major league in each season?
+             For each of them:
+                What was their longest streak of consecutive games with a goal (and how many goals did it include)?
+                How many minutes did they need on average to score a goal?
+                How did their market value change during that season?
 
    Approach: - CTE_Player_Games: one row per player per league game (appearances in the top 15 leagues), season label built once.
              - CTE_Players_Stats_By_Season: goals, assists, games, minutes and minutes per goal for each player, league and season
@@ -14,22 +14,22 @@
              - Market value: last valuation of the season minus last valuation of the previous season.
 
    Insight: The results match known figures (Messi 46 goals in 2012/13, Ronaldo 48 in 2014/15, Salah 32 in 2017/18, Lewandowski 41 in 2020/21, Haaland 36 in 2022/23, Gyökeres 39 in 2024/25, and Vardy's 11-game, 13-goal streak in 2015/16).
-            - Goals: the top scorer of a season averaged 32.6 goals in La Liga, 28.6 in the Bundesliga, 27.7 in Ligue 1, 27.1 in the Premier League, 26.9 in Serie A, 26.7 in the Primeira Liga, 24.1 in the Eredivisie and 19.2 in Belgium (16-team seasons, no play-offs in the data). 
-			         In La Liga the top scorer scored 31 goals or more in each of the 7 seasons up to 2018/19 (average 38.9) and has not gone above 31 since (average 26.4 from 2019/20 to 2025/26).
-            - Streaks: for most of the top 3 scorers the longest scoring streak is 3 to 5 games. Messi's 21 games (33 goals) in 2012/13 is by far the longest, almost twice the next one (Lewandowski, 12 games and 14 goals, also in 2012/13). 
-			           Five more reached 11 games: Ronaldo (La Liga 2014/15, 20 goals), Vardy (13), Quagliarella (14), Ronaldo again (Serie A 2019/20, 16) and Lewandowski (2019/20, 16).
+            - Goals: the top scorer of a season averaged 32.6 goals in La Liga, 28.6 in the Bundesliga, 27.7 in Ligue 1, 27.1 in the Premier League, 26.9 in Serie A, 26.7 in the Primeira Liga, 24.1 in the Eredivisie and 19.2 in Belgium (16-team seasons, no play-offs in the data).
+                     In La Liga the top scorer scored 31 goals or more in each of the 7 seasons up to 2018/19 (average 38.9) and has not gone above 31 since (average 26.4 from 2019/20 to 2025/26).
+            - Streaks: for most of the top 3 scorers the longest scoring streak is 3 to 5 games. Messi's 21 games (33 goals) in 2012/13 is by far the longest, almost twice the next one (Lewandowski, 12 games and 14 goals, also in 2012/13).
+                       Five more reached 11 games: Ronaldo (La Liga 2014/15, 20 goals), Vardy (13), Quagliarella (14), Ronaldo again (Serie A 2019/20, 16) and Lewandowski (2019/20, 16).
             - Efficiency: the lowest minutes per goal were Messi (57 in 2012/13), Lewandowski (60 in 2020/21) and Ronaldo (65 in 2014/15).
-            - Market value: finishing as top scorer does not guarantee a higher valuation. 34% of the top scorers (44 of 128 with data) ended the season with the same or a lower market value than a year earlier: 47% in the five biggest leagues (36 of 77) against 16% in Belgium, the Netherlands and Portugal (8 of 51). 
-							The largest rises were Salah in 2017/18 (+115M EUR), Kane in 2017/18 (+90M), Neymar in 2017/18 and Mbappé in 2018/19 (+80M each). 
-							The largest falls were Messi (-38M in 2019/20 and -32M in 2020/21). This is not adjusted for age or career stage, which probably explains much of the difference.
+            - Market value: finishing as top scorer does not guarantee a higher valuation. 34% of the top scorers (44 of 128 with data) ended the season with the same or a lower market value than a year earlier: 47% in the five biggest leagues (36 of 77) against 16% in Belgium, the Netherlands and Portugal (8 of 51).
+                            The largest rises were Salah in 2017/18 (+115M EUR), Kane in 2017/18 (+90M), Neymar in 2017/18 and Mbappé in 2018/19 (+80M each).
+                            The largest falls were Messi (-38M in 2019/20 and -32M in 2020/21). This is not adjusted for age or career stage, which probably explains much of the difference.
             - Limits: in 2019/20 Ligue 1, the Eredivisie and the Belgian league were cut short by the pandemic, which lowers their goal totals (18, 15 and 18 goals for the top scorers).
 
    Note: The English second division, known as the Championship, is not included, as there is no data available for it.
    Note: Only league games count (domestic leagues of the top 15 list). A streak counts consecutive games in which the player appeared: games he did not play do not break it.
    Note: With RANK(), players tied in 3rd place all appear, so a league-season can have more than 3 rows.
    Note: The latest season of calendar-year leagues (2026) was still in progress when the data was downloaded, so it is partial.
-   Note: Market value season = July to June for leagues that start in one year and end in the next, and the calendar year for calendar-year leagues. 
-		 The difference is NULL when the player has no valuation in the previous season.
+   Note: Market value season = July to June for leagues that start in one year and end in the next, and the calendar year for calendar-year leagues.
+         The difference is NULL when the player has no valuation in the previous season.
 */
 
 USE TransfermarktDB;

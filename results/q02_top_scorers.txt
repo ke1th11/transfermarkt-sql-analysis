@@ -1,0 +1,374 @@
+player_name	club_name	competition_id	season_formatted	ranking	total_goals	total_assists	total_games	avg_mins_per_goal	longest_scoring_streak_games	goals_in_longest_streak	market_value_diff
+Carlos Bacca	Club Brugge KV	BE1	2012 / 2013	1	22	4	25	94.27	8	9	6000000.00
+Ibou	Oud-Heverlee Leuven	BE1	2012 / 2013	2	17	8	28	143.06	5	5	950000.00
+Dieumerci Mbokani	RSC Anderlecht	BE1	2012 / 2013	2	17	3	19	99.29	5	8	4000000.00
+Michy Batshuayi	Standard Liège	BE1	2013 / 2014	1	18	3	29	128.33	3	6	4500000.00
+Hamdi Harbaoui	KSC Lokeren (- 2020)	BE1	2013 / 2014	2	17	1	28	115.35	5	6	500000.00
+Aleksandar Mitrović	RSC Anderlecht	BE1	2013 / 2014	3	13	4	23	142.54	3	3	6000000.00
+Ivan Santini	KV Kortrijk	BE1	2013 / 2014	3	13	8	29	186.38	3	5	1400000.00
+Habib Habibou	Zulte Waregem	BE1	2013 / 2014	3	13	5	26	156.38	3	3	1000000.00
+David Pollet	Royal Charleroi Sporting Club	BE1	2013 / 2014	3	13	3	28	155.38	4	4	1000000.00
+Aleksandar Mitrović	RSC Anderlecht	BE1	2014 / 2015	1	14	4	27	165.07	3	3	3500000.00
+Ivan Santini	KV Kortrijk	BE1	2014 / 2015	2	13	2	23	151.23	3	4	500000.00
+Renaud Emond	SK Beveren	BE1	2014 / 2015	2	13	1	28	154.92	3	3	1200000.00
+Jérémy Perbet	Royal Charleroi Sporting Club	BE1	2015 / 2016	1	14	1	23	136.71	3	3	400000.00
+Sofiane Hanni	KV Mechelen	BE1	2015 / 2016	1	14	8	29	165.00	5	5	2000000.00
+Cyriac	KV Oostende	BE1	2015 / 2016	3	13	4	28	143.85	4	6	1000000.00
+Stefano Okaka	RSC Anderlecht	BE1	2015 / 2016	3	13	3	27	143.31	5	6	-500000.00
+Mbaye Leye	Zulte Waregem	BE1	2015 / 2016	3	13	3	28	190.00	2	2	-50000.00
+Frédéric Gounongbe	KVC Westerlo	BE1	2015 / 2016	3	13	4	28	165.23	3	3	500000.00
+Lukasz Teodorczyk	RSC Anderlecht	BE1	2016 / 2017	1	20	4	28	114.95	5	5	8500000.00
+Jelle Vossen	Club Brugge KV	BE1	2016 / 2017	2	15	6	30	138.67	4	7	-500000.00
+Idriss Saadi	KV Kortrijk	BE1	2016 / 2017	3	14	2	29	165.93	3	5	NULL
+Orlando Sá	Standard Liège	BE1	2016 / 2017	3	14	0	21	94.29	3	4	700000.00
+Isaac Kiese Thelin	SK Beveren	BE1	2017 / 2018	1	16	3	27	141.75	4	4	1000000.00
+Teddy Chevalier	KV Kortrijk	BE1	2017 / 2018	1	16	4	30	153.25	4	5	0.00
+Kaveh Rezaei	Royal Charleroi Sporting Club	BE1	2017 / 2018	3	12	6	29	197.83	2	3	3500000.00
+Ally Samatta	KRC Genk	BE1	2018 / 2019	1	20	3	28	116.05	5	6	9000000.00
+Hamdi Harbaoui	Zulte Waregem	BE1	2018 / 2019	2	18	1	27	131.61	2	3	-150000.00
+Ivan Santini	RSC Anderlecht	BE1	2018 / 2019	3	14	1	25	144.93	3	7	-1500000.00
+Jonathan David	KAA Gent	BE1	2019 / 2020	1	18	8	27	116.72	4	7	13500000.00
+Dieumerci Mbokani	Royal Antwerp FC	BE1	2019 / 2020	1	18	7	28	139.28	4	4	-700000.00
+Hans Vanaken	Club Brugge KV	BE1	2019 / 2020	3	13	3	29	194.23	3	3	500000.00
+Paul Onuachu	KRC Genk	BE1	2020 / 2021	1	29	2	33	89.31	5	7	14800000.00
+Thomas Henry	Oud-Heverlee Leuven	BE1	2020 / 2021	2	21	6	31	132.33	8	10	4050000.00
+Gianni Bruno	Zulte Waregem	BE1	2020 / 2021	3	20	5	34	146.65	6	7	900000.00
+Deniz Undav	Union Saint-Gilloise	BE1	2021 / 2022	1	25	10	33	115.84	3	5	7100000.00
+Michael Frey	Royal Antwerp FC	BE1	2021 / 2022	2	22	4	33	114.68	6	6	2800000.00
+Paul Onuachu	KRC Genk	BE1	2021 / 2022	3	19	3	29	113.68	4	7	-3000000.00
+Tarik Tissoudali	KAA Gent	BE1	2021 / 2022	3	19	5	29	115.74	3	5	5000000.00
+Hugo Cuypers	KAA Gent	BE1	2022 / 2023	1	20	4	33	134.55	3	4	8000000.00
+Ayase Ueda	Cercle Brugge	BE1	2022 / 2023	2	18	1	34	151.94	3	3	4500000.00
+Gianni Bruno	Sint-Truidense VV	BE1	2022 / 2023	2	18	2	30	116.44	4	6	-300000.00
+Kévin Denkey	Cercle Brugge	BE1	2023 / 2024	1	23	0	28	108.57	5	6	13000000.00
+Mohamed Amoura	Union Saint-Gilloise	BE1	2023 / 2024	2	17	2	23	84.76	4	5	14000000.00
+Igor Thiago	Club Brugge KV	BE1	2023 / 2024	3	16	2	26	115.44	6	11	21000000.00
+Tolu Arokodare	KRC Genk	BE1	2024 / 2025	1	17	6	30	137.35	3	4	12500000.00
+Adriano Bertaccini	Sint-Truidense VV	BE1	2024 / 2025	2	16	1	27	139.63	3	5	3600000.00
+Kasper Dolberg	RSC Anderlecht	BE1	2024 / 2025	3	14	1	22	120.36	3	7	1000000.00
+Nicolò Tresoldi	Club Brugge KV	BE1	2025 / 2026	1	13	3	30	139.31	3	4	16000000.00
+Thorgan Hazard	RSC Anderlecht	BE1	2025 / 2026	2	12	8	27	184.42	2	5	-500000.00
+Keisuke Goto	Sint-Truidense VV	BE1	2025 / 2026	3	10	5	28	208.10	2	2	8800000.00
+Wilfried Kanga	KAA Gent	BE1	2025 / 2026	3	10	4	25	202.50	2	4	500000.00
+Jeppe Erenbjerg	Zulte Waregem	BE1	2025 / 2026	3	10	3	30	241.60	3	3	3000000.00
+Lionel Messi	FC Barcelona	ES1	2012 / 2013	1	46	13	32	57.09	21	33	20000000.00
+Cristiano Ronaldo	Real Madrid	ES1	2012 / 2013	2	34	11	34	79.91	5	9	10000000.00
+Radamel Falcao	Atlético de Madrid	ES1	2012 / 2013	3	28	1	34	103.61	7	10	20000000.00
+Cristiano Ronaldo	Real Madrid	ES1	2013 / 2014	1	31	11	30	81.94	8	9	0.00
+Lionel Messi	FC Barcelona	ES1	2013 / 2014	2	28	11	31	89.36	5	10	0.00
+Diego Costa	Atlético de Madrid	ES1	2013 / 2014	3	27	3	35	109.59	6	6	20000000.00
+Cristiano Ronaldo	Real Madrid	ES1	2014 / 2015	1	48	17	35	64.56	11	20	20000000.00
+Lionel Messi	FC Barcelona	ES1	2014 / 2015	2	43	21	38	78.49	6	11	0.00
+Neymar	FC Barcelona	ES1	2014 / 2015	3	22	9	33	116.86	4	6	20000000.00
+Luis Suárez	FC Barcelona	ES1	2015 / 2016	1	40	18	35	78.75	7	10	30000000.00
+Cristiano Ronaldo	Real Madrid	ES1	2015 / 2016	2	35	11	36	90.97	4	4	-10000000.00
+Lionel Messi	FC Barcelona	ES1	2015 / 2016	3	26	16	33	104.96	4	7	0.00
+Lionel Messi	FC Barcelona	ES1	2016 / 2017	1	37	12	34	76.54	6	8	0.00
+Luis Suárez	FC Barcelona	ES1	2016 / 2017	2	28	15	35	102.21	4	6	0.00
+Cristiano Ronaldo	Real Madrid	ES1	2016 / 2017	3	25	6	29	101.76	4	6	-10000000.00
+Lionel Messi	FC Barcelona	ES1	2017 / 2018	1	34	14	36	88.12	6	9	60000000.00
+Cristiano Ronaldo	Real Madrid	ES1	2017 / 2018	2	26	5	27	88.35	10	18	0.00
+Luis Suárez	FC Barcelona	ES1	2017 / 2018	3	25	13	33	116.08	7	10	-20000000.00
+Lionel Messi	FC Barcelona	ES1	2018 / 2019	1	36	14	34	75.28	8	12	-30000000.00
+Karim Benzema	Real Madrid	ES1	2018 / 2019	2	21	7	36	141.05	5	8	0.00
+Iago Aspas	Celta de Vigo	ES1	2018 / 2019	3	20	6	27	113.10	4	6	0.00
+Lionel Messi	FC Barcelona	ES1	2019 / 2020	1	25	22	33	115.20	5	8	-38000000.00
+Karim Benzema	Real Madrid	ES1	2019 / 2020	2	21	8	37	150.29	3	4	-8000000.00
+Gerard Moreno	Villarreal CF	ES1	2019 / 2020	3	18	6	35	152.89	4	5	-1500000.00
+Lionel Messi	FC Barcelona	ES1	2020 / 2021	1	30	11	35	100.77	8	12	-32000000.00
+Gerard Moreno	Villarreal CF	ES1	2020 / 2021	2	23	7	33	116.61	5	6	24000000.00
+Luis Suárez	Atlético de Madrid	ES1	2020 / 2021	3	21	3	32	120.10	4	7	-13000000.00
+Karim Benzema	Real Madrid	ES1	2021 / 2022	1	27	12	32	96.41	5	7	5000000.00
+Iago Aspas	Celta de Vigo	ES1	2021 / 2022	2	18	6	37	171.94	4	5	-2000000.00
+Raúl de Tomás	RCD Espanyol Barcelona	ES1	2021 / 2022	3	17	3	34	172.24	5	5	15000000.00
+Vinicius Junior	Real Madrid	ES1	2021 / 2022	3	17	13	35	158.82	2	3	60000000.00
+Robert Lewandowski	FC Barcelona	ES1	2022 / 2023	1	23	7	34	124.00	6	9	-15000000.00
+Karim Benzema	Real Madrid	ES1	2022 / 2023	2	19	3	24	107.58	5	6	-5000000.00
+Joselu	RCD Espanyol Barcelona	ES1	2022 / 2023	3	16	2	34	186.81	3	4	1000000.00
+Artem Dovbyk	Girona FC	ES1	2023 / 2024	1	24	8	36	108.54	5	6	20000000.00
+Alexander Sørloth	Villarreal CF	ES1	2023 / 2024	2	23	6	34	108.30	4	4	13000000.00
+Robert Lewandowski	FC Barcelona	ES1	2023 / 2024	3	19	8	35	145.21	4	5	-15000000.00
+Jude Bellingham	Real Madrid	ES1	2023 / 2024	3	19	6	28	122.32	4	5	60000000.00
+Kylian Mbappé	Real Madrid	ES1	2024 / 2025	1	31	3	34	94.10	5	9	0.00
+Robert Lewandowski	FC Barcelona	ES1	2024 / 2025	2	27	2	34	99.33	4	5	-3000000.00
+Ante Budimir	CA Osasuna	ES1	2024 / 2025	3	21	4	38	141.29	3	4	0.00
+Kylian Mbappé	Real Madrid	ES1	2025 / 2026	1	25	5	31	104.24	8	10	0.00
+Vedat Muriqi	RCD Mallorca	ES1	2025 / 2026	2	23	1	37	136.39	3	5	-500000.00
+Ante Budimir	CA Osasuna	ES1	2025 / 2026	3	17	0	37	173.71	4	5	-2200000.00
+Zlatan Ibrahimović	Paris Saint-Germain	FR1	2012 / 2013	1	30	10	34	99.13	4	7	-7000000.00
+Darío Cvitanich	OGC Nice	FR1	2012 / 2013	2	19	3	29	123.42	3	4	NULL
+Pierre-Emerick Aubameyang	AS Saint-Étienne	FR1	2012 / 2013	2	19	12	37	169.16	7	8	8000000.00
+Zlatan Ibrahimović	Paris Saint-Germain	FR1	2013 / 2014	1	26	15	33	106.54	3	6	-2000000.00
+Salomon Kalou	LOSC Lille	FR1	2013 / 2014	2	16	5	38	194.44	2	3	500000.00
+André-Pierre Gignac	Olympique Marseille	FR1	2013 / 2014	2	16	3	35	170.13	3	3	500000.00
+Edinson Cavani	Paris Saint-Germain	FR1	2013 / 2014	2	16	5	30	143.69	3	5	5000000.00
+Wissam Ben Yedder	FC Toulouse	FR1	2013 / 2014	2	16	5	38	187.69	4	5	-500000.00
+Vincent Aboubakar	FC Lorient	FR1	2013 / 2014	2	16	8	35	182.88	3	4	2250000.00
+Alexandre Lacazette	Olympique Lyon	FR1	2014 / 2015	1	27	8	33	105.52	6	10	20000000.00
+André-Pierre Gignac	Olympique Marseille	FR1	2014 / 2015	2	21	2	38	146.71	3	5	1000000.00
+Zlatan Ibrahimović	Paris Saint-Germain	FR1	2014 / 2015	3	19	6	24	105.47	3	6	-13000000.00
+Zlatan Ibrahimović	Paris Saint-Germain	FR1	2015 / 2016	1	38	13	31	67.18	6	11	0.00
+Alexandre Lacazette	Olympique Lyon	FR1	2015 / 2016	2	21	3	34	141.05	4	6	0.00
+Edinson Cavani	Paris Saint-Germain	FR1	2015 / 2016	3	19	5	32	121.37	3	5	-2000000.00
+Edinson Cavani	Paris Saint-Germain	FR1	2016 / 2017	1	35	4	36	85.00	5	7	5000000.00
+Alexandre Lacazette	Olympique Lyon	FR1	2016 / 2017	2	28	3	30	86.00	5	7	10000000.00
+Radamel Falcao	AS Monaco	FR1	2016 / 2017	3	21	5	29	92.29	3	3	-8000000.00
+Edinson Cavani	Paris Saint-Germain	FR1	2017 / 2018	1	28	7	32	92.46	7	10	15000000.00
+Florian Thauvin	Olympique Marseille	FR1	2017 / 2018	2	22	11	35	134.82	3	5	32000000.00
+Memphis Depay	Olympique Lyon	FR1	2017 / 2018	3	19	13	36	134.89	6	7	26000000.00
+Neymar	Paris Saint-Germain	FR1	2017 / 2018	3	19	13	20	94.58	3	7	80000000.00
+Kylian Mbappé	Paris Saint-Germain	FR1	2018 / 2019	1	33	9	29	70.58	7	9	80000000.00
+Nicolas Pépé	LOSC Lille	FR1	2018 / 2019	2	22	11	38	151.45	4	4	55000000.00
+Edinson Cavani	Paris Saint-Germain	FR1	2018 / 2019	3	18	6	21	93.50	3	6	-20000000.00
+Kylian Mbappé	Paris Saint-Germain	FR1	2019 / 2020	1	18	7	20	84.17	4	6	-20000000.00
+Wissam Ben Yedder	AS Monaco	FR1	2019 / 2020	1	18	7	26	120.61	6	8	0.00
+Moussa Dembélé	Olympique Lyon	FR1	2019 / 2020	3	16	2	27	136.81	4	4	13000000.00
+Kylian Mbappé	Paris Saint-Germain	FR1	2020 / 2021	1	27	7	31	88.41	5	8	-20000000.00
+Wissam Ben Yedder	AS Monaco	FR1	2020 / 2021	2	20	8	37	131.30	3	3	-5000000.00
+Memphis Depay	Olympique Lyon	FR1	2020 / 2021	2	20	12	37	146.65	2	4	1000000.00
+Kylian Mbappé	Paris Saint-Germain	FR1	2021 / 2022	1	28	19	35	108.29	4	7	0.00
+Wissam Ben Yedder	AS Monaco	FR1	2021 / 2022	2	25	5	37	101.72	4	5	-10000000.00
+Moussa Dembélé	Olympique Lyon	FR1	2021 / 2022	3	21	4	30	105.24	7	9	0.00
+Martin Terrier	Stade Rennais FC	FR1	2021 / 2022	3	21	4	37	133.67	7	8	12000000.00
+Kylian Mbappé	Paris Saint-Germain	FR1	2022 / 2023	1	29	6	34	97.31	6	9	20000000.00
+Alexandre Lacazette	Olympique Lyon	FR1	2022 / 2023	2	27	5	35	108.70	4	7	-1000000.00
+Jonathan David	LOSC Lille	FR1	2022 / 2023	3	24	4	37	132.46	4	5	15000000.00
+Kylian Mbappé	Paris Saint-Germain	FR1	2023 / 2024	1	27	7	29	79.96	4	7	0.00
+Jonathan David	LOSC Lille	FR1	2023 / 2024	2	19	4	34	139.05	3	4	-10000000.00
+Alexandre Lacazette	Olympique Lyon	FR1	2023 / 2024	2	19	3	29	121.32	5	5	-5000000.00
+Mason Greenwood	Olympique Marseille	FR1	2024 / 2025	1	21	6	34	134.19	3	5	15000000.00
+Ousmane Dembélé	Paris Saint-Germain	FR1	2024 / 2025	1	21	8	29	82.67	6	11	30000000.00
+Arnaud Kalimuendo	Stade Rennais FC	FR1	2024 / 2025	3	17	4	33	152.41	3	3	2000000.00
+Estéban Lepaul	Stade Rennais FC	FR1	2025 / 2026	1	21	5	34	128.81	5	5	28000000.00
+Mason Greenwood	Olympique Marseille	FR1	2025 / 2026	2	16	7	32	154.44	2	5	15000000.00
+Joaquín Panichelli	RC Strasbourg Alsace	FR1	2025 / 2026	2	16	1	27	137.25	4	6	28000000.00
+Robin van Persie	Manchester United	GB1	2012 / 2013	1	26	15	38	120.15	5	6	-2500000.00
+Luis Suárez	Liverpool FC	GB1	2012 / 2013	2	23	11	33	128.48	4	5	7000000.00
+Gareth Bale	Tottenham Hotspur	GB1	2012 / 2013	3	21	8	33	139.29	5	7	2000000.00
+Luis Suárez	Liverpool FC	GB1	2013 / 2014	1	31	17	33	95.65	4	10	16000000.00
+Daniel Sturridge	Liverpool FC	GB1	2013 / 2014	2	22	9	29	103.50	8	10	5000000.00
+Yaya Touré	Manchester City	GB1	2013 / 2014	3	20	9	35	146.35	2	4	-6000000.00
+Sergio Agüero	Manchester City	GB1	2014 / 2015	1	26	8	33	97.69	5	8	5000000.00
+Harry Kane	Tottenham Hotspur	GB1	2014 / 2015	2	21	5	34	123.00	4	6	NULL
+Diego Costa	Chelsea FC	GB1	2014 / 2015	3	20	3	26	104.20	4	7	15000000.00
+Harry Kane	Tottenham Hotspur	GB1	2015 / 2016	1	25	1	38	134.80	4	7	25000000.00
+Jamie Vardy	Leicester City	GB1	2015 / 2016	2	24	8	36	130.79	11	13	16000000.00
+Sergio Agüero	Manchester City	GB1	2015 / 2016	2	24	2	30	98.92	6	8	10000000.00
+Harry Kane	Tottenham Hotspur	GB1	2016 / 2017	1	29	7	30	87.45	4	5	20000000.00
+Romelu Lukaku	Everton FC	GB1	2016 / 2017	2	25	6	37	130.68	4	5	10000000.00
+Alexis Sánchez	Arsenal FC	GB1	2016 / 2017	3	24	11	38	134.33	4	5	10000000.00
+Mohamed Salah	Liverpool FC	GB1	2017 / 2018	1	32	11	36	91.25	5	6	115000000.00
+Harry Kane	Tottenham Hotspur	GB1	2017 / 2018	2	30	3	37	102.77	3	3	90000000.00
+Sergio Agüero	Manchester City	GB1	2017 / 2018	3	21	6	25	93.76	6	8	15000000.00
+Mohamed Salah	Liverpool FC	GB1	2018 / 2019	1	22	10	38	148.23	3	3	0.00
+Sadio Mané	Liverpool FC	GB1	2018 / 2019	1	22	2	36	140.27	4	4	50000000.00
+Pierre-Emerick Aubameyang	Arsenal FC	GB1	2018 / 2019	1	22	5	36	124.18	3	5	-5000000.00
+Jamie Vardy	Leicester City	GB1	2019 / 2020	1	23	5	35	131.91	8	11	-4000000.00
+Danny Ings	Southampton FC	GB1	2019 / 2020	2	22	2	38	127.91	5	5	2500000.00
+Pierre-Emerick Aubameyang	Arsenal FC	GB1	2019 / 2020	2	22	3	36	142.68	4	5	-14000000.00
+Harry Kane	Tottenham Hotspur	GB1	2020 / 2021	1	23	14	35	134.17	3	3	0.00
+Mohamed Salah	Liverpool FC	GB1	2020 / 2021	2	22	5	37	140.09	4	5	-20000000.00
+Bruno Fernandes	Manchester United	GB1	2020 / 2021	3	18	11	37	172.72	4	4	42000000.00
+Heung-min Son	Tottenham Hotspur	GB1	2021 / 2022	1	23	9	35	131.39	4	4	-10000000.00
+Mohamed Salah	Liverpool FC	GB1	2021 / 2022	1	23	14	35	120.09	7	9	-10000000.00
+Cristiano Ronaldo	Manchester United	GB1	2021 / 2022	3	18	3	30	136.61	4	6	-15000000.00
+Erling Haaland	Manchester City	GB1	2022 / 2023	1	36	8	35	77.14	7	13	30000000.00
+Harry Kane	Tottenham Hotspur	GB1	2022 / 2023	2	30	3	38	113.60	5	6	0.00
+Ivan Toney	Brentford FC	GB1	2022 / 2023	3	20	4	33	147.75	4	5	0.00
+Erling Haaland	Manchester City	GB1	2023 / 2024	1	27	4	31	94.74	4	7	0.00
+Cole Palmer	Chelsea FC	GB1	2023 / 2024	2	22	11	34	119.45	3	6	65000000.00
+Alexander Isak	Newcastle United	GB1	2023 / 2024	3	21	2	30	107.90	4	5	5000000.00
+Mohamed Salah	Liverpool FC	GB1	2024 / 2025	1	29	18	38	116.55	7	9	-5000000.00
+Alexander Isak	Newcastle United	GB1	2024 / 2025	2	23	6	34	120.61	8	11	45000000.00
+Erling Haaland	Manchester City	GB1	2024 / 2025	3	22	3	31	124.68	5	10	0.00
+Erling Haaland	Manchester City	GB1	2025 / 2026	1	27	8	35	109.59	6	9	20000000.00
+Igor Thiago	Brentford FC	GB1	2025 / 2026	2	22	1	38	149.41	3	5	47000000.00
+Antoine Semenyo	AFC Bournemouth	GB1	2025 / 2026	3	17	4	37	188.53	3	3	40000000.00
+Edinson Cavani	SSC Napoli	IT1	2012 / 2013	1	29	3	34	102.79	5	8	20000000.00
+Antonio Di Natale	Udinese Calcio	IT1	2012 / 2013	2	23	4	33	117.65	3	5	-5000000.00
+Daniel Osvaldo	Associazione Sportiva Roma	IT1	2012 / 2013	3	16	2	29	144.88	4	5	2000000.00
+Stephan El Shaarawy	AC Milan	IT1	2012 / 2013	3	16	5	37	177.25	4	4	17000000.00
+Ciro Immobile	Torino FC	IT1	2013 / 2014	1	22	3	33	117.68	6	8	5000000.00
+Luca Toni	Hellas Verona	IT1	2013 / 2014	2	20	11	34	150.45	5	6	0.00
+Carlos Tevez	Juventus FC	IT1	2013 / 2014	3	19	7	34	136.84	3	3	-5000000.00
+Mauro Icardi	Inter Milan	IT1	2014 / 2015	1	22	8	36	131.77	3	4	13000000.00
+Luca Toni	Hellas Verona	IT1	2014 / 2015	1	22	3	38	146.91	3	4	0.00
+Carlos Tevez	Juventus FC	IT1	2014 / 2015	3	20	7	32	129.50	4	6	1000000.00
+Gonzalo Higuaín	SSC Napoli	IT1	2015 / 2016	1	36	2	35	82.61	6	8	20000000.00
+Paulo Dybala	Juventus FC	IT1	2015 / 2016	2	19	7	34	129.68	2	3	17000000.00
+Carlos Bacca	AC Milan	IT1	2015 / 2016	3	18	2	38	176.17	4	4	5000000.00
+Edin Dzeko	Associazione Sportiva Roma	IT1	2016 / 2017	1	29	12	37	105.31	5	6	7000000.00
+Dries Mertens	SSC Napoli	IT1	2016 / 2017	2	28	9	35	91.43	4	6	12000000.00
+Andrea Belotti	Torino FC	IT1	2016 / 2017	3	26	5	35	118.12	3	3	23000000.00
+Ciro Immobile	Società Sportiva Lazio S.p.A.	IT1	2017 / 2018	1	29	8	33	92.97	4	7	30000000.00
+Mauro Icardi	Inter Milan	IT1	2017 / 2018	1	29	1	34	102.41	4	4	45000000.00
+Paulo Dybala	Juventus FC	IT1	2017 / 2018	3	22	5	33	107.09	4	8	45000000.00
+Fabio Quagliarella	UC Sampdoria	IT1	2018 / 2019	1	26	7	37	123.50	11	14	500000.00
+Duván Zapata	Atalanta BC	IT1	2018 / 2019	2	23	7	37	126.04	8	14	20000000.00
+Krzysztof Piatek	Genoa CFC	IT1	2018 / 2019	3	22	1	37	135.05	7	9	39100000.00
+Ciro Immobile	Società Sportiva Lazio S.p.A.	IT1	2019 / 2020	1	36	8	37	88.22	9	13	0.00
+Cristiano Ronaldo	Juventus FC	IT1	2019 / 2020	2	31	6	33	94.16	11	16	-30000000.00
+Romelu Lukaku	Inter Milan	IT1	2019 / 2020	3	23	2	36	129.70	4	6	-7000000.00
+Cristiano Ronaldo	Juventus FC	IT1	2020 / 2021	1	29	2	33	96.66	5	8	-15000000.00
+Romelu Lukaku	Inter Milan	IT1	2020 / 2021	2	24	10	36	120.33	4	4	32000000.00
+Luis Muriel	Atalanta BC	IT1	2020 / 2021	3	22	9	36	65.23	5	6	15000000.00
+Ciro Immobile	Società Sportiva Lazio S.p.A.	IT1	2021 / 2022	1	27	3	31	100.59	4	6	-11000000.00
+Dušan Vlahović	ACF Fiorentina	IT1	2021 / 2022	2	24	5	36	122.50	6	8	45000000.00
+Lautaro Martínez	Inter Milan	IT1	2021 / 2022	3	21	3	35	109.43	5	6	-5000000.00
+Victor Osimhen	SSC Napoli	IT1	2022 / 2023	1	26	5	32	99.27	8	10	55000000.00
+Lautaro Martínez	Inter Milan	IT1	2022 / 2023	2	21	7	38	122.57	3	5	10000000.00
+Boulaye Dia	US Salernitana 1919	IT1	2022 / 2023	3	16	6	33	157.88	3	5	13000000.00
+Lautaro Martínez	Inter Milan	IT1	2023 / 2024	1	24	6	33	111.13	5	6	25000000.00
+Dušan Vlahović	Juventus FC	IT1	2023 / 2024	2	16	3	33	144.94	4	6	-5000000.00
+Victor Osimhen	SSC Napoli	IT1	2023 / 2024	3	15	3	25	132.60	3	3	-20000000.00
+Olivier Giroud	AC Milan	IT1	2023 / 2024	3	15	8	35	158.13	3	4	-1000000.00
+Mateo Retegui	Atalanta BC	IT1	2024 / 2025	1	25	8	36	96.16	3	6	29000000.00
+Moise Kean	ACF Fiorentina	IT1	2024 / 2025	2	19	3	32	142.68	4	7	36000000.00
+Riccardo Orsolini	Bologna Football Club 1909	IT1	2024 / 2025	3	15	5	30	125.73	4	4	9000000.00
+Ademola Lookman	Atalanta BC	IT1	2024 / 2025	3	15	5	31	151.00	2	2	20000000.00
+Lautaro Martínez	Inter Milan	IT1	2025 / 2026	1	17	6	30	128.12	5	6	-10000000.00
+Anastasios Douvikas	Como 1907	IT1	2025 / 2026	2	14	2	38	162.71	2	2	15000000.00
+Donyell Malen	Associazione Sportiva Roma	IT1	2025 / 2026	2	14	2	18	105.57	2	4	20000000.00
+Stefan Kießling	Bayer 04 Leverkusen	L1	2012 / 2013	1	25	10	34	120.76	6	7	4500000.00
+Robert Lewandowski	Borussia Dortmund	L1	2012 / 2013	2	24	7	31	108.08	12	14	19000000.00
+Alexander Meier	Eintracht Frankfurt	L1	2012 / 2013	3	16	3	31	170.31	3	3	500000.00
+Robert Lewandowski	Borussia Dortmund	L1	2013 / 2014	1	20	10	33	140.15	2	3	11000000.00
+Mario Mandzukic	Bayern Munich	L1	2013 / 2014	2	18	6	30	112.22	6	7	7000000.00
+Josip Drmic	1.FC Nuremberg	L1	2013 / 2014	3	17	3	33	156.59	4	5	7000000.00
+Alexander Meier	Eintracht Frankfurt	L1	2014 / 2015	1	19	3	26	116.32	3	5	NULL
+Robert Lewandowski	Bayern Munich	L1	2014 / 2015	2	17	7	31	146.29	3	4	0.00
+Bas Dost	VfL Wolfsburg	L1	2014 / 2015	3	16	4	21	95.56	4	9	-500000.00
+Pierre-Emerick Aubameyang	Borussia Dortmund	L1	2014 / 2015	3	16	7	33	170.06	4	5	2000000.00
+Robert Lewandowski	Bayern Munich	L1	2015 / 2016	1	30	5	32	88.47	4	10	25000000.00
+Pierre-Emerick Aubameyang	Borussia Dortmund	L1	2015 / 2016	2	25	6	31	98.92	8	10	26000000.00
+Thomas Müller	Bayern Munich	L1	2015 / 2016	3	20	7	31	117.10	4	6	20000000.00
+Pierre-Emerick Aubameyang	Borussia Dortmund	L1	2016 / 2017	1	31	2	32	89.77	6	8	20000000.00
+Robert Lewandowski	Bayern Munich	L1	2016 / 2017	2	30	6	33	92.57	3	5	5000000.00
+Anthony Modeste	1.FC Köln	L1	2016 / 2017	3	25	2	34	119.12	4	7	14000000.00
+Robert Lewandowski	Bayern Munich	L1	2017 / 2018	1	29	2	30	74.79	5	6	10000000.00
+Nils Petersen	SC Freiburg	L1	2017 / 2018	2	15	1	32	147.73	3	6	7500000.00
+Mark Uth	TSG 1899 Hoffenheim	L1	2017 / 2018	3	14	8	31	155.43	2	3	13000000.00
+Kevin Volland	Bayer 04 Leverkusen	L1	2017 / 2018	3	14	2	31	185.64	4	4	5000000.00
+Niclas Füllkrug	Hannover 96	L1	2017 / 2018	3	14	3	34	170.57	3	5	6000000.00
+Robert Lewandowski	Bayern Munich	L1	2018 / 2019	1	22	9	33	134.50	5	8	-25000000.00
+Paco Alcácer	Borussia Dortmund	L1	2018 / 2019	2	18	0	26	66.89	4	7	22000000.00
+Kai Havertz	Bayer 04 Leverkusen	L1	2018 / 2019	3	17	4	34	170.76	4	4	62000000.00
+Wout Weghorst	VfL Wolfsburg	L1	2018 / 2019	3	17	7	34	172.82	3	3	13000000.00
+Luka Jović	Eintracht Frankfurt	L1	2018 / 2019	3	17	6	32	132.18	3	7	52000000.00
+Marco Reus	Borussia Dortmund	L1	2018 / 2019	3	17	10	27	136.59	3	3	15000000.00
+Andrej Kramaric	TSG 1899 Hoffenheim	L1	2018 / 2019	3	17	4	30	141.47	4	5	11000000.00
+Robert Lewandowski	Bayern Munich	L1	2019 / 2020	1	34	4	31	81.21	11	16	-9000000.00
+Timo Werner	RB Leipzig	L1	2019 / 2020	2	28	8	34	100.29	7	12	-1000000.00
+Jadon Sancho	Borussia Dortmund	L1	2019 / 2020	3	17	17	32	134.82	5	6	17000000.00
+Robert Lewandowski	Bayern Munich	L1	2020 / 2021	1	41	7	29	60.07	10	17	4000000.00
+André Silva	Eintracht Frankfurt	L1	2020 / 2021	2	28	8	32	99.04	5	7	29000000.00
+Erling Haaland	Borussia Dortmund	L1	2020 / 2021	3	27	8	28	89.26	3	6	58000000.00
+Robert Lewandowski	Bayern Munich	L1	2021 / 2022	1	35	4	34	84.34	5	7	-15000000.00
+Patrik Schick	Bayer 04 Leverkusen	L1	2021 / 2022	2	24	5	27	87.33	4	4	27000000.00
+Erling Haaland	Borussia Dortmund	L1	2021 / 2022	3	22	8	24	87.05	6	9	20000000.00
+Christopher Nkunku	RB Leipzig	L1	2022 / 2023	1	16	6	25	118.56	4	5	0.00
+Niclas Füllkrug	SV Werder Bremen	L1	2022 / 2023	1	16	5	28	154.94	2	3	10000000.00
+Vincenzo Grifo	SC Freiburg	L1	2022 / 2023	3	15	5	33	162.07	2	3	0.00
+Randal Kolo Muani	Eintracht Frankfurt	L1	2022 / 2023	3	15	14	32	176.47	3	4	64000000.00
+Harry Kane	Bayern Munich	L1	2023 / 2024	1	36	8	32	78.97	5	10	10000000.00
+Serhou Guirassy	VfB Stuttgart	L1	2023 / 2024	2	28	2	28	79.07	6	7	26000000.00
+Loïs Openda	RB Leipzig	L1	2023 / 2024	3	24	7	34	113.17	5	5	25000000.00
+Harry Kane	Bayern Munich	L1	2024 / 2025	1	26	10	31	91.96	3	6	-25000000.00
+Patrik Schick	Bayer 04 Leverkusen	L1	2024 / 2025	2	21	1	31	80.29	3	5	5000000.00
+Serhou Guirassy	Borussia Dortmund	L1	2024 / 2025	2	21	4	30	123.90	5	6	5000000.00
+Harry Kane	Bayern Munich	L1	2025 / 2026	1	36	5	31	66.17	5	9	-15000000.00
+Deniz Undav	VfB Stuttgart	L1	2025 / 2026	2	19	6	29	118.37	6	7	2000000.00
+Serhou Guirassy	Borussia Dortmund	L1	2025 / 2026	3	17	2	33	138.29	3	5	-13000000.00
+Wilfried Bony	Vitesse Arnhem	NL1	2012 / 2013	1	31	8	30	85.39	10	15	4000000.00
+Graziano Pellè	Feyenoord Rotterdam	NL1	2012 / 2013	2	27	9	29	95.81	9	11	4000000.00
+Alfred Finnbogason	SC Heerenveen	NL1	2012 / 2013	3	24	6	31	112.54	6	6	NULL
+Alfred Finnbogason	SC Heerenveen	NL1	2013 / 2014	1	29	10	31	96.21	8	11	4500000.00
+Graziano Pellè	Feyenoord Rotterdam	NL1	2013 / 2014	2	23	6	28	108.87	4	6	1500000.00
+Aron Jóhannsson	AZ Alkmaar	NL1	2013 / 2014	3	17	6	32	146.59	3	3	2000000.00
+Memphis Depay	PSV Eindhoven	NL1	2014 / 2015	1	22	6	30	116.59	4	5	15000000.00
+Luuk de Jong	PSV Eindhoven	NL1	2014 / 2015	2	20	12	32	142.25	5	7	-1500000.00
+Michiel Kramer	ADO Den Haag	NL1	2014 / 2015	3	17	2	32	157.65	5	5	1100000.00
+Michael de Leeuw	FC Groningen	NL1	2014 / 2015	3	17	1	28	126.18	3	3	250000.00
+Vincent Janssen	AZ Alkmaar	NL1	2015 / 2016	1	27	5	34	101.78	7	8	5600000.00
+Luuk de Jong	PSV Eindhoven	NL1	2015 / 2016	2	26	10	33	110.04	5	7	4000000.00
+Arkadiusz Milik	Ajax Amsterdam	NL1	2015 / 2016	3	21	8	31	117.81	6	9	5000000.00
+Nicolai Jörgensen	Feyenoord Rotterdam	NL1	2016 / 2017	1	21	13	32	128.52	3	4	10500000.00
+Ricky van Wolfswinkel	Vitesse Arnhem	NL1	2016 / 2017	2	20	4	32	138.20	3	3	1000000.00
+Reza Ghoochannejhad	SC Heerenveen	NL1	2016 / 2017	3	19	3	34	153.89	3	3	2250000.00
+Samuel Armenteros	Heracles Almelo	NL1	2016 / 2017	3	19	1	29	132.16	4	5	1500000.00
+Alireza Jahanbakhsh	AZ Alkmaar	NL1	2017 / 2018	1	21	12	33	135.19	3	3	6500000.00
+Björn Johnsen	ADO Den Haag	NL1	2017 / 2018	2	19	2	34	134.74	2	4	3000000.00
+Wout Weghorst	AZ Alkmaar	NL1	2017 / 2018	3	18	6	31	153.44	3	4	4250000.00
+Steven Berghuis	Feyenoord Rotterdam	NL1	2017 / 2018	3	18	14	31	144.22	4	6	6500000.00
+Luuk de Jong	PSV Eindhoven	NL1	2018 / 2019	1	28	7	34	109.29	6	7	4000000.00
+Dušan Tadić	Ajax Amsterdam	NL1	2018 / 2019	1	28	13	34	103.89	4	6	10000000.00
+Adrián Dalmau	Heracles Almelo	NL1	2018 / 2019	3	19	5	31	125.95	4	8	3700000.00
+Cyriel Dessers	Heracles Almelo	NL1	2019 / 2020	1	15	5	26	154.13	3	6	2200000.00
+Steven Berghuis	Feyenoord Rotterdam	NL1	2019 / 2020	1	15	7	24	140.53	2	3	-1000000.00
+Bryan Linssen	Vitesse Arnhem	NL1	2019 / 2020	3	14	6	25	152.00	2	3	-600000.00
+Myron Boadu	AZ Alkmaar	NL1	2019 / 2020	3	14	8	24	144.21	4	5	16000000.00
+Georgios Giakoumakis	VVV-Venlo	NL1	2020 / 2021	1	26	1	30	99.65	5	5	2175000.00
+Donyell Malen	PSV Eindhoven	NL1	2020 / 2021	2	19	8	32	129.21	3	5	5000000.00
+Steven Berghuis	Feyenoord Rotterdam	NL1	2020 / 2021	3	18	14	31	147.11	4	6	1000000.00
+Sébastien Haller	Ajax Amsterdam	NL1	2021 / 2022	1	21	7	31	122.81	3	6	8000000.00
+Loïs Openda	Vitesse Arnhem	NL1	2021 / 2022	2	18	2	33	147.83	2	4	4500000.00
+Vangelis Pavlidis	AZ Alkmaar	NL1	2021 / 2022	3	16	5	33	157.50	3	4	3500000.00
+Ricky van Wolfswinkel	FC Twente Enschede	NL1	2021 / 2022	3	16	8	32	160.75	3	3	300000.00
+Anastasios Douvikas	FC Utrecht	NL1	2022 / 2023	1	19	4	32	112.68	4	5	7000000.00
+Xavi Simons	PSV Eindhoven	NL1	2022 / 2023	1	19	9	34	148.47	3	6	36000000.00
+Sydney van Hooijdonk	SC Heerenveen	NL1	2022 / 2023	3	16	1	33	163.44	5	7	4700000.00
+Vangelis Pavlidis	AZ Alkmaar	NL1	2023 / 2024	1	29	4	34	103.45	9	13	11000000.00
+Luuk de Jong	PSV Eindhoven	NL1	2023 / 2024	1	29	15	34	95.72	3	5	-500000.00
+Santiago Gimenez	Feyenoord Rotterdam	NL1	2023 / 2024	3	23	6	30	103.65	8	13	15000000.00
+Sem Steijn	FC Twente Enschede	NL1	2024 / 2025	1	24	7	33	115.50	4	4	6000000.00
+Igor Paixão	Feyenoord Rotterdam	NL1	2024 / 2025	2	16	14	34	180.13	3	6	21000000.00
+Troy Parrott	AZ Alkmaar	NL1	2024 / 2025	3	14	2	28	156.64	3	3	9500000.00
+Luuk de Jong	PSV Eindhoven	NL1	2024 / 2025	3	14	8	31	175.36	4	4	-1000000.00
+Ayase Ueda	Feyenoord Rotterdam	NL1	2025 / 2026	1	25	2	31	101.36	3	6	9000000.00
+Mika Godts	Ajax Amsterdam	NL1	2025 / 2026	2	17	12	32	158.00	3	3	25000000.00
+Ricardo Pepi	PSV Eindhoven	NL1	2025 / 2026	3	16	1	26	88.44	6	6	14000000.00
+Troy Parrott	AZ Alkmaar	NL1	2025 / 2026	3	16	5	28	137.88	2	3	11000000.00
+Jackson Martínez	FC Porto	PO1	2012 / 2013	1	26	2	30	103.27	7	8	9000000.00
+Lima	SL Benfica	PO1	2012 / 2013	2	20	6	29	115.35	3	3	5000000.00
+Óscar Cardozo	SL Benfica	PO1	2012 / 2013	3	17	3	25	102.24	3	7	1500000.00
+Jackson Martínez	FC Porto	PO1	2013 / 2014	1	20	3	30	130.00	5	5	16000000.00
+Derley	CS Marítimo	PO1	2013 / 2014	2	16	8	30	167.31	2	2	NULL
+Rafael Martins	Vitória Setúbal FC	PO1	2013 / 2014	3	15	1	28	144.20	4	5	NULL
+Jonas	SL Benfica	PO1	2014 / 2015	1	20	6	27	111.00	4	5	-3000000.00
+Lima	SL Benfica	PO1	2014 / 2015	2	19	8	34	147.32	2	3	-3500000.00
+Marco Matias	CD Nacional	PO1	2014 / 2015	3	17	2	33	163.88	3	4	800000.00
+Jonas	SL Benfica	PO1	2015 / 2016	1	32	14	34	88.91	3	5	2000000.00
+Islam Slimani	Sporting CP	PO1	2015 / 2016	2	27	6	33	106.93	5	8	5000000.00
+Léo Bonatini	GD Estoril Praia	PO1	2015 / 2016	3	17	3	33	169.12	3	5	NULL
+Bas Dost	Sporting CP	PO1	2016 / 2017	1	34	5	31	79.71	5	8	8500000.00
+Tiquinho Soares	Vitória Guimarães SC	PO1	2016 / 2017	2	19	3	31	141.95	7	10	6250000.00
+Konstantinos Mitroglou	SL Benfica	PO1	2016 / 2017	3	16	1	28	140.25	4	6	2500000.00
+André Silva	FC Porto	PO1	2016 / 2017	3	16	6	32	153.50	3	5	20000000.00
+Jonas	SL Benfica	PO1	2017 / 2018	1	34	6	30	72.68	10	14	-2000000.00
+Bas Dost	Sporting CP	PO1	2017 / 2018	2	27	4	30	95.96	3	5	6000000.00
+Moussa Marega	FC Porto	PO1	2017 / 2018	3	22	4	29	109.59	3	3	15000000.00
+Haris Seferovic	SL Benfica	PO1	2018 / 2019	1	23	6	29	85.57	8	11	14000000.00
+Bruno Fernandes	Sporting CP	PO1	2018 / 2019	2	20	13	33	147.10	3	4	25000000.00
+Rafa Silva	SL Benfica	PO1	2018 / 2019	3	17	2	26	112.76	5	7	16000000.00
+Carlos Vinícius	SL Benfica	PO1	2019 / 2020	1	18	8	32	99.11	4	6	9000000.00
+Mehdi Taremi	Rio Ave FC	PO1	2019 / 2020	1	18	5	30	130.78	4	5	1500000.00
+Pizzi	SL Benfica	PO1	2019 / 2020	1	18	14	34	157.06	3	3	-3500000.00
+Pedro Gonçalves	Sporting CP	PO1	2020 / 2021	1	23	4	32	118.91	6	10	20200000.00
+Haris Seferovic	SL Benfica	PO1	2020 / 2021	2	22	7	31	103.09	4	6	2000000.00
+Mehdi Taremi	FC Porto	PO1	2020 / 2021	3	16	15	34	139.06	2	2	12800000.00
+Darwin Núñez	SL Benfica	PO1	2021 / 2022	1	26	4	28	76.50	4	5	35000000.00
+Mehdi Taremi	FC Porto	PO1	2021 / 2022	2	20	13	32	121.65	4	4	4000000.00
+Ricardo Horta	SC Braga	PO1	2021 / 2022	3	19	5	32	147.00	4	4	6000000.00
+Mehdi Taremi	FC Porto	PO1	2022 / 2023	1	22	8	33	119.68	3	6	-2000000.00
+Gonçalo Ramos	SL Benfica	PO1	2022 / 2023	2	19	7	30	121.37	2	3	36000000.00
+Fran Navarro	Gil Vicente FC	PO1	2022 / 2023	3	17	3	34	178.71	3	4	10000000.00
+João Mário	SL Benfica	PO1	2022 / 2023	3	17	9	33	156.35	3	5	4000000.00
+Viktor Gyökeres	Sporting CP	PO1	2023 / 2024	1	29	9	33	100.52	4	6	52000000.00
+Simon Banza	SC Braga	PO1	2023 / 2024	2	21	4	28	95.19	7	9	10000000.00
+Rafa Mujica	FC Arouca	PO1	2023 / 2024	3	20	3	30	126.80	4	5	6500000.00
+Viktor Gyökeres	Sporting CP	PO1	2024 / 2025	1	39	8	33	71.90	6	10	10000000.00
+Vangelis Pavlidis	SL Benfica	PO1	2024 / 2025	2	19	7	34	119.79	5	8	10000000.00
+Samu Aghehowa	FC Porto	PO1	2024 / 2025	2	19	3	30	119.16	3	4	15000000.00
+Luis Suárez	Sporting CP	PO1	2025 / 2026	1	28	7	32	96.39	7	9	22000000.00
+Vangelis Pavlidis	SL Benfica	PO1	2025 / 2026	2	22	4	33	121.32	2	4	-7000000.00
+Yanis Begraoui	GD Estoril Praia	PO1	2025 / 2026	3	20	2	34	136.30	3	7	8500000.00
