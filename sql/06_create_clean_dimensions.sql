@@ -62,7 +62,7 @@ INSERT INTO clean.competitions
     (competition_id, competition_name, competition_group, raw_type, raw_sub_type, country_name, in_source_table)
 VALUES
     ('POCP', 'taca-de-portugal',      'Domestic cup',                  NULL, NULL, 'Portugal', 0),
-    ('CGB',  'efl-cup-to-confirm',    'Domestic cup',                  NULL, NULL, 'England',  0),
+    ('CGB',  'efl-cup',    'Domestic cup',                  NULL, NULL, 'England',  0),
     ('COL1', 'categoria-primera-a',   'Domestic league',               NULL, NULL, 'Colombia', 0),
     ('KLUB', 'fifa-club-world-cup',   'International club tournament', NULL, NULL, NULL,       0),
     ('UKRS', 'ukrainian-super-cup',   'Domestic super cup',            NULL, NULL, 'Ukraine',  0);
