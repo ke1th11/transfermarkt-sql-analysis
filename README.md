@@ -156,7 +156,7 @@ The raw data needed careful handling. The full list of 17 findings and the decis
 
 ## About
 
-Made by **Bruno Sousa**, Physics Engineering graduate (University of Minho) and MSc student in Industrial Management and Decision (ESTG - UTP), with an interest in data analysis, modelling and process optimisation.
+Made by **Bruno Sousa**, Physics Engineering graduate (University of Minho) and MSc student in Management and Industrial Decision-Making (ESTG - UTP), with an interest in data analysis, modelling and process optimisation.
 
 The final versions of the analysis scripts (`08` to `14`) were reviewed and optimised with AI assistance. My original first versions are kept in [`sql/drafts/`](sql/drafts/).
 

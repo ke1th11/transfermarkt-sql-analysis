@@ -21,7 +21,7 @@ The dataset does not seem to have been updated since July 2026 (check "last upda
 | # | Table / column | Finding | Decision |
 |---|---|---|---|
 | 1 | `appearances.player_id` | 2 rows point to a player that does not exist (player 380365, no name, Copa del Rey 2018). | Exclude from `clean.appearances` and log it. Negligible (2 of 1.89M rows). |
-| 2 | `games.competition_id` | 1,214 games use competitions missing from `competitions`: POCP (602), CGB (246), COL1 (200), KLUB (156), UKRS (10). By club names: POCP = Portuguese cup, KLUB = FIFA Club World Cup, COL1 = Colombian league (2025), UKRS = Ukrainian Super Cup, CGB = English clubs from 2022 (probably the EFL Cup, to confirm). | Keep the games. Add the 5 competitions to `clean.competitions` with a name and group set manually. |
+| 2 | `games.competition_id` | 1,214 games use competitions missing from `competitions`: POCP (602), CGB (246), COL1 (200), KLUB (156), UKRS (10). By club names: POCP = Portuguese cup, KLUB = FIFA Club World Cup, COL1 = Colombian league (2025), UKRS = Ukrainian Super Cup, CGB = English clubs from 2022 CGB = EFL Cup (Carabao Cup): first-round games between Championship, League One and League Two clubs, two-legged semi-finals, no group stage. | Keep the games. Add the 5 competitions to `clean.competitions` with a name and group set manually. |
 | 3 | `games.home_club_id` / `away_club_id` | 12,818 games have a home club and 11,242 an away club not in `clubs`. Only 692 home cases are national teams. Most are clubs from leagues the dataset does not cover (domestic cups, European qualifiers), e.g. Ludogorets, Qarabag, Maccabi Tel Aviv. 50 national-team games are not in `national_teams` either. | Build `clean.clubs` from `clubs` + `national_teams` + names found in `games`, with a flag showing whether the club is in the source `clubs` table. |
 | 4 | `transfers.transfer_date` | 520 transfers are dated after the snapshot (2026-07-06), up to 2030-06-30. 396 are in 2026-12 and 48 in 2027. They look like scheduled loan returns or contract ends, not real transfers. | Add an `is_scheduled` flag using the snapshot date (not today's date). Exclude scheduled rows from analysis. |
 | 5 | `players.position` | 586 rows contain the text "Missing". | Convert to NULL. |
@@ -43,8 +43,3 @@ The dataset does not seem to have been updated since July 2026 (check "last upda
 - Club analyses: seasons 2012-2025, core leagues (`is_core_league = 1`).
 - Portugal focus: `PO1` (Liga Portugal) complete for every season (306 games each), plus `POSU` and `POCP` (cup, partial coverage).
 - Transfers: only rows dated up to the snapshot date.
-
-## 4. Still to confirm
-
-- The exact name of competition CGB.
-- The date of the last update of the dataset.
